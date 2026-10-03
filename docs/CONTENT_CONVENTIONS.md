@@ -3,9 +3,12 @@
 ## Agreed interface
 
 The node shows a title and one-line meaning. The right inspector shows short recall
-bullets, a Mains connection, explained direct links and source references. Concepts
-and articles appear first; judgments and applications are expanded deliberately.
-Click or tap pins details; hovering previews the direct neighbourhood only.
+bullets, a Mains connection, explained direct links and source references. Every
+concept and edge in the loaded microtheme is present from the start, including
+judgments and applications. No per-node disclosure controls. Click or tap pins
+details; hovering previews the direct neighbourhood only. Camera framing never
+changes which records are present. Off-screen nodes remain discoverable through
+the overview, topic index and linked names in the inspector.
 The selected restrained canvas mock is docs/design/selected-canvas-option-2.png.
 
 ## Labels and evidence

@@ -7,13 +7,6 @@ export function neighbours(id: string, edges: Connection[]): Set<string> {
   }
   return result;
 }
-export function expand(
-  id: string,
-  visible: string[],
-  edges: Connection[],
-): string[] {
-  return [...new Set([...visible, ...neighbours(id, edges)])];
-}
 export function validateGraph(graph: GraphRelease): string[] {
   const errors: string[] = [];
   const ids = new Set(graph.nodes.map((n) => n.id));

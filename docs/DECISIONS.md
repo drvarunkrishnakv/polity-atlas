@@ -10,3 +10,10 @@
   additional depth requires deliberate expansion. Responsive touch controls required.
 - 2026-10-03: First content release is an original, source-cited Fundamental Rights
   demonstration. Full corpus conversion and scheduled imports are separate work.
+
+- 2026-10-04: User rejected per-node Reveal because hidden links look like absent
+  knowledge. Supersedes the earlier deliberate-expansion decision: render every
+  record in the current curated microtheme immediately. Hover remains one hop;
+  selection pins details. Camera framing and the overview aid navigation without
+  changing content visibility. Named gateways are reserved for real neighbouring
+  microthemes; this single-theme example has none yet.

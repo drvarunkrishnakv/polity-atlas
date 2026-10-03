@@ -3,6 +3,8 @@
 Read README.md, docs/HANDOFF.md, docs/ARCHITECTURE.md and docs/CONTENT_CONVENTIONS.md.
 
 - Preserve the selected restrained canvas design; no gamification or reading app.
+- Show the complete loaded microtheme immediately. No per-node Reveal controls.
+  Hover highlights direct neighbours only; camera framing must not hide records.
 - Work on a task branch, never push directly to main. Use a separate worktree when
   another agent is active. State the issue, branch and scope in the PR.
 - Keep content, graph traversal and UI separate. Stable IDs are permanent identities.

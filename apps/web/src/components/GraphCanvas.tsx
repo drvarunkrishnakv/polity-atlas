@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, useCallback } from "react";
 import {
   ReactFlow,
   Background,
+  MiniMap,
   BackgroundVariant,
   Handle,
   Position,
@@ -22,7 +23,7 @@ import {
   BookOpen,
 } from "@phosphor-icons/react";
 import type { Concept, GraphRelease } from "../content/types";
-import { expand, neighbours } from "../graph/explore";
+import { neighbours } from "../graph/explore";
 import { Inspector } from "./Inspector";
 import "@xyflow/react/dist/style.css";
 type ConceptNode = Node<
@@ -111,9 +112,6 @@ export function GraphCanvas({
       return next;
     });
   }, []);
-  const [visible, setVisible] = useState(() => [
-    ...new Set([...graph.initialIds, validInitial]),
-  ]);
   const [query, setQuery] = useState("");
   const [indexOpen, setIndexOpen] = useState(false);
   const [detailsOpen, setDetailsOpen] = useState(true);
@@ -131,7 +129,6 @@ export function GraphCanvas({
       setDetailsOpen(true);
       setQuery("");
       setIndexOpen(false);
-      setVisible((v) => (v.includes(id) ? v : [...v, id]));
       history.replaceState(
         null,
         "",
@@ -152,7 +149,6 @@ export function GraphCanvas({
     [graph.nodes, setCenter],
   );
   const reset = () => {
-    setVisible(graph.initialIds);
     setSelected("fr");
     setHovered(null);
     setQuery("");
@@ -163,13 +159,12 @@ export function GraphCanvas({
   };
   useEffect(() => {
     const t = setTimeout(() => {
-      if (innerWidth <= 1100) {
-        const n = graph.nodes.find((n) => n.id === (selected || "fr"))!;
-        setCenter(n.position.x + 102, n.position.y + 29, {
-          zoom: 0.85,
-          duration: 180,
-        });
-      } else fitView({ padding: 0.12, maxZoom: 1.15, duration: 180 });
+      const n = graph.nodes.find((n) => n.id === (selected || "fr"))!;
+      // Start at reading size; the overview and Fit graph expose the full extent.
+      setCenter(n.position.x + 102, n.position.y + 29, {
+        zoom: innerWidth <= 1100 ? 0.85 : 0.7,
+        duration: 180,
+      });
     }, 70);
     return () => clearTimeout(t);
   }, [focusVersion, fitView]);
@@ -186,55 +181,50 @@ export function GraphCanvas({
     window.addEventListener("keydown", key);
     return () => window.removeEventListener("keydown", key);
   }, []);
-  const nodes: ConceptNode[] = graph.nodes
-    .filter((n) => visible.includes(n.id))
-    .map((concept) => ({
-      id: concept.id,
-      type: "concept",
-      position: concept.position,
-      measured: measurements[concept.id],
-      data: {
-        concept,
-        active: active === concept.id,
-        dimmed: !!active && !lit.has(concept.id),
-        onSelect: (id) => select(id, false),
+  const nodes: ConceptNode[] = graph.nodes.map((concept) => ({
+    id: concept.id,
+    type: "concept",
+    position: concept.position,
+    measured: measurements[concept.id],
+    data: {
+      concept,
+      active: active === concept.id,
+      dimmed: !!active && !lit.has(concept.id),
+      onSelect: (id) => select(id, false),
+    },
+    ariaLabel: `${concept.title}: ${concept.meaning}`,
+    draggable: false,
+    selected: selected === concept.id,
+  }));
+  const edges: Edge[] = graph.edges.map((e) => {
+    const highlighted =
+      !!active && (e.source === active || e.target === active);
+    const from = graph.nodes.find((n) => n.id === e.source)!.position;
+    const to = graph.nodes.find((n) => n.id === e.target)!.position;
+    const dx = to.x - from.x,
+      dy = to.y - from.y;
+    const vertical = Math.abs(dx) < 140;
+    return {
+      ...e,
+      label: undefined,
+      sourceHandle:
+        "s" +
+        (vertical ? (dy > 0 ? "bottom" : "top") : dx > 0 ? "right" : "left"),
+      targetHandle:
+        "t" +
+        (vertical ? (dy > 0 ? "top" : "bottom") : dx > 0 ? "left" : "right"),
+      type: "default",
+      style: {
+        stroke: highlighted ? "#b7c9de" : "#34424f",
+        strokeWidth: highlighted ? 1.8 : 1.1,
+        opacity: active && !highlighted ? 0.2 : 0.9,
+        strokeDasharray: e.classification === "analytical" ? "5 5" : undefined,
       },
-      ariaLabel: `${concept.title}: ${concept.meaning}`,
-      draggable: false,
-      selected: selected === concept.id,
-    }));
-  const edges: Edge[] = graph.edges
-    .filter((e) => visible.includes(e.source) && visible.includes(e.target))
-    .map((e) => {
-      const highlighted =
-        !!active && (e.source === active || e.target === active);
-      const from = graph.nodes.find((n) => n.id === e.source)!.position;
-      const to = graph.nodes.find((n) => n.id === e.target)!.position;
-      const dx = to.x - from.x,
-        dy = to.y - from.y;
-      const vertical = Math.abs(dx) < 140;
-      return {
-        ...e,
-        label: undefined,
-        sourceHandle:
-          "s" +
-          (vertical ? (dy > 0 ? "bottom" : "top") : dx > 0 ? "right" : "left"),
-        targetHandle:
-          "t" +
-          (vertical ? (dy > 0 ? "top" : "bottom") : dx > 0 ? "left" : "right"),
-        type: "default",
-        style: {
-          stroke: highlighted ? "#b7c9de" : "#34424f",
-          strokeWidth: highlighted ? 1.8 : 1.1,
-          opacity: active && !highlighted ? 0.2 : 0.9,
-          strokeDasharray:
-            e.classification === "analytical" ? "5 5" : undefined,
-        },
-        ariaLabel: `${e.label}: ${e.explanation}`,
-        interactionWidth: 20,
-        data: { explanation: e.explanation },
-      };
-    });
+      ariaLabel: `${e.label}: ${e.explanation}`,
+      interactionWidth: 20,
+      data: { explanation: e.explanation },
+    };
+  });
   const inspected = graph.nodes.find(
     (n) => n.id === (selected || hovered || "fr"),
   )!;
@@ -243,9 +233,6 @@ export function GraphCanvas({
       .toLowerCase()
       .includes(query.trim().toLowerCase()),
   );
-  const hiddenCount = [...neighbours(inspected.id, graph.edges)].filter(
-    (id) => !visible.includes(id),
-  ).length;
   return (
     <div className="app-shell">
       <header className="topbar">
@@ -299,7 +286,7 @@ export function GraphCanvas({
               </div>
             )}
           </div>
-          <span className="depth-label">Direct links</span>
+          <span className="depth-label">Highlight: direct links</span>
           <button aria-label="Reset" className="reset-button" onClick={reset}>
             <ArrowCounterClockwise size={17} />
             <span>Reset</span>
@@ -334,6 +321,10 @@ export function GraphCanvas({
             <span className="eyebrow">Indian Constitution</span>
             <span>
               Fundamental Rights <small>· Part III</small>
+              <small className="scope-status">
+                All {graph.nodes.length} concepts · {graph.edges.length} links
+                on canvas
+              </small>
             </span>
           </div>
           {indexOpen && (
@@ -387,6 +378,14 @@ export function GraphCanvas({
               zoomOnDoubleClick={false}
               colorMode="dark"
             >
+              <MiniMap
+                pannable
+                zoomable
+                ariaLabel="Theme overview — pan or zoom to explore the full canvas"
+                nodeColor="#647b8d"
+                nodeStrokeColor="#90a5b6"
+                maskColor="rgba(5, 10, 15, 0.65)"
+              />
               <Background
                 variant={BackgroundVariant.Lines}
                 gap={32}
@@ -442,10 +441,14 @@ export function GraphCanvas({
             concept={inspected}
             graph={graph}
             onSelect={select}
-            hiddenCount={hiddenCount}
-            onExpand={() => {
-              setVisible((v) => expand(inspected.id, v, graph.edges));
-              setFocusVersion((v) => v + 1);
+            onFrameConnections={() => {
+              const ids = neighbours(inspected.id, graph.edges);
+              fitView({
+                nodes: [...ids].map((id) => ({ id })),
+                padding: 0.25,
+                maxZoom: 1,
+                duration: 250,
+              });
             }}
             onClose={() => setDetailsOpen(false)}
           />

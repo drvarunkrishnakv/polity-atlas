@@ -1,5 +1,34 @@
 # Handoff
 
+## Complete microtheme view — 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/5
+- Branch: `codex/show-complete-theme`, based on hover fix handover `44610b2`.
+  Assisting tool: Codex. Implementation commit: `f8428d7`.
+- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/6 (open).
+  Later handover-only commits may follow; use the actual branch head when resuming.
+- All 41 concepts and 46 edges in the current example render immediately and
+  remain present through selection, search, camera movement and Reset. Removed
+  per-node Reveal controls and obsolete expansion logic. Academic records unchanged.
+- Hover still highlights only direct neighbours; selecting a node pins details.
+  Article 21 → Puttaswamy → Privacy is available without disclosure steps.
+- Added full-theme counts, an overview map, and Frame connections (camera only).
+  The initial view uses readable zoom; off-screen nodes remain on the canvas and
+  are accessible by pan/zoom, Fit graph, index or inspector links.
+- Cross-theme gateways are reserved for actual sourced destinations. This example
+  has only one microtheme, so none are fabricated. No new corpus work or deployment.
+- Checks: `npm run check` passes (format, TypeScript, six unit tests, build, public
+  audit). `npm run test:e2e`: 22 passed, two mouse-hover cases skipped on touch
+  profiles. Includes complete graph counts, no Reveal controls, direct-only
+  highlighting, camera framing, Privacy card clicking and the flicker regression.
+- Screenshots: `docs/design/complete-theme-desktop.png` and
+  `docs/design/privacy-chain-{desktop,phone}.png`. Chromium desktop/phone/tablet
+  emulation passed; physical-device and Safari verification remain outstanding.
+- Next: review this follow-up into the hover-fix branch (PR #4), then the original
+  implementation (PR #2). Earlier checkpoint descriptions below are historical;
+  per-node expansion is superseded by this user-approved complete-theme contract.
+
+
 ## Hover flicker follow-up — 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/3

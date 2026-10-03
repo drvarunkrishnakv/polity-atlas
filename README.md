@@ -7,8 +7,8 @@ concepts and understand justified connections. No textbook reader, tutor or game
 
 GS papers → subjects → syllabus topics → PYQ microthemes → concepts. A compact
 node contains a title and one-line meaning. The inspector shows short recall
-bullets, Mains use, explained connections and source references. Reveal direct
-neighbours first; never recursively light up the entire corpus.
+bullets, Mains use, explained connections and source references. Show the complete
+curated microtheme from the start; highlight direct neighbours only.
 
 The selected design is `docs/design/selected-canvas-option-2.png`. Generated mock
 copy is visual reference only, not study evidence.
@@ -50,9 +50,11 @@ explicit action. Never put provider credentials in frontend code.
 
 ## First example
 
-Open GS II → Polity. Search for Article 21, select it, and reveal its connections.
-Hover changes highlighting; click/tap pins the inspector. Use “Why?” to inspect
-a relationship, the topic index for all provisions, and Reset for the base view.
+Open GS II → Polity. All 41 concepts and 46 links are already on the canvas.
+Select Article 21 → Puttaswamy → Privacy without revealing anything. Hover changes
+highlighting; click/tap pins the inspector. “Frame connections” only moves the
+camera. Use the overview, pan/zoom or Fit graph to explore off-screen concepts,
+and “Why?” for relationship evidence. Reset preserves the complete graph.
 
 Desktop uses a right inspector; smaller screens support closing details and phones
 use a bottom sheet. The graph deliberately pans beyond the screen at readable zoom.

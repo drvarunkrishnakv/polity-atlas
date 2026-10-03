@@ -1,20 +1,24 @@
 import { useEffect, useRef } from "react";
-import { ArrowRight, ArrowLeft, ArrowUpRight, X } from "@phosphor-icons/react";
+import {
+  ArrowRight,
+  ArrowLeft,
+  ArrowUpRight,
+  CornersOut,
+  X,
+} from "@phosphor-icons/react";
 import type { Concept, GraphRelease } from "../content/types";
 export function Inspector({
   concept,
   graph,
   onSelect,
-  onExpand,
+  onFrameConnections,
   onClose,
-  hiddenCount,
 }: {
   concept: Concept;
   graph: GraphRelease;
   onSelect: (id: string) => void;
-  onExpand: () => void;
+  onFrameConnections: () => void;
   onClose: () => void;
-  hiddenCount: number;
 }) {
   const panel = useRef<HTMLElement>(null);
   useEffect(() => {
@@ -124,15 +128,17 @@ export function Inspector({
           })}
         </div>
         <button
-          className="expand-button"
-          disabled={!hiddenCount}
-          onClick={onExpand}
+          className="frame-button"
+          title="Move the view to these connections; all concepts stay on the canvas"
+          onClick={onFrameConnections}
         >
-          {hiddenCount
-            ? `Reveal ${hiddenCount} more on canvas`
-            : "All direct connections visible"}
-          <ArrowUpRight size={17} />
+          Frame connections
+          <CornersOut size={17} />
         </button>
+        <p className="muted source-note">
+          All connections in this example are already on the canvas. Select a
+          name to move to it.
+        </p>
       </section>
       {pyqs.length > 0 && (
         <section>

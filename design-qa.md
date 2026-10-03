@@ -79,3 +79,21 @@ Safari are follow-up device checks, not claimed as verified.
 - [x] Record limitations and handover instructions.
 
 final result: passed
+
+
+## Complete microtheme follow-up — 2026-10-04
+
+User-approved correction: no per-node Reveal. All 41 nodes and 46 relationships
+render immediately, while highlighting remains bounded to direct neighbours.
+The restrained card design and source-backed content remain unchanged. Readable
+initial zoom means some cards are off-screen; the overview, Fit graph, index and
+inspector links expose the full extent without changing record visibility.
+
+Checked the Article 21 → Puttaswamy → Privacy path across desktop, phone and tablet
+Chromium emulation. The Frame connections button changes the camera only. Resolved
+the small-screen overview overlapping Privacy by placing its compact panel at the
+lower left. Physical-device and Safari validation remain outstanding.
+
+Final validation: `npm run check` passed; browser suite 22 passed, two mouse-only
+cases skipped on touch profiles. Evidence: `docs/design/complete-theme-desktop.png`,
+`docs/design/privacy-chain-desktop.png`, `docs/design/privacy-chain-phone.png`.
