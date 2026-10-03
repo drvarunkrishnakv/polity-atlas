@@ -4,7 +4,9 @@
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/7
 - Branch: `codex/rights-hierarchy-colours`, based on complete-theme handover
-  `ceaa784`. Assisting tool: Codex. Use the actual branch head when resuming.
+  `ceaa784`. Assisting tool: Codex. Implementation commit: `5a27d5a`.
+- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/8 (open).
+  Later handover-only commits may follow; use the actual branch head when resuming.
 - Release `2026.10.04.1`: 47 concepts, 52 explained edges and seven PYQ angles.
   Six category records introduce the Articles. Supporting and omitted provisions
   occupy separate labelled regions, not extra rights categories. All earlier
