@@ -4,7 +4,9 @@
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/11
 - Branch: `codex/polity-syllabus-overview`, based on appearance handover `a67a75f`.
-  Assisting tool: Codex. Implementation commit/PR recorded after publication.
+  Assisting tool: Codex. Implementation commit: `5bddfa7`.
+- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/12 (open).
+  A handover-only commit follows; use the actual branch head when resuming.
 - Polity now opens a nine-topic syllabus overview. Topic canvases show all mapped
   themes; selecting a theme opens its coverage outline. Search, sidebar lists,
   back navigation, persistent appearance and old node bookmarks work. Fundamental
