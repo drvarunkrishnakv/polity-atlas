@@ -1,40 +1,34 @@
-# Content conventions under discussion
+# Content conventions
 
-## Confirmed by the user
+## Agreed interface
 
-The node shows a title and one-line meaning. The right sidebar changes with the
-selected node and holds brief detail. Concepts/articles are the initial expansion;
-judgments, applications and current affairs extend them. No chapter reader or quiz.
+The node shows a title and one-line meaning. The right inspector shows short recall
+bullets, a Mains connection, explained direct links and source references. Concepts
+and articles appear first; judgments and applications are expanded deliberately.
+Click or tap pins details; hovering previews the direct neighbourhood only.
 The selected restrained canvas mock is docs/design/selected-canvas-option-2.png.
 
-## Proposed for the next sample, not generated graph content
+## Labels and evidence
 
-Judgments: recognisable short case name plus year on the node; one-line principle
-below. Sidebar retains the full case title, court/date, precise relevant holding,
-source, current status, and one suggested sentence for Mains. Distinguish decisions
-with similar party names by year and issue. A short citation plus an accurate
-principle is our recommended writing convention, not a claim about every topper.
+Judgments use a recognisable short case name plus year, with a principle beneath.
+The inspector retains the full title, date, relevant holding, locator and Mains use.
+Disambiguate rulings with similar names by year and issue. Suggested writing style
+is not represented as a universal topper convention.
 
-Current affairs: neutral issue/event label, with a one-line meaning. Preserve the
-original headline, date, source and event identity separately. Sidebar distinguishes
-what happened, what it illustrates, and an evidence-backed Mains-use sentence.
-Avoid hiding tentative proposals or changed statistics behind undated summaries.
+Current-affairs labels name an issue or event. Preserve dates and source identity;
+never silently present an old example as today's news. Every node has source IDs.
+Every edge has a precise source/target, relationship, explanation, evidence and
+review status. Direct legal relationships and editorial applications are distinct.
+Similarity proposes candidates; it does not approve connections.
 
-Relationships: specific source and target, relationship type, explanation, source
-evidence, direct/analytical distinction, and review status. A direct legal basis,
-a judgment interpreting a provision, an illustrative application, and a tension
-between principles are different relations. Similarity produces candidates only.
-Broad theme nodes can navigate to more precise concepts without falsely presenting
-the theme itself as the legal basis of every connected example.
+The sample's `source-checked` status means the author inspected cited evidence. It
+is not independent expert approval. See docs/CONTENT_REVIEW.md for source boundaries.
 
-Visibility: store all justified connections. Proposed default hover highlights
-direct links, with deliberate deeper expansion; recursively highlighting the entire
-connected component could make a large graph unreadable. This is a UI proposal.
+## Updates
 
-Updates: the user suggested a weekly manually initiated import/review session.
-No automation or fixed Sunday time has been authorised/configured. Add new items;
-reuse unchanged IDs/content/vectors; review only new/changed material and affected
-relationships. Preserve version history and distinguish court overruling from a
-new event, updated statistic, amendment, or corrected source. The amount of change
-cannot be assumed to be 1-2 percent. A stale claim should leave the current revision
-view while its history remains accessible.
+Stable IDs persist across releases. Add new items and revise affected material;
+retain previous releases and distinguish overruling, factual updates and editorial
+corrections. Do not regenerate the graph or embeddings on each import. A stale claim
+must leave the current revision view while remaining in release history.
+
+Weekly manual import/review is a discussed workflow, not a configured schedule.
