@@ -4,7 +4,9 @@
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/9
 - Branch: `codex/dark-light-mode`, based on hierarchy handover `f5ca72d`.
-  Assisting tool: Codex. Implementation/PR recorded after validation below.
+  Assisting tool: Codex. Implementation commit: `10c6ac7`.
+- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/10 (open).
+  A handover-only commit follows; use the current branch head when resuming.
 - Sun/moon toggle in the library and graph header. Dark is the initial default;
   a browser-local preference survives navigation/reloads. Storage failures leave
   the toggle usable for the current session. Choice is per browser, not cloud-synced.
