@@ -4,7 +4,9 @@
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/3
 - Branch: `codex/fix-hover-flicker`, based on `bfe97a7` of the still-open app PR #2.
-  Assisting tool: Codex. Use `git rev-parse HEAD` for the current fix commit.
+  Assisting tool: Codex. Fix commit: `245e95a`.
+- Fix PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/4 (open).
+  Later handover-only commits may follow; use `git rev-parse HEAD` to resume.
 - Root cause reproduced in Chromium: hover rebuilt controlled nodes without their
   measured dimensions, temporarily hiding cards and removing edges. Hiding the
   hovered card also cleared the hover state.
