@@ -38,6 +38,8 @@ describe("Published knowledge graph", () => {
       "33",
       "34",
       "35",
+      "226",
+      "359",
     ];
     expect(
       graph.nodes
@@ -48,7 +50,8 @@ describe("Published knowledge graph", () => {
   });
   it("highlights one hop, never traversing through a shared theme", () => {
     const related = neighbours("a21", graph.edges);
-    expect(related.has("fr")).toBe(true);
+    expect(related.has("right-freedom")).toBe(true);
+    expect(related.has("fr")).toBe(false);
     expect(related.has("puttaswamy")).toBe(true);
     expect(related.has("a15")).toBe(false);
     expect(related.has("privacy")).toBe(false);
@@ -78,5 +81,76 @@ describe("Published knowledge graph", () => {
         .filter((n) => n.kind === "event")
         .every((n) => n.date && n.status),
     ).toBe(true);
+  });
+});
+
+describe("Six-category teaching structure", () => {
+  it("introduces six categories without lighting every Article", () => {
+    const categories = graph.nodes.filter((n) => n.kind === "category");
+    expect(categories).toHaveLength(6);
+    const lit = neighbours("fr", graph.edges);
+    expect(categories.every((n) => lit.has(n.id))).toBe(true);
+    expect(
+      graph.nodes
+        .filter((n) => n.kind === "article")
+        .every((n) => !lit.has(n.id)),
+    ).toBe(true);
+  });
+  it("groups each guarantee under the correct category, including education", () => {
+    const membership = {
+      "right-equality": ["a14", "a15", "a16", "a17", "a18"],
+      "right-freedom": ["a19", "a20", "a21", "a21A", "a22"],
+      "right-exploitation": ["a23", "a24"],
+      "right-religion": ["a25", "a26", "a27", "a28"],
+      "right-cultural": ["a29", "a30"],
+      "right-remedies": ["a32"],
+    };
+    for (const [parent, children] of Object.entries(membership)) {
+      expect(
+        graph.edges
+          .filter((e) => e.source === parent && e.role === "structure")
+          .map((e) => e.target)
+          .sort(),
+      ).toEqual([...children].sort());
+      expect(
+        graph.nodes
+          .filter((n) => n.groupId === parent)
+          .map((n) => n.id)
+          .sort(),
+      ).toEqual([...children].sort());
+    }
+    expect(neighbours("right-freedom", graph.edges).has("puttaswamy")).toBe(
+      false,
+    );
+  });
+  it("keeps supporting and omitted provisions outside the six categories", () => {
+    expect(
+      graph.nodes
+        .filter((n) => n.groupId === "historical")
+        .map((n) => n.id)
+        .sort(),
+    ).toEqual(["a31", "a31D", "a32A"]);
+    expect(graph.nodes.filter((n) => n.groupId === "supporting")).toHaveLength(
+      8,
+    );
+    for (const e of graph.edges.filter(
+      (e) =>
+        [
+          "a12",
+          "a13",
+          "a31",
+          "a31A",
+          "a31B",
+          "a31C",
+          "a31D",
+          "a32A",
+          "a33",
+          "a34",
+          "a35",
+        ].includes(e.target) && e.role !== "connection",
+    )) {
+      expect(e.source).toBe("constitution");
+      expect(e.role).toBe("context");
+    }
   });
 });

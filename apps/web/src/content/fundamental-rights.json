@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.03.1",
+  "version": "2026.10.04.1",
   "title": "Fundamental Rights",
-  "scope": "Part III provision skeleton plus selected judgments, applications and PYQ angles; not an exhaustive case-law digest.",
+  "scope": "Six rights categories, their Articles, supporting and historical Part III provisions, plus selected judgments, applications and PYQ angles; not an exhaustive case-law digest.",
   "sourceCutoff": "Constitution: 2024 edition. Judgment/event examples: 2017 and 2024. No live current-affairs feed.",
   "syllabus": {
     "id": "syllabus:cse2026:GS2:01",
@@ -48,6 +48,13 @@
       "url": "https://indiankanoon.org/doc/322504/",
       "locator": "Conclusion (iii)–(iv); court judgment reproduced by Indian Kanoon",
       "edition": "11 January 2007"
+    },
+    {
+      "id": "rights-classification",
+      "title": "PIB · 70 Years of Indian Constitution",
+      "url": "https://static.pib.gov.in/WriteReadData/ebooklat/Flip-Book/constfiles/files/basic-html/page59.html",
+      "locator": "Page 59: six-category classification and Article ranges",
+      "edition": "70 Years of Indian Constitution; classification checked 2026-10-04"
     }
   ],
   "nodes": [
@@ -57,8 +64,8 @@
       "meaning": "Rights, institutions and limits",
       "kind": "foundation",
       "position": {
-        "x": 60,
-        "y": 340
+        "x": 800,
+        "y": 290
       },
       "bullets": [
         "Part III sets out Fundamental Rights.",
@@ -71,20 +78,20 @@
     {
       "id": "fr",
       "title": "Fundamental Rights",
-      "meaning": "Part III · Articles 12–35",
+      "meaning": "Six categories of rights · Part III",
       "kind": "theme",
       "position": {
-        "x": 350,
-        "y": 330
+        "x": 800,
+        "y": 500
       },
       "bullets": [
-        "Identify the right-holder, duty-bearer and guarantee.",
-        "Distinguish a restriction from a violation.",
-        "Finish with enforcement and an appropriate remedy."
+        "Start with the six categories, then identify the relevant Article.",
+        "Connect its guarantee to limits, judicial interpretation and an appropriate remedy.",
+        "Supporting and omitted provisions are reference material, not extra categories of rights."
       ],
       "mains": "Right → restriction → justification → remedy.",
-      "sources": ["constitution"],
-      "reviewedOn": "2026-10-03",
+      "sources": ["constitution", "rights-classification"],
+      "reviewedOn": "2026-10-04",
       "microthemeId": "microtheme:3dc9a2d227339195a31d5617",
       "syllabusId": "syllabus:cse2026:GS2:01"
     },
@@ -94,8 +101,8 @@
       "meaning": "Meaning of the State",
       "kind": "article",
       "position": {
-        "x": 100,
-        "y": 840
+        "x": 80,
+        "y": 1470
       },
       "bullets": [
         "Identifies bodies covered by “State” in Part III.",
@@ -104,7 +111,8 @@
       "mains": "Identify who owes the constitutional obligation.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 12"
+      "locator": "Article 12",
+      "groupId": "supporting"
     },
     {
       "id": "a13",
@@ -112,8 +120,8 @@
       "meaning": "Laws tested against rights",
       "kind": "article",
       "position": {
-        "x": 380,
-        "y": 200
+        "x": 350,
+        "y": 1470
       },
       "bullets": [
         "Inconsistent laws are void to the extent of inconsistency.",
@@ -122,7 +130,8 @@
       "mains": "Identify the law and the precise right it abridges.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 13"
+      "locator": "Article 13",
+      "groupId": "supporting"
     },
     {
       "id": "a14",
@@ -130,8 +139,8 @@
       "meaning": "Equality before law",
       "kind": "article",
       "position": {
-        "x": 80,
-        "y": 100
+        "x": 150,
+        "y": -180
       },
       "bullets": [
         "Protects every person.",
@@ -140,7 +149,8 @@
       "mains": "Ask whether different treatment has a defensible constitutional basis.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 14"
+      "locator": "Article 14",
+      "groupId": "right-equality"
     },
     {
       "id": "a15",
@@ -148,8 +158,8 @@
       "meaning": "Non-discrimination",
       "kind": "article",
       "position": {
-        "x": 350,
-        "y": 90
+        "x": 390,
+        "y": -180
       },
       "bullets": [
         "Protects citizens against specified grounds of discrimination.",
@@ -158,7 +168,8 @@
       "mains": "Distinguish prohibited discrimination from measures advancing substantive equality.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 15"
+      "locator": "Article 15",
+      "groupId": "right-equality"
     },
     {
       "id": "a16",
@@ -166,8 +177,8 @@
       "meaning": "Public employment equality",
       "kind": "article",
       "position": {
-        "x": 620,
-        "y": 90
+        "x": 630,
+        "y": -180
       },
       "bullets": [
         "Guarantees citizens equality of opportunity in public employment.",
@@ -176,7 +187,8 @@
       "mains": "Keep public employment separate from educational admission.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 16"
+      "locator": "Article 16",
+      "groupId": "right-equality"
     },
     {
       "id": "a17",
@@ -184,8 +196,8 @@
       "meaning": "Abolition of untouchability",
       "kind": "article",
       "position": {
-        "x": 100,
-        "y": 945
+        "x": 270,
+        "y": -60
       },
       "bullets": [
         "Abolishes untouchability and forbids its practice.",
@@ -194,7 +206,8 @@
       "mains": "Connect social equality with effective enforcement.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 17"
+      "locator": "Article 17",
+      "groupId": "right-equality"
     },
     {
       "id": "a18",
@@ -202,8 +215,8 @@
       "meaning": "Abolition of titles",
       "kind": "article",
       "position": {
-        "x": 355,
-        "y": 945
+        "x": 510,
+        "y": -60
       },
       "bullets": [
         "The State cannot confer titles except military or academic distinctions.",
@@ -212,7 +225,8 @@
       "mains": "Distinguish prohibited titles from permitted distinctions.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 18"
+      "locator": "Article 18",
+      "groupId": "right-equality"
     },
     {
       "id": "a19",
@@ -220,8 +234,8 @@
       "meaning": "Six freedoms of citizens",
       "kind": "article",
       "position": {
-        "x": 800,
-        "y": 245
+        "x": 1000,
+        "y": -180
       },
       "bullets": [
         "Includes expression, assembly, association, movement, residence and profession.",
@@ -230,7 +244,8 @@
       "mains": "Name the freedom and its relevant restriction clause; avoid a generic public-interest claim.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 19"
+      "locator": "Article 19",
+      "groupId": "right-freedom"
     },
     {
       "id": "a20",
@@ -238,8 +253,8 @@
       "meaning": "Safeguards in conviction",
       "kind": "article",
       "position": {
-        "x": 810,
-        "y": 390
+        "x": 1240,
+        "y": -180
       },
       "bullets": [
         "Protects against retrospective criminal punishment and double jeopardy.",
@@ -248,7 +263,8 @@
       "mains": "Separate the three safeguards instead of treating them as interchangeable.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 20"
+      "locator": "Article 20",
+      "groupId": "right-freedom"
     },
     {
       "id": "a21",
@@ -256,8 +272,8 @@
       "meaning": "Life and personal liberty",
       "kind": "article",
       "position": {
-        "x": 660,
-        "y": 530
+        "x": 1480,
+        "y": -180
       },
       "bullets": [
         "Protects every person.",
@@ -266,7 +282,8 @@
       "mains": "Start with liberty, examine the procedure, then connect the relevant judicial interpretation.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 21"
+      "locator": "Article 21",
+      "groupId": "right-freedom"
     },
     {
       "id": "a21A",
@@ -274,8 +291,8 @@
       "meaning": "Education for ages 6–14",
       "kind": "article",
       "position": {
-        "x": 355,
-        "y": 600
+        "x": 1120,
+        "y": -60
       },
       "bullets": [
         "Requires free and compulsory education for children aged six to fourteen.",
@@ -284,7 +301,8 @@
       "mains": "Connect the guarantee to access and implementation barriers.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 21A"
+      "locator": "Article 21A",
+      "groupId": "right-freedom"
     },
     {
       "id": "a22",
@@ -292,8 +310,8 @@
       "meaning": "Arrest and detention safeguards",
       "kind": "article",
       "position": {
-        "x": 355,
-        "y": 1050
+        "x": 1360,
+        "y": -60
       },
       "bullets": [
         "Ordinary arrest protections include information, counsel and production before a magistrate.",
@@ -302,7 +320,8 @@
       "mains": "Distinguish ordinary arrest safeguards from preventive-detention rules.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 22"
+      "locator": "Article 22",
+      "groupId": "right-freedom"
     },
     {
       "id": "a23",
@@ -310,8 +329,8 @@
       "meaning": "Freedom from exploitation",
       "kind": "article",
       "position": {
-        "x": 610,
-        "y": 1050
+        "x": 1630,
+        "y": 410
       },
       "bullets": [
         "Prohibits trafficking, begar and similar forced labour.",
@@ -320,7 +339,8 @@
       "mains": "Connect coercion and vulnerability with enforcement.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 23"
+      "locator": "Article 23",
+      "groupId": "right-exploitation"
     },
     {
       "id": "a24",
@@ -328,8 +348,8 @@
       "meaning": "Protection from hazardous work",
       "kind": "article",
       "position": {
-        "x": 865,
-        "y": 1050
+        "x": 1630,
+        "y": 540
       },
       "bullets": [
         "Bars employment of children below fourteen in factories, mines or other hazardous employment.",
@@ -338,7 +358,8 @@
       "mains": "Link protection from exploitation to education and social support.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 24"
+      "locator": "Article 24",
+      "groupId": "right-exploitation"
     },
     {
       "id": "a25",
@@ -347,7 +368,7 @@
       "kind": "article",
       "position": {
         "x": 80,
-        "y": 590
+        "y": 1100
       },
       "bullets": [
         "Protects all persons, subject to public order, morality, health and other Part III provisions.",
@@ -356,7 +377,8 @@
       "mains": "State both the guarantee and its express limitations.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 25"
+      "locator": "Article 25",
+      "groupId": "right-religion"
     },
     {
       "id": "a26",
@@ -364,8 +386,8 @@
       "meaning": "Religious denomination rights",
       "kind": "article",
       "position": {
-        "x": 100,
-        "y": 1155
+        "x": 320,
+        "y": 1100
       },
       "bullets": [
         "Protects denominational religious affairs and related institutional interests.",
@@ -374,7 +396,8 @@
       "mains": "Distinguish individual conscience from denominational autonomy.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 26"
+      "locator": "Article 26",
+      "groupId": "right-religion"
     },
     {
       "id": "a27",
@@ -382,8 +405,8 @@
       "meaning": "Taxes and religious promotion",
       "kind": "article",
       "position": {
-        "x": 355,
-        "y": 1155
+        "x": 560,
+        "y": 1100
       },
       "bullets": [
         "Bars compulsion to pay taxes specifically appropriated to promote or maintain a particular religion.",
@@ -392,7 +415,8 @@
       "mains": "Avoid equating every religion-related expenditure with an Article 27 violation.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 27"
+      "locator": "Article 27",
+      "groupId": "right-religion"
     },
     {
       "id": "a28",
@@ -400,8 +424,8 @@
       "meaning": "Religious instruction in institutions",
       "kind": "article",
       "position": {
-        "x": 610,
-        "y": 1155
+        "x": 800,
+        "y": 1100
       },
       "bullets": [
         "Rules differ by state maintenance, administration, recognition and aid.",
@@ -410,7 +434,8 @@
       "mains": "Identify the type of institution before applying the rule.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 28"
+      "locator": "Article 28",
+      "groupId": "right-religion"
     },
     {
       "id": "a29",
@@ -418,8 +443,8 @@
       "meaning": "Culture and admission safeguards",
       "kind": "article",
       "position": {
-        "x": 40,
-        "y": 450
+        "x": 1180,
+        "y": 1100
       },
       "bullets": [
         "Protects a section of citizens with a distinct language, script or culture.",
@@ -428,7 +453,8 @@
       "mains": "Do not assume every Article 29 protection is confined to minorities.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 29"
+      "locator": "Article 29",
+      "groupId": "right-cultural"
     },
     {
       "id": "a30",
@@ -436,8 +462,8 @@
       "meaning": "Minority educational institutions",
       "kind": "article",
       "position": {
-        "x": 1120,
-        "y": 1155
+        "x": 1420,
+        "y": 1100
       },
       "bullets": [
         "Religious and linguistic minorities may establish and administer educational institutions.",
@@ -446,7 +472,8 @@
       "mains": "Connect cultural autonomy with educational governance.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 30"
+      "locator": "Article 30",
+      "groupId": "right-cultural"
     },
     {
       "id": "a31",
@@ -454,8 +481,8 @@
       "meaning": "Property provision · omitted",
       "kind": "article",
       "position": {
-        "x": 100,
-        "y": 1260
+        "x": 1800,
+        "y": 1470
       },
       "bullets": [
         "Article 31 was omitted by the 44th Amendment.",
@@ -464,7 +491,8 @@
       "mains": "Do not describe property as a current Fundamental Right.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 31"
+      "locator": "Article 31",
+      "groupId": "historical"
     },
     {
       "id": "a31A",
@@ -472,8 +500,8 @@
       "meaning": "Specified laws protected",
       "kind": "article",
       "position": {
-        "x": 355,
-        "y": 1260
+        "x": 620,
+        "y": 1470
       },
       "bullets": [
         "Protects specified categories of laws against Articles 14 and 19 challenges, subject to conditions.",
@@ -482,7 +510,8 @@
       "mains": "Identify the exact constitutional protection before claiming immunity.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 31A"
+      "locator": "Article 31A",
+      "groupId": "supporting"
     },
     {
       "id": "a31B",
@@ -490,8 +519,8 @@
       "meaning": "Ninth Schedule protection",
       "kind": "article",
       "position": {
-        "x": 610,
-        "y": 1260
+        "x": 890,
+        "y": 1470
       },
       "bullets": [
         "Concerns listed Acts and Regulations.",
@@ -500,7 +529,8 @@
       "mains": "Do not assume a Ninth Schedule entry ends all constitutional scrutiny.",
       "sources": ["constitution", "coelho"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 31B; I. R. Coelho conclusions (iii)–(iv)"
+      "locator": "Article 31B; I. R. Coelho conclusions (iii)–(iv)",
+      "groupId": "supporting"
     },
     {
       "id": "a31C",
@@ -508,8 +538,8 @@
       "meaning": "Directive-principle protection",
       "kind": "article",
       "position": {
-        "x": 865,
-        "y": 1260
+        "x": 80,
+        "y": 1600
       },
       "bullets": [
         "Operative protection concerns laws giving effect to Article 39(b) or (c).",
@@ -518,7 +548,8 @@
       "mains": "Specify the directive principle and avoid claiming blanket immunity for all welfare laws.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 31C"
+      "locator": "Article 31C",
+      "groupId": "supporting"
     },
     {
       "id": "a32",
@@ -526,8 +557,8 @@
       "meaning": "Constitutional remedies",
       "kind": "article",
       "position": {
-        "x": 80,
-        "y": 230
+        "x": -40,
+        "y": 500
       },
       "bullets": [
         "Guarantees access to the Supreme Court to enforce Part III rights.",
@@ -536,7 +567,8 @@
       "mains": "End with the enforceable right and the remedy sought.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 32"
+      "locator": "Article 32",
+      "groupId": "right-remedies"
     },
     {
       "id": "a33",
@@ -544,8 +576,8 @@
       "meaning": "Rights in specified services",
       "kind": "article",
       "position": {
-        "x": 100,
-        "y": 1365
+        "x": 350,
+        "y": 1600
       },
       "bullets": [
         "Parliament may modify rights for specified forces and related services.",
@@ -554,7 +586,8 @@
       "mains": "State the institutional context and constitutional purpose of modification.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 33"
+      "locator": "Article 33",
+      "groupId": "supporting"
     },
     {
       "id": "a34",
@@ -562,8 +595,8 @@
       "meaning": "Martial-law context",
       "kind": "article",
       "position": {
-        "x": 355,
-        "y": 1365
+        "x": 620,
+        "y": 1600
       },
       "bullets": [
         "Parliament may provide indemnity and validate specified acts in a martial-law area.",
@@ -572,7 +605,8 @@
       "mains": "Keep martial law and constitutional emergency analytically separate.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 34"
+      "locator": "Article 34",
+      "groupId": "supporting"
     },
     {
       "id": "a35",
@@ -580,8 +614,8 @@
       "meaning": "Parliament’s legislative role",
       "kind": "article",
       "position": {
-        "x": 610,
-        "y": 1365
+        "x": 890,
+        "y": 1600
       },
       "bullets": [
         "Reserves lawmaking on specified Part III matters to Parliament.",
@@ -590,7 +624,8 @@
       "mains": "Identify legislative competence as well as the substantive right.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 35"
+      "locator": "Article 35",
+      "groupId": "supporting"
     },
     {
       "id": "dpsp",
@@ -598,8 +633,8 @@
       "meaning": "Part IV · goals of governance",
       "kind": "foundation",
       "position": {
-        "x": 1090,
-        "y": 745
+        "x": 1250,
+        "y": 1600
       },
       "bullets": [
         "Article 37 distinguishes non-enforceability from their fundamental role in governance.",
@@ -614,10 +649,10 @@
       "id": "a226",
       "title": "Article 226",
       "meaning": "High Court writ jurisdiction",
-      "kind": "foundation",
+      "kind": "article",
       "position": {
-        "x": -180,
-        "y": 235
+        "x": -300,
+        "y": 500
       },
       "bullets": [
         "High Courts can issue writs for Fundamental Rights and for other purposes."
@@ -631,10 +666,10 @@
       "id": "a359",
       "title": "Article 359",
       "meaning": "Emergency enforcement limits",
-      "kind": "foundation",
+      "kind": "article",
       "position": {
-        "x": 1050,
-        "y": 400
+        "x": 1830,
+        "y": -100
       },
       "bullets": [
         "A Presidential order can suspend access to courts for specified rights during an emergency.",
@@ -651,8 +686,8 @@
       "meaning": "Addressing unequal starting points",
       "kind": "application",
       "position": {
-        "x": 340,
-        "y": -90
+        "x": 150,
+        "y": -500
       },
       "bullets": [
         "Formal equal treatment and corrective measures answer different problems.",
@@ -669,8 +704,8 @@
       "meaning": "Dignity and personal autonomy",
       "kind": "application",
       "position": {
-        "x": 1070,
-        "y": 610
+        "x": 1750,
+        "y": -500
       },
       "bullets": [
         "Privacy is protected within Part III.",
@@ -686,8 +721,8 @@
       "meaning": "Fair procedure; connected rights",
       "kind": "judgment",
       "position": {
-        "x": 1050,
-        "y": 95
+        "x": 1000,
+        "y": -500
       },
       "bullets": [
         "Article 21 procedure must be fair, just and reasonable.",
@@ -707,8 +742,8 @@
       "meaning": "Privacy as a fundamental right",
       "kind": "judgment",
       "position": {
-        "x": 1030,
-        "y": 525
+        "x": 1480,
+        "y": -500
       },
       "bullets": [
         "The nine-judge Bench recognised constitutional protection for privacy.",
@@ -728,8 +763,8 @@
       "meaning": "Political funding and disclosure",
       "kind": "judgment",
       "position": {
-        "x": 1080,
-        "y": 260
+        "x": 740,
+        "y": -500
       },
       "bullets": [
         "Non-disclosure provisions violated Article 19(1)(a).",
@@ -749,8 +784,8 @@
       "meaning": "Transparency in electoral finance",
       "kind": "event",
       "position": {
-        "x": 1320,
-        "y": 390
+        "x": 480,
+        "y": -500
       },
       "bullets": [
         "The 2024 judgment directed disclosure of electoral-bond funding information.",
@@ -768,8 +803,8 @@
       "meaning": "Anti-national activities · omitted",
       "kind": "article",
       "position": {
-        "x": 1380,
-        "y": 1100
+        "x": 2040,
+        "y": 1470
       },
       "bullets": [
         "Omitted by the 43rd Amendment.",
@@ -778,7 +813,8 @@
       "mains": "Distinguish historical restrictions from the current constitutional framework.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 31D and omission footnote"
+      "locator": "Article 31D and omission footnote",
+      "groupId": "historical"
     },
     {
       "id": "a32A",
@@ -786,8 +822,8 @@
       "meaning": "State-law review exclusion · omitted",
       "kind": "article",
       "position": {
-        "x": 1380,
-        "y": 1210
+        "x": 1800,
+        "y": 1600
       },
       "bullets": [
         "Omitted by the 43rd Amendment.",
@@ -796,7 +832,116 @@
       "mains": "Distinguish historical restrictions from the current constitutional framework.",
       "sources": ["constitution"],
       "reviewedOn": "2026-10-03",
-      "locator": "Article 32A and omission footnote"
+      "locator": "Article 32A and omission footnote",
+      "groupId": "historical"
+    },
+    {
+      "id": "right-equality",
+      "title": "Right to Equality",
+      "meaning": "Articles 14–18",
+      "kind": "category",
+      "position": {
+        "x": 420,
+        "y": 160
+      },
+      "bullets": [
+        "Equal treatment and protections against discrimination.",
+        "Read the individual Articles for their holders, scope and limits."
+      ],
+      "mains": "Identify the inequality, then test the relevant guarantee.",
+      "sources": ["constitution", "rights-classification"],
+      "locator": "Articles 14–18; six-category classification",
+      "reviewedOn": "2026-10-04"
+    },
+    {
+      "id": "right-freedom",
+      "title": "Right to Freedom",
+      "meaning": "Articles 19–22 · includes 21A",
+      "kind": "category",
+      "position": {
+        "x": 1180,
+        "y": 160
+      },
+      "bullets": [
+        "Freedoms, liberty, education and safeguards against State action.",
+        "Read the individual Articles for their holders, scope and limits."
+      ],
+      "mains": "Identify the freedom, its limits and the safeguard or remedy.",
+      "sources": ["constitution", "rights-classification"],
+      "locator": "Articles 19–22 · includes 21A; six-category classification",
+      "reviewedOn": "2026-10-04"
+    },
+    {
+      "id": "right-exploitation",
+      "title": "Right against Exploitation",
+      "meaning": "Articles 23–24",
+      "kind": "category",
+      "position": {
+        "x": 1330,
+        "y": 500
+      },
+      "bullets": [
+        "Protection against trafficking, forced labour and specified child labour.",
+        "Read the individual Articles for their holders, scope and limits."
+      ],
+      "mains": "Connect the guarantee to vulnerable groups and enforcement.",
+      "sources": ["constitution", "rights-classification"],
+      "locator": "Articles 23–24; six-category classification",
+      "reviewedOn": "2026-10-04"
+    },
+    {
+      "id": "right-religion",
+      "title": "Freedom of Religion",
+      "meaning": "Articles 25–28",
+      "kind": "category",
+      "position": {
+        "x": 420,
+        "y": 850
+      },
+      "bullets": [
+        "Conscience, religious practice and institutional safeguards.",
+        "Read the individual Articles for their holders, scope and limits."
+      ],
+      "mains": "Distinguish individual and denominational rights and their limits.",
+      "sources": ["constitution", "rights-classification"],
+      "locator": "Articles 25–28; six-category classification",
+      "reviewedOn": "2026-10-04"
+    },
+    {
+      "id": "right-cultural",
+      "title": "Cultural & Educational Rights",
+      "meaning": "Articles 29–30",
+      "kind": "category",
+      "position": {
+        "x": 1180,
+        "y": 850
+      },
+      "bullets": [
+        "Cultural protection and minority educational institutions.",
+        "Read the individual Articles for their holders, scope and limits."
+      ],
+      "mains": "Distinguish cultural protection from minority-institution rights.",
+      "sources": ["constitution", "rights-classification"],
+      "locator": "Articles 29–30; six-category classification",
+      "reviewedOn": "2026-10-04"
+    },
+    {
+      "id": "right-remedies",
+      "title": "Constitutional Remedies",
+      "meaning": "Article 32",
+      "kind": "category",
+      "position": {
+        "x": 270,
+        "y": 500
+      },
+      "bullets": [
+        "Enforcement of Fundamental Rights through the Supreme Court.",
+        "Read the individual Articles for their holders, scope and limits."
+      ],
+      "mains": "Close the analysis with an appropriate constitutional remedy.",
+      "sources": ["constitution", "rights-classification"],
+      "locator": "Article 32; six-category classification",
+      "reviewedOn": "2026-10-04"
     }
   ],
   "edges": [
@@ -808,287 +953,316 @@
       "explanation": "Part III of the Constitution sets out Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a12",
-      "source": "fr",
+      "id": "constitution--a12",
+      "source": "constitution",
       "target": "a12",
-      "label": "contains",
-      "explanation": "Part III includes Article 12.",
+      "label": "supporting provision",
+      "explanation": "Article 12 is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a13",
-      "source": "fr",
+      "id": "constitution--a13",
+      "source": "constitution",
       "target": "a13",
-      "label": "contains",
-      "explanation": "Part III includes Article 13.",
+      "label": "supporting provision",
+      "explanation": "Article 13 is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a14",
-      "source": "fr",
+      "id": "right-equality--a14",
+      "source": "right-equality",
       "target": "a14",
       "label": "contains",
-      "explanation": "Part III includes Article 14.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Equality includes Article 14 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a15",
-      "source": "fr",
+      "id": "right-equality--a15",
+      "source": "right-equality",
       "target": "a15",
       "label": "contains",
-      "explanation": "Part III includes Article 15.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Equality includes Article 15 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a16",
-      "source": "fr",
+      "id": "right-equality--a16",
+      "source": "right-equality",
       "target": "a16",
       "label": "contains",
-      "explanation": "Part III includes Article 16.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Equality includes Article 16 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a17",
-      "source": "fr",
+      "id": "right-equality--a17",
+      "source": "right-equality",
       "target": "a17",
       "label": "contains",
-      "explanation": "Part III includes Article 17.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Equality includes Article 17 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a18",
-      "source": "fr",
+      "id": "right-equality--a18",
+      "source": "right-equality",
       "target": "a18",
       "label": "contains",
-      "explanation": "Part III includes Article 18.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Equality includes Article 18 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a19",
-      "source": "fr",
+      "id": "right-freedom--a19",
+      "source": "right-freedom",
       "target": "a19",
       "label": "contains",
-      "explanation": "Part III includes Article 19.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Freedom includes Article 19 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a20",
-      "source": "fr",
+      "id": "right-freedom--a20",
+      "source": "right-freedom",
       "target": "a20",
       "label": "contains",
-      "explanation": "Part III includes Article 20.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Freedom includes Article 20 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a21",
-      "source": "fr",
+      "id": "right-freedom--a21",
+      "source": "right-freedom",
       "target": "a21",
       "label": "contains",
-      "explanation": "Part III includes Article 21.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Freedom includes Article 21 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a21A",
-      "source": "fr",
+      "id": "right-freedom--a21A",
+      "source": "right-freedom",
       "target": "a21A",
       "label": "contains",
-      "explanation": "Part III includes Article 21A.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Freedom includes Article 21A in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a22",
-      "source": "fr",
+      "id": "right-freedom--a22",
+      "source": "right-freedom",
       "target": "a22",
       "label": "contains",
-      "explanation": "Part III includes Article 22.",
-      "evidence": ["constitution"],
+      "explanation": "Right to Freedom includes Article 22 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a23",
-      "source": "fr",
+      "id": "right-exploitation--a23",
+      "source": "right-exploitation",
       "target": "a23",
       "label": "contains",
-      "explanation": "Part III includes Article 23.",
-      "evidence": ["constitution"],
+      "explanation": "Right against Exploitation includes Article 23 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a24",
-      "source": "fr",
+      "id": "right-exploitation--a24",
+      "source": "right-exploitation",
       "target": "a24",
       "label": "contains",
-      "explanation": "Part III includes Article 24.",
-      "evidence": ["constitution"],
+      "explanation": "Right against Exploitation includes Article 24 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a25",
-      "source": "fr",
+      "id": "right-religion--a25",
+      "source": "right-religion",
       "target": "a25",
       "label": "contains",
-      "explanation": "Part III includes Article 25.",
-      "evidence": ["constitution"],
+      "explanation": "Freedom of Religion includes Article 25 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a26",
-      "source": "fr",
+      "id": "right-religion--a26",
+      "source": "right-religion",
       "target": "a26",
       "label": "contains",
-      "explanation": "Part III includes Article 26.",
-      "evidence": ["constitution"],
+      "explanation": "Freedom of Religion includes Article 26 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a27",
-      "source": "fr",
+      "id": "right-religion--a27",
+      "source": "right-religion",
       "target": "a27",
       "label": "contains",
-      "explanation": "Part III includes Article 27.",
-      "evidence": ["constitution"],
+      "explanation": "Freedom of Religion includes Article 27 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a28",
-      "source": "fr",
+      "id": "right-religion--a28",
+      "source": "right-religion",
       "target": "a28",
       "label": "contains",
-      "explanation": "Part III includes Article 28.",
-      "evidence": ["constitution"],
+      "explanation": "Freedom of Religion includes Article 28 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a29",
-      "source": "fr",
+      "id": "right-cultural--a29",
+      "source": "right-cultural",
       "target": "a29",
       "label": "contains",
-      "explanation": "Part III includes Article 29.",
-      "evidence": ["constitution"],
+      "explanation": "Cultural & Educational Rights includes Article 29 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a30",
-      "source": "fr",
+      "id": "right-cultural--a30",
+      "source": "right-cultural",
       "target": "a30",
       "label": "contains",
-      "explanation": "Part III includes Article 30.",
-      "evidence": ["constitution"],
+      "explanation": "Cultural & Educational Rights includes Article 30 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a31",
-      "source": "fr",
+      "id": "constitution--a31",
+      "source": "constitution",
       "target": "a31",
-      "label": "contains",
-      "explanation": "Part III includes Article 31. It is omitted in the current text.",
+      "label": "historical provision",
+      "explanation": "Article 31 is recorded as omitted in Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a31A",
-      "source": "fr",
+      "id": "constitution--a31A",
+      "source": "constitution",
       "target": "a31A",
-      "label": "contains",
-      "explanation": "Part III includes Article 31A.",
+      "label": "supporting provision",
+      "explanation": "Article 31A is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a31B",
-      "source": "fr",
+      "id": "constitution--a31B",
+      "source": "constitution",
       "target": "a31B",
-      "label": "contains",
-      "explanation": "Part III includes Article 31B.",
+      "label": "supporting provision",
+      "explanation": "Article 31B is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a31C",
-      "source": "fr",
+      "id": "constitution--a31C",
+      "source": "constitution",
       "target": "a31C",
-      "label": "contains",
-      "explanation": "Part III includes Article 31C.",
+      "label": "supporting provision",
+      "explanation": "Article 31C is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a32",
-      "source": "fr",
+      "id": "right-remedies--a32",
+      "source": "right-remedies",
       "target": "a32",
       "label": "contains",
-      "explanation": "Part III includes Article 32.",
-      "evidence": ["constitution"],
+      "explanation": "Constitutional Remedies includes Article 32 in the six-category classification.",
+      "evidence": ["constitution", "rights-classification"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "structure"
     },
     {
-      "id": "fr--a33",
-      "source": "fr",
+      "id": "constitution--a33",
+      "source": "constitution",
       "target": "a33",
-      "label": "contains",
-      "explanation": "Part III includes Article 33.",
+      "label": "supporting provision",
+      "explanation": "Article 33 is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a34",
-      "source": "fr",
+      "id": "constitution--a34",
+      "source": "constitution",
       "target": "a34",
-      "label": "contains",
-      "explanation": "Part III includes Article 34.",
+      "label": "supporting provision",
+      "explanation": "Article 34 is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a35",
-      "source": "fr",
+      "id": "constitution--a35",
+      "source": "constitution",
       "target": "a35",
-      "label": "contains",
-      "explanation": "Part III includes Article 35.",
+      "label": "supporting provision",
+      "explanation": "Article 35 is a supporting provision of Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
       "id": "a14--maneka",
@@ -1098,7 +1272,8 @@
       "explanation": "The discussion of Maneka Gandhi connects equality with fair procedure and liberty.",
       "evidence": ["privacy"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a19--maneka",
@@ -1108,7 +1283,8 @@
       "explanation": "Article 19 scrutiny remains relevant where a measure also affects liberty.",
       "evidence": ["privacy"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a21--maneka",
@@ -1118,7 +1294,8 @@
       "explanation": "Maneka Gandhi requires a fair, just and reasonable procedure.",
       "evidence": ["privacy"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a21--puttaswamy",
@@ -1128,7 +1305,8 @@
       "explanation": "The Court located privacy in life and liberty and the freedoms of Part III.",
       "evidence": ["privacy"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "puttaswamy--privacy",
@@ -1138,7 +1316,8 @@
       "explanation": "The nine-judge ruling recognises the constitutional right to privacy.",
       "evidence": ["privacy"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a19--bonds",
@@ -1148,7 +1327,8 @@
       "explanation": "The non-disclosure provisions were invalidated under Article 19(1)(a).",
       "evidence": ["bonds"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a14--bonds",
@@ -1158,7 +1338,8 @@
       "explanation": "The unlimited corporate-contribution amendment was invalidated under Article 14.",
       "evidence": ["bonds"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "bonds--disclosure",
@@ -1168,7 +1349,8 @@
       "explanation": "Paragraph 217 directs funding disclosure to give effect to the ruling.",
       "evidence": ["bonds"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a15--equality",
@@ -1178,7 +1360,8 @@
       "explanation": "Special provisions under Article 15 help explain substantive equality.",
       "evidence": ["constitution"],
       "classification": "analytical",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a14--equality",
@@ -1188,7 +1371,8 @@
       "explanation": "Compare general equality with targeted measures under Article 15.",
       "evidence": ["constitution"],
       "classification": "analytical",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a32--a226",
@@ -1198,7 +1382,8 @@
       "explanation": "Article 226 extends to Fundamental Rights and other purposes; Article 32 concerns Part III enforcement.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a20--a359",
@@ -1208,7 +1393,8 @@
       "explanation": "Article 359(1) excludes Articles 20 and 21.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a21--a359",
@@ -1218,7 +1404,8 @@
       "explanation": "Article 359(1) excludes Articles 20 and 21.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a31C--dpsp",
@@ -1228,7 +1415,8 @@
       "explanation": "Operative Article 31C protection concerns Article 39(b) and (c), not all DPSPs.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
       "id": "a21A--a24",
@@ -1238,27 +1426,96 @@
       "explanation": "Education and protection from hazardous child employment can support one another in a Mains analysis.",
       "evidence": ["constitution"],
       "classification": "analytical",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "connection"
     },
     {
-      "id": "fr--a31D",
-      "source": "fr",
+      "id": "constitution--a31D",
+      "source": "constitution",
       "target": "a31D",
       "label": "historical provision",
-      "explanation": "The current Part III text records Article 31D as omitted by the 43rd Amendment.",
+      "explanation": "Article 31D is recorded as omitted in Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
     },
     {
-      "id": "fr--a32A",
-      "source": "fr",
+      "id": "constitution--a32A",
+      "source": "constitution",
       "target": "a32A",
       "label": "historical provision",
-      "explanation": "The current Part III text records Article 32A as omitted by the 43rd Amendment.",
+      "explanation": "Article 32A is recorded as omitted in Part III; it is not an additional category of Fundamental Rights.",
       "evidence": ["constitution"],
       "classification": "direct",
-      "reviewStatus": "source-checked"
+      "reviewStatus": "source-checked",
+      "role": "context"
+    },
+    {
+      "id": "fr--right-equality",
+      "source": "fr",
+      "target": "right-equality",
+      "label": "category",
+      "explanation": "Right to Equality is one of the six broad categories of Fundamental Rights.",
+      "evidence": ["constitution", "rights-classification"],
+      "classification": "direct",
+      "reviewStatus": "source-checked",
+      "role": "structure"
+    },
+    {
+      "id": "fr--right-freedom",
+      "source": "fr",
+      "target": "right-freedom",
+      "label": "category",
+      "explanation": "Right to Freedom is one of the six broad categories of Fundamental Rights.",
+      "evidence": ["constitution", "rights-classification"],
+      "classification": "direct",
+      "reviewStatus": "source-checked",
+      "role": "structure"
+    },
+    {
+      "id": "fr--right-exploitation",
+      "source": "fr",
+      "target": "right-exploitation",
+      "label": "category",
+      "explanation": "Right against Exploitation is one of the six broad categories of Fundamental Rights.",
+      "evidence": ["constitution", "rights-classification"],
+      "classification": "direct",
+      "reviewStatus": "source-checked",
+      "role": "structure"
+    },
+    {
+      "id": "fr--right-religion",
+      "source": "fr",
+      "target": "right-religion",
+      "label": "category",
+      "explanation": "Freedom of Religion is one of the six broad categories of Fundamental Rights.",
+      "evidence": ["constitution", "rights-classification"],
+      "classification": "direct",
+      "reviewStatus": "source-checked",
+      "role": "structure"
+    },
+    {
+      "id": "fr--right-cultural",
+      "source": "fr",
+      "target": "right-cultural",
+      "label": "category",
+      "explanation": "Cultural & Educational Rights is one of the six broad categories of Fundamental Rights.",
+      "evidence": ["constitution", "rights-classification"],
+      "classification": "direct",
+      "reviewStatus": "source-checked",
+      "role": "structure"
+    },
+    {
+      "id": "fr--right-remedies",
+      "source": "fr",
+      "target": "right-remedies",
+      "label": "category",
+      "explanation": "Constitutional Remedies is one of the six broad categories of Fundamental Rights.",
+      "evidence": ["constitution", "rights-classification"],
+      "classification": "direct",
+      "reviewStatus": "source-checked",
+      "role": "structure"
     }
   ],
   "pyqs": [

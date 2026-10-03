@@ -3,6 +3,8 @@ import {
   ReactFlow,
   Background,
   MiniMap,
+  ViewportPortal,
+  useNodesInitialized,
   BackgroundVariant,
   Handle,
   Position,
@@ -24,6 +26,7 @@ import {
 } from "@phosphor-icons/react";
 import type { Concept, GraphRelease } from "../content/types";
 import { neighbours } from "../graph/explore";
+import { cardWidth, kindStyle, teachingRegions } from "../graph/presentation";
 import { Inspector } from "./Inspector";
 import "@xyflow/react/dist/style.css";
 type ConceptNode = Node<
@@ -58,7 +61,14 @@ function ConceptCard({ data }: NodeProps<ConceptNode>) {
         ),
       )}
       <span className="category-dot" />
-      <div>
+      <div className="card-copy">
+        <span className="node-type">
+          {kindStyle[concept.kind].label}
+          {concept.groupId === "historical" ? " · omitted" : ""}
+          {concept.kind === "event" && concept.date
+            ? ` · ${concept.date.slice(0, 4)}`
+            : ""}
+        </span>
         <strong>{concept.title}</strong>
         <span className="node-meaning">{concept.meaning}</span>
       </div>
@@ -72,11 +82,12 @@ function ConceptCard({ data }: NodeProps<ConceptNode>) {
 }
 const nodeTypes = { concept: ConceptCard };
 const categories = [
-  ["foundation", "Foundation"],
-  ["article", "Rights"],
+  ["category", "Rights categories"],
+  ["article", "Articles"],
   ["judgment", "Judgments"],
-  ["application", "Connections"],
+  ["application", "Concepts / uses"],
   ["event", "Current affairs"],
+  ["foundation", "Context"],
 ];
 export function GraphCanvas({
   graph,
@@ -117,6 +128,30 @@ export function GraphCanvas({
   const [detailsOpen, setDetailsOpen] = useState(true);
   const [focusVersion, setFocusVersion] = useState(0);
   const { fitView, setCenter, zoomIn, zoomOut } = useReactFlow<ConceptNode>();
+  const initialized = useNodesInitialized();
+  const regions = useMemo(() => teachingRegions(graph), [graph]);
+  const focusConcept = useCallback(
+    (id: string) => {
+      const n = graph.nodes.find((n) => n.id === id)!;
+      if (n.kind === "category" || (n.kind === "theme" && innerWidth > 700)) {
+        const children = graph.edges
+          .filter((e) => e.source === id && e.role === "structure")
+          .map((e) => ({ id: e.target }));
+        fitView({
+          nodes: [{ id }, ...children],
+          padding: 0.22,
+          maxZoom: 1,
+          duration: 240,
+        });
+      } else {
+        setCenter(n.position.x + cardWidth(n) / 2, n.position.y + 46, {
+          zoom: innerWidth <= 700 ? 0.85 : 1,
+          duration: 240,
+        });
+      }
+    },
+    [graph, fitView, setCenter],
+  );
   const active = hovered || selected;
   const lit = useMemo(
     () => (active ? neighbours(active, graph.edges) : new Set<string>()),
@@ -134,19 +169,11 @@ export function GraphCanvas({
         "",
         `#/gs2/polity?node=${encodeURIComponent(id)}`,
       );
-      if (center) {
-        const n = graph.nodes.find((n) => n.id === id)!;
-        setTimeout(
-          () =>
-            setCenter(n.position.x + 105, n.position.y + 30, {
-              zoom: 1,
-              duration: 240,
-            }),
-          50,
-        );
+      if (center || graph.nodes.find((n) => n.id === id)?.kind === "category") {
+        setTimeout(() => focusConcept(id), 50);
       }
     },
-    [graph.nodes, setCenter],
+    [graph.nodes, focusConcept],
   );
   const reset = () => {
     setSelected("fr");
@@ -158,16 +185,9 @@ export function GraphCanvas({
     history.replaceState(null, "", "#/gs2/polity");
   };
   useEffect(() => {
-    const t = setTimeout(() => {
-      const n = graph.nodes.find((n) => n.id === (selected || "fr"))!;
-      // Start at reading size; the overview and Fit graph expose the full extent.
-      setCenter(n.position.x + 102, n.position.y + 29, {
-        zoom: innerWidth <= 1100 ? 0.85 : 0.7,
-        duration: 180,
-      });
-    }, 70);
-    return () => clearTimeout(t);
-  }, [focusVersion, fitView]);
+    if (!initialized) return;
+    focusConcept(focusVersion ? "fr" : validInitial);
+  }, [initialized, focusVersion, focusConcept]);
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -215,9 +235,16 @@ export function GraphCanvas({
         (vertical ? (dy > 0 ? "top" : "bottom") : dx > 0 ? "left" : "right"),
       type: "default",
       style: {
-        stroke: highlighted ? "#b7c9de" : "#34424f",
-        strokeWidth: highlighted ? 1.8 : 1.1,
-        opacity: active && !highlighted ? 0.2 : 0.9,
+        stroke: highlighted
+          ? e.role === "structure"
+            ? "#c0acf0"
+            : "#b7c9de"
+          : e.role === "structure"
+            ? "#685a84"
+            : "#34424f",
+        strokeWidth: highlighted ? 2 : e.role === "structure" ? 1.5 : 1,
+        opacity:
+          active && !highlighted ? (e.role === "structure" ? 0.35 : 0.15) : 0.9,
         strokeDasharray: e.classification === "analytical" ? "5 5" : undefined,
       },
       ariaLabel: `${e.label}: ${e.explanation}`,
@@ -322,10 +349,22 @@ export function GraphCanvas({
             <span>
               Fundamental Rights <small>· Part III</small>
               <small className="scope-status">
-                All {graph.nodes.length} concepts · {graph.edges.length} links
-                on canvas
+                6 rights categories · {graph.nodes.length} concepts ·{" "}
+                {graph.edges.length} links on canvas
               </small>
             </span>
+          </div>
+          <div className="highlight-status" data-testid="highlight-status">
+            {hovered ? "Hover preview" : "Highlighting"}:{" "}
+            <strong>
+              {graph.nodes.find((n) => n.id === active)?.title || "Whole theme"}
+            </strong>
+            {hovered && selected && hovered !== selected && (
+              <small>
+                Details pinned to{" "}
+                {graph.nodes.find((n) => n.id === selected)?.title}
+              </small>
+            )}
           </div>
           {indexOpen && (
             <div className="topic-index">
@@ -356,8 +395,6 @@ export function GraphCanvas({
               edges={edges}
               nodeTypes={nodeTypes}
               onNodesChange={onNodesChange}
-              fitView
-              fitViewOptions={{ padding: 0.12, maxZoom: 1.15 }}
               minZoom={0.2}
               maxZoom={1.8}
               nodesConnectable={false}
@@ -378,11 +415,29 @@ export function GraphCanvas({
               zoomOnDoubleClick={false}
               colorMode="dark"
             >
-              <MiniMap
+              <ViewportPortal>
+                {regions.map((region) => (
+                  <div
+                    key={region.id}
+                    className="teaching-region"
+                    data-region={region.id}
+                    style={{
+                      left: region.left,
+                      top: region.top,
+                      width: region.width,
+                      height: region.height,
+                    }}
+                  >
+                    <strong>{region.title}</strong>
+                    <span>{region.note}</span>
+                  </div>
+                ))}
+              </ViewportPortal>
+              <MiniMap<ConceptNode>
                 pannable
                 zoomable
                 ariaLabel="Theme overview — pan or zoom to explore the full canvas"
-                nodeColor="#647b8d"
+                nodeColor={(node) => kindStyle[node.data.concept.kind].colour}
                 nodeStrokeColor="#90a5b6"
                 maskColor="rgba(5, 10, 15, 0.65)"
               />

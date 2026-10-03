@@ -1,5 +1,35 @@
 # Handoff
 
+## Six categories and node-type colours — 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/7
+- Branch: `codex/rights-hierarchy-colours`, based on complete-theme handover
+  `ceaa784`. Assisting tool: Codex. Use the actual branch head when resuming.
+- Release `2026.10.04.1`: 47 concepts, 52 explained edges and seven PYQ angles.
+  Six category records introduce the Articles. Supporting and omitted provisions
+  occupy separate labelled regions, not extra rights categories. All earlier
+  concept IDs and substantive cross-links are retained. See CONTENT_REVIEW.md
+  for sources, affected records and retired display-edge IDs.
+- Neutral topic/context, purple categories, blue Articles, amber judgments, teal
+  concepts/applications and rose dated events. Text badges supplement colour;
+  topic/category cards are larger. Article 226 and 359 now use the Article type.
+- Initial desktop view frames the six-category skeleton. Choosing a category
+  frames its Articles without disclosure or hiding. All records stay on canvas.
+  Root inspector lists six categories first and constitutional context separately.
+- Desktop hover preview names the highlighted concept and identifies the pinned
+  sidebar when they differ. Inspector is explicitly labelled Pinned details.
+- Validation: `npm run check` passed (format, TypeScript, nine graph/content tests,
+  build, public audit). `npm run test:e2e`: 25 passed, two mouse-only hover cases
+  skipped on touch profiles. Category membership, colours, no disclosure, camera
+  framing, pinned/hover distinction and flicker regression covered.
+- Screenshots: `docs/design/six-categories-desktop.png`,
+  `docs/design/typed-nodes-desktop.png`, `docs/design/freedom-articles-phone.png`.
+  Chromium emulation; physical devices and Safari not tested.
+- Next: review this follow-up into PR #6's branch, then the existing PR stack.
+  No merge, Firebase deployment, corpus regeneration or private publication included.
+  Older checkpoint descriptions below are historical and may describe superseded UI.
+
+
 ## Complete microtheme view — 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/5

@@ -1,11 +1,18 @@
 export type Kind =
-  "foundation" | "theme" | "article" | "judgment" | "application" | "event";
+  | "foundation"
+  | "theme"
+  | "category"
+  | "article"
+  | "judgment"
+  | "application"
+  | "event";
 export interface Concept {
   id: string;
   title: string;
   meaning: string;
   kind: Kind;
   position: { x: number; y: number };
+  groupId?: string;
   bullets: string[];
   mains: string;
   sources: string[];
@@ -25,6 +32,7 @@ export interface Connection {
   evidence: string[];
   classification: "direct" | "analytical";
   reviewStatus: string;
+  role?: "structure" | "context" | "connection";
 }
 export interface Source {
   id: string;
