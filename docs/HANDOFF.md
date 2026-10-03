@@ -1,5 +1,27 @@
 # Handoff
 
+## Dark/light appearance — 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/9
+- Branch: `codex/dark-light-mode`, based on hierarchy handover `f5ca72d`.
+  Assisting tool: Codex. Implementation/PR recorded after validation below.
+- Sun/moon toggle in the library and graph header. Dark is the initial default;
+  a browser-local preference survives navigation/reloads. Storage failures leave
+  the toggle usable for the current session. Choice is per browser, not cloud-synced.
+- Shared palette tokens cover the canvas, grid, links, minimap, inspector, search,
+  index and library. Node types keep their semantic hue and explicit text labels.
+  Changing appearance preserves pinned details, camera, all 47 concepts/52 edges,
+  and the bounded hover behaviour. No content/corpus changes.
+- Validation: `npm run check` passed (format, TypeScript, nine content/graph
+  tests, production build and public audit); `npm run test:e2e`: 31 passed, two
+  mouse-only cases skipped on touch profiles. New checks cover keyboard switching,
+  persistence across routes/reloads, stable camera and selection, light-mode type
+  label contrast, responsive bounds and blocked storage. Screenshots: `docs/design/light-mode-desktop.png`,
+  `light-mode-phone.png`, `dark-mode-desktop.png`, `dark-mode-phone.png`.
+- Limitations: Chromium desktop/phone/tablet emulation; physical devices and Safari
+  remain untested. No merge or Firebase deployment.
+- Next: review this follow-up into PR #8's branch, then the existing PR stack.
+
 ## Six categories and node-type colours — 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/7

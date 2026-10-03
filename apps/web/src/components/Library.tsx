@@ -1,3 +1,4 @@
+import { ThemeToggle } from "./ThemeToggle";
 import { ArrowLeft, ArrowRight, Circle } from "@phosphor-icons/react";
 export function Library({
   subject,
@@ -19,6 +20,7 @@ export function Library({
           Polity Atlas
         </button>
         <span className="library-tag">Revision through connections</span>
+        <ThemeToggle />
       </header>
       <main className="library-main">
         {subject && (

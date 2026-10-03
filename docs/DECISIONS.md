@@ -24,3 +24,11 @@
   applications teal, current affairs rose. Labels supplement colour. Supporting
   and omitted provisions are visibly separate. Hover preview and pinned details
   have independent labels. No per-node disclosure or automatic corpus regeneration.
+
+## 2026-10-04 — Persistent dark/light appearance
+
+Provide an explicit sun/moon toggle in both app headers. Preserve dark as the
+first-use default and store the choice in this browser. Both palettes retain the
+node-type hues and labels. Theme is presentation state above routing; switching
+must preserve selected concept and camera. No system-following or account-sync
+setting is introduced for this two-mode request.
