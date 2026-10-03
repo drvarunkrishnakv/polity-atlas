@@ -1,0 +1,26 @@
+# Private corpus and upstream tools: intentionally local only
+/data/
+/config/
+/scripts/
+/output/
+/corpus_snapshot_manifest.json
+/docs/private/
+/docs/upstream/
+/docs/LOCAL_BOOK_RAG.md
+/upsc_polity_graph_demo.html
+/.venv/
+__pycache__/
+*.pyc
+*.sqlite*
+# Build, dependencies, secrets and machine state
+node_modules/
+dist/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+.firebase/
+.firebaserc
+*-debug.log
+.DS_Store
