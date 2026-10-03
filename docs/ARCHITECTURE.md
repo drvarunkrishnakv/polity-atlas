@@ -50,3 +50,13 @@ writes and currently deny all database reads until a specific owner UID and priv
 content publishing workflow are configured. No Firebase project is silently reused.
 A later Firestore adapter can implement the repository interface without changing
 components. Server credentials and AI provider calls remain outside the client.
+
+## Appearance preference
+
+`theme/ThemeProvider.tsx` owns the browser-local dark/light preference. It sits
+above routing and the React Flow provider so a theme change does not remount the
+graph. `main.tsx` applies the saved `data-theme` before the first React render;
+storage exceptions fall back to dark and leave in-session switching available.
+`ThemeToggle` is shared by the library and graph. CSS tokens control surfaces,
+text and graph strokes; the minimap uses the same kind classes as concept cards.
+Appearance never changes the content release, traversal or graph positions.

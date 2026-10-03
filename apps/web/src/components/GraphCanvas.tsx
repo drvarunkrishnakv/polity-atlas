@@ -1,3 +1,5 @@
+import { ThemeToggle } from "./ThemeToggle";
+import { useTheme } from "../theme/ThemeProvider";
 import { useEffect, useMemo, useState, useCallback } from "react";
 import {
   ReactFlow,
@@ -96,6 +98,7 @@ export function GraphCanvas({
   graph: GraphRelease;
   onNavigate: (path: string) => void;
 }) {
+  const { theme } = useTheme();
   const initialId = new URLSearchParams(location.hash.split("?")[1]).get(
     "node",
   );
@@ -237,11 +240,11 @@ export function GraphCanvas({
       style: {
         stroke: highlighted
           ? e.role === "structure"
-            ? "#c0acf0"
-            : "#b7c9de"
+            ? "var(--edge-structure-active)"
+            : "var(--edge-active)"
           : e.role === "structure"
-            ? "#685a84"
-            : "#34424f",
+            ? "var(--edge-structure)"
+            : "var(--edge)",
         strokeWidth: highlighted ? 2 : e.role === "structure" ? 1.5 : 1,
         opacity:
           active && !highlighted ? (e.role === "structure" ? 0.35 : 0.15) : 0.9,
@@ -313,6 +316,7 @@ export function GraphCanvas({
               </div>
             )}
           </div>
+          <ThemeToggle />
           <span className="depth-label">Highlight: direct links</span>
           <button aria-label="Reset" className="reset-button" onClick={reset}>
             <ArrowCounterClockwise size={17} />
@@ -413,7 +417,7 @@ export function GraphCanvas({
               }}
               onNodeDragStart={() => setHovered(null)}
               zoomOnDoubleClick={false}
-              colorMode="dark"
+              colorMode={theme}
             >
               <ViewportPortal>
                 {regions.map((region) => (
@@ -437,14 +441,15 @@ export function GraphCanvas({
                 pannable
                 zoomable
                 ariaLabel="Theme overview — pan or zoom to explore the full canvas"
-                nodeColor={(node) => kindStyle[node.data.concept.kind].colour}
-                nodeStrokeColor="#90a5b6"
-                maskColor="rgba(5, 10, 15, 0.65)"
+                nodeClassName={(node) => `kind-${node.data.concept.kind}`}
+                nodeColor="var(--dot)"
+                nodeStrokeColor="var(--minimap-stroke)"
+                maskColor="var(--minimap-mask)"
               />
               <Background
                 variant={BackgroundVariant.Lines}
                 gap={32}
-                color="#121c24"
+                color="var(--grid)"
                 lineWidth={0.5}
               />
             </ReactFlow>

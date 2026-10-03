@@ -117,3 +117,16 @@ unverified; the screenshots and browser profiles use Chromium.
 Final checks: `npm run check` passed (including nine content/graph tests); browser
 suite 25 passed, two mouse-only cases skipped. Evidence: `docs/design/six-categories-desktop.png`,
 `docs/design/typed-nodes-desktop.png`, `docs/design/freedom-articles-phone.png`.
+
+## Dark/light appearance — 2026-10-04
+
+- Reviewed light-mode desktop/phone graph and phone library screenshots, plus
+  dark desktop graph. Preserved the cool restrained canvas and type-coloured boxes.
+- Saved both modes for desktop and phone under `docs/design/*-mode-*.png`.
+- Sun/moon control appears beside search on the graph and in the library header;
+  narrow screens use the icon with an accessible action name. Keyboard focus is visible.
+- Browser checks cover persistence, routing, blocked storage, unchanged camera and
+  pinned selection, and light node-type label contrast of at least 4.5:1 against
+  its undimmed card tint. Dimmed unrelated nodes intentionally recede.
+- Full browser suite: 31 passed, two hover-only cases skipped on touch. Desktop,
+  Pixel 7 and iPad Chromium emulation; physical devices/Safari not checked.
