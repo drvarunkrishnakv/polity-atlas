@@ -1431,3 +1431,89 @@ p {
     min-width: 0;
   }
 }
+
+/* Syllabus navigation uses the same quiet canvas, with a separate coverage inspector. */
+.coverage-shell .map-card {
+  width: 250px;
+  min-height: 105px;
+}
+.coverage-shell .map-card strong {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.map-meaning {
+  display: block;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  margin-top: 5px;
+}
+.coverage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 14px;
+}
+.coverage-list button {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 12px;
+  background: var(--input);
+}
+.coverage-list strong {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.coverage-list small,
+.coverage-list span {
+  font-size: 10px;
+  color: var(--muted);
+}
+.coverage-list span {
+  color: var(--link);
+}
+.coverage-link {
+  margin-top: 15px;
+}
+.coverage-link button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  font-size: 12px;
+  text-align: left;
+  padding: 0;
+}
+.coverage-link small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.coverage-caution {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  padding: 10px;
+  background: var(--soft);
+  margin-top: 12px;
+  border-left: 2px solid var(--line-strong);
+}
+.coverage-inspector .back-link {
+  margin: 20px 0 0;
+  font-size: 12px;
+}
+.coverage-shell .graph-viewport {
+  inset: 118px 0 66px;
+}
+@media (max-width: 700px) {
+  .coverage-shell .graph-viewport {
+    inset: 104px 0 53px;
+  }
+  .coverage-shell .canvas-heading {
+    max-width: calc(100% - 28px);
+  }
+  .coverage-shell .canvas-footer > span {
+    max-width: 215px;
+  }
+}

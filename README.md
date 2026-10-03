@@ -26,7 +26,8 @@ npm run test:e2e
 ```
 
 The app is in `apps/web`; curated, versioned content is separate from components.
-The first example covers Fundamental Rights. See `docs/HANDOFF.md` for exact
+The Polity overview maps nine syllabus topics and 154 unique PYQ themes.
+Fundamental Rights is the first available detailed study example. See `docs/HANDOFF.md` for exact
 implementation and verification status, and `docs/ARCHITECTURE.md` for boundaries.
 
 ## Public code, private corpus
@@ -48,9 +49,24 @@ for simultaneous agents. Pull requests, automated checks and previews precede
 merging. Main is protected on the public remote. Production release is a separate,
 explicit action. Never put provider credentials in frontend code.
 
-## First example
+## Polity coverage map
 
-Open GS II → Polity. All 47 concepts and 52 links are already on the canvas.
+Open GS II → Polity → a syllabus topic → a PYQ theme. The canvas uses the first
+nine GS II syllabus bullets as the Polity spine; headings are concise paraphrases
+with a link to the official 2026 notification. All nine topics remain present.
+The catalogue preserves 139 Polity themes (118 Mains / 210 Prelims occurrences)
+and 15 related themes from other subjects. Topic memberships overlap and must
+not be summed. Two supporting Prelims themes are separate from the Mains bullets.
+
+Existing question-register tags and new editorial navigation placements are
+labelled separately. Theme outlines are not completed study graphs. Mains data
+covers 2013–2025 and Prelims 2009–2026; supplied questions/answers are not certified
+against official papers. Raw texts and per-question audit trails remain private.
+
+## First study example
+
+From Constitution & its foundations, choose Fundamental Rights → Open Fundamental
+Rights graph. All 47 concepts and 52 links are already on the canvas.
 Start with the six rights categories, then select Right to Freedom → Article 21 →
 Puttaswamy → Privacy without revealing anything. Selecting a category frames its
 Articles. Node tints and text labels distinguish categories, Articles, judgments,

@@ -4,21 +4,23 @@ import { bundledRepository } from "./content/repository";
 import type { GraphRelease } from "./content/types";
 import { validateGraph } from "./graph/explore";
 import { GraphCanvas } from "./components/GraphCanvas";
+import { PolityOverview } from "./components/PolityOverview";
+import { catalog, validateCatalog } from "./content/catalog";
 import { Library } from "./components/Library";
 export function App() {
-  const [route, setRoute] = useState(location.hash.slice(2).split("?")[0]);
+  const [route, setRoute] = useState(location.hash.slice(2));
   const [graph, setGraph] = useState<GraphRelease | null>(null);
   const [error, setError] = useState("");
   useEffect(() => {
     bundledRepository
       .load()
       .then((g) => {
-        const errors = validateGraph(g);
+        const errors = [...validateGraph(g), ...validateCatalog()];
         if (errors.length) throw Error(errors.join("; "));
         setGraph(g);
       })
       .catch((e) => setError(String(e)));
-    const change = () => setRoute(location.hash.slice(2).split("?")[0]);
+    const change = () => setRoute(location.hash.slice(2));
     window.addEventListener("hashchange", change);
     return () => window.removeEventListener("hashchange", change);
   }, []);
@@ -33,11 +35,39 @@ export function App() {
       </main>
     );
   if (!graph) return <main className="loading">Loading your atlas…</main>;
-  if (route === "gs2/polity")
+  const [path, query] = route.split("?");
+  const params = new URLSearchParams(query);
+  if (
+    path === "gs2/polity/fundamental-rights" ||
+    (path === "gs2/polity" && params.has("node"))
+  )
     return (
       <ReactFlowProvider>
         <GraphCanvas graph={graph} onNavigate={navigate} />
       </ReactFlowProvider>
     );
-  return <Library subject={route === "gs2"} onNavigate={navigate} />;
+  if (path === "gs2/polity" || path.startsWith("gs2/polity/topics/")) {
+    const topicId = path.split("/")[3];
+    if (
+      topicId &&
+      topicId !== "prelims-context" &&
+      !catalog.topics.some((t) => t.id === topicId)
+    )
+      return (
+        <main className="loading">
+          <h1>Topic not found</h1>
+          <button onClick={() => navigate("gs2/polity")}>Back to Polity</button>
+        </main>
+      );
+    return (
+      <ReactFlowProvider key={topicId || "overview"}>
+        <PolityOverview
+          topicId={topicId}
+          themeId={params.get("theme") || undefined}
+          onNavigate={navigate}
+        />
+      </ReactFlowProvider>
+    );
+  }
+  return <Library subject={path === "gs2"} onNavigate={navigate} />;
 }

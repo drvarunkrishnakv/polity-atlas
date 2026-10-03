@@ -7,7 +7,7 @@ test("hover keeps cards and edges visible without losing the pinned inspector", 
     test.info().project.name !== "desktop",
     "Mouse hover requires a mouse profile",
   );
-  await page.goto("/#/gs2/polity");
+  await page.goto("/#/gs2/polity/fundamental-rights");
   await expect(page.locator('[data-concept="fr"]')).toBeVisible();
   await page.waitForTimeout(700);
   const edgeCount = await page.locator(".react-flow__edge").count();

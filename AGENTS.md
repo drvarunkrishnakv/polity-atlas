@@ -13,6 +13,9 @@ Read README.md, docs/HANDOFF.md, docs/ARCHITECTURE.md and docs/CONTENT_CONVENTIO
 - Work on a task branch, never push directly to main. Use a separate worktree when
   another agent is active. State the issue, branch and scope in the PR.
 - Keep content, graph traversal and UI separate. Stable IDs are permanent identities.
+- Start Polity navigation from syllabus topics, then canonical PYQ themes. Keep
+  coverage outlines separate from authored study graphs. Preserve original tags;
+  label new editorial placements and overlapping counts explicitly.
 - Change only affected content records. Record version/source/reason; do not rebuild
   embeddings or regenerate the corpus for an interface task.
 - Similarity is candidate discovery, never evidence that an edge is academically valid.

@@ -1,0 +1,3473 @@
+{
+  "schemaVersion": 1,
+  "version": "2026.10.04.1",
+  "reviewedOn": "2026-10-04",
+  "title": "Polity syllabus map",
+  "scope": "GS II bullets 1–9 form the Polity navigation spine. Governance, social justice and international relations remain separate subjects; existing overlapping PYQ themes are shown as related themes. National symbols and political thought remain Prelims context, not invented Mains syllabus bullets.",
+  "countNote": "Counts are accepted occurrences in the supplied register, not a complete official-paper frequency analysis. A theme may link to multiple topics; do not add topic totals. Mains covers 2013–2025; Prelims covers 2009–2026.",
+  "sources": [
+    {
+      "id": "upsc-cse-2026",
+      "title": "UPSC CSE 2026 notification",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf#page=34",
+      "locator": "Section III; GS II, printed page 34; Prelims GS I, page 32",
+      "note": "Topic headings and prompts are concise editorial paraphrases. Open the official notification for exact wording."
+    },
+    {
+      "id": "pyq-register-july-2026",
+      "title": "Supplied PYQ theme register · July 2026 snapshot",
+      "url": null,
+      "locator": "Canonical microtheme register v3; counts checked against accepted question occurrences",
+      "note": "Private question text and answers are not published. Tags are editorial; neither questions nor answer keys are certified against official papers here."
+    }
+  ],
+  "totals": {
+    "polityThemes": 139,
+    "relatedThemes": 15,
+    "polityMains": 118,
+    "polityPrelims": 210,
+    "relatedMains": 30,
+    "relatedPrelims": 16,
+    "flaggedRows": 3
+  },
+  "topics": [
+    {
+      "id": "constitution",
+      "syllabusId": "syllabus:cse2026:GS2:01",
+      "ordinal": 1,
+      "title": "Constitution & its foundations",
+      "meaning": "Origins, rights and limits on change",
+      "outline": [
+        "Begin with constitutional evolution and founding values.",
+        "Locate rights, duties and other significant provisions.",
+        "Connect amendment powers with constitutional limits."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 1; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "federalism",
+      "syllabusId": "syllabus:cse2026:GS2:02",
+      "ordinal": 2,
+      "title": "Federalism & local government",
+      "meaning": "Sharing power, responsibilities and finances",
+      "outline": [
+        "Distinguish Union, State and local responsibilities.",
+        "Connect the distribution of powers with financial devolution.",
+        "Study coordination, disputes and practical limits on decentralisation."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 2; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "separation-of-powers",
+      "syllabusId": "syllabus:cse2026:GS2:03",
+      "ordinal": 3,
+      "title": "Separation of powers",
+      "meaning": "Checks, balances and dispute resolution",
+      "outline": [
+        "Identify the institutions sharing or checking a power.",
+        "Examine the dispute and the mechanism available to resolve it.",
+        "Connect institutional independence with accountability."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 3; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "comparative-constitutions",
+      "syllabusId": "syllabus:cse2026:GS2:04",
+      "ordinal": 4,
+      "title": "Comparing constitutions",
+      "meaning": "Indian design alongside other systems",
+      "outline": [
+        "Choose a constitutional feature before comparing countries.",
+        "Compare its design, operation and limits.",
+        "Explain why a borrowed feature may operate differently in India."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 4; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "legislatures",
+      "syllabusId": "syllabus:cse2026:GS2:05",
+      "ordinal": 5,
+      "title": "Parliament & State legislatures",
+      "meaning": "Representation, lawmaking and accountability",
+      "outline": [
+        "Start with the structure and representation of each House.",
+        "Follow how business, legislation and scrutiny are conducted.",
+        "Connect powers and privileges with accountability concerns."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 5; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "executive-judiciary",
+      "syllabusId": "syllabus:cse2026:GS2:06",
+      "ordinal": 6,
+      "title": "Executive, judiciary & groups",
+      "meaning": "Institutions and participation in politics",
+      "outline": [
+        "Locate the office, ministry, court or association.",
+        "Separate structure and appointment from day-to-day functioning.",
+        "Connect participation, institutional responsibility and oversight."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 6; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "elections",
+      "syllabusId": "syllabus:cse2026:GS2:07",
+      "ordinal": 7,
+      "title": "Elections & representation",
+      "meaning": "The framework for representative elections",
+      "outline": [
+        "Start with electoral representation and its legal framework.",
+        "Connect qualifications, disqualifications and election administration.",
+        "Distinguish the law from proposals for reform."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 7; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "constitutional-bodies",
+      "syllabusId": "syllabus:cse2026:GS2:08",
+      "ordinal": 8,
+      "title": "Constitutional posts & bodies",
+      "meaning": "Appointments, mandates and accountability",
+      "outline": [
+        "Identify the constitutional basis of each post or body.",
+        "Link appointment and tenure to powers and responsibilities.",
+        "Examine independence, checks and practical effectiveness."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 8; printed page 34",
+      "status": "coverage-mapped"
+    },
+    {
+      "id": "statutory-bodies",
+      "syllabusId": "syllabus:cse2026:GS2:09",
+      "ordinal": 9,
+      "title": "Statutory & regulatory bodies",
+      "meaning": "Institutions created and empowered by law",
+      "outline": [
+        "Identify the law and mandate behind each institution.",
+        "Distinguish regulatory, statutory and adjudicatory functions.",
+        "Connect powers, procedure and accountability."
+      ],
+      "sourceId": "upsc-cse-2026",
+      "locator": "GS II, bullet 9; printed page 34",
+      "status": "coverage-mapped"
+    }
+  ],
+  "themes": [
+    {
+      "id": "microtheme:8a16059cef94d164b3d96a1d",
+      "title": "Fiscal governance",
+      "subject": "Economy",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 3,
+      "years": [2010, 2013, 2020, 2023, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ef708bf96a9af4b657055de1",
+      "title": "Public finance",
+      "subject": "Economy",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 9,
+      "prelims": 11,
+      "years": [
+        2010, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2025
+      ],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:89b54b741cde68ab404fe2bd",
+      "title": "Constitutional morality",
+      "subject": "Ethics",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2019, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:804d81bb555b5e3064f882e6",
+      "title": "Civil society",
+      "subject": "Governance",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 4,
+      "prelims": 0,
+      "years": [2015, 2021, 2023, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:28e4035d3c86a57eb6e46496",
+      "title": "Financial regulation",
+      "subject": "Governance",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:f3d28742f8637e0d93f8becc",
+      "title": "Investigative and enforcement institutions",
+      "subject": "Governance",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:7ba512908604add4bb3d3c61",
+      "title": "Panchayati Raj capacity and development",
+      "subject": "Governance",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:66b10c2f9702609d93a6a33b",
+      "title": "Public integrity",
+      "subject": "Governance",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 3,
+      "prelims": 0,
+      "years": [2013, 2015, 2016],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b6c6563aab64bd72c3e6c979",
+      "title": "Regulatory institutions",
+      "subject": "Governance",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2015, 2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e9390f572abf9d5bae34d651",
+      "title": "Regulatory policy",
+      "subject": "Governance",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2014],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:341b1357c87f33e46952b238",
+      "title": "Transparency",
+      "subject": "Governance",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2020],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:f087f386dd83c8c373dc8f95",
+      "title": "Access to justice",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 1,
+      "years": [2016, 2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:8ee8ee1e784cf7030f36e439",
+      "title": "Administrative tribunals",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because administrative tribunals supports the study of statutory & regulatory bodies. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2009],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:fb847a71d4e1961b65719fb6",
+      "title": "Alternative dispute resolution",
+      "subject": "Polity",
+      "homeTopicId": "separation-of-powers",
+      "links": [
+        {
+          "topicId": "separation-of-powers",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because alternative dispute resolution supports the study of separation of powers. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2009, 2010],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:5fbb7609b02a46d308f2d5bf",
+      "title": "Anti-defection law",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because anti-defection law supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2014, 2022, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e458b50f95ef6a59003e6a57",
+      "title": "Asymmetric federalism",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:aa5196d6657af216756dac52",
+      "title": "Bicameral financial powers",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because bicameral financial powers supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2015],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:efeec92be33699cf254facd1",
+      "title": "Bicameralism",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because bicameralism supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2020, 2022],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:985491c646c5db1604573a8d",
+      "title": "Cabinet government",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because cabinet government supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2013, 2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:42be2ed766cf0499ec19fe1c",
+      "title": "Centre-state relations",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because centre-state relations supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b7be21a887147ac1dc45d18e",
+      "title": "Citizenship",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because citizenship supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:729cf48f7dcc1b60bc3e5f20",
+      "title": "Comparative constitutionalism",
+      "subject": "Polity",
+      "homeTopicId": "comparative-constitutions",
+      "links": [
+        {
+          "topicId": "comparative-constitutions",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because comparative constitutionalism supports the study of comparing constitutions. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c418da05adf5bf32787138d7",
+      "title": "Comparative constitutions",
+      "subject": "Polity",
+      "homeTopicId": "comparative-constitutions",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "comparative-constitutions",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 8,
+      "prelims": 0,
+      "years": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:8e07cc7e7d3278699a18ea56",
+      "title": "Constitution making",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitution making supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2013, 2023, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:34d6e3ff5d72c612894a8938",
+      "title": "Constitutional amendment",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 3,
+      "prelims": 5,
+      "years": [2013, 2019, 2022, 2023, 2024, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:f02c0708969a6e63504534e0",
+      "title": "Constitutional amendment history",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional amendment history supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a47fce66b70745f3af028ba0",
+      "title": "Constitutional bodies",
+      "subject": "Polity",
+      "homeTopicId": "constitutional-bodies",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "constitutional-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 6,
+      "prelims": 1,
+      "years": [2011, 2016, 2018, 2022, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:7fcb384207a954260270cd8d",
+      "title": "Constitutional commencement and repeal",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c3c94f6635b8e4706b38c1c0",
+      "title": "Constitutional history",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2015, 2016],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:d61035419d9947c5cca201e3",
+      "title": "Constitutional immunities",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional immunities supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:6cbd3c141384c45b7d57c5a6",
+      "title": "Constitutional languages",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional languages supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a3a1ac01d2874c2c60ad8eb1",
+      "title": "Constitutional morality",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:3e0e6e49e64da9083ccf7932",
+      "title": "Constitutional offices",
+      "subject": "Polity",
+      "homeTopicId": "constitutional-bodies",
+      "links": [
+        {
+          "topicId": "constitutional-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2019, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:0018b78cdf24beb7591884c7",
+      "title": "Constitutional principles",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2016, 2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ab4bbb3b5b488d9fd7648790",
+      "title": "Constitutional provisions",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional provisions supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:4c151a40114a66773378a049",
+      "title": "Constitutional remedies",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional remedies supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2022, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:d45ad59a671b13757e4d8e99",
+      "title": "Constitutional rights",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional rights supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:fe254ebcb09f69a6474906a3",
+      "title": "Constitutional safeguards",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional safeguards supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2020],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:f456be7c19b4544f3a10a2c1",
+      "title": "Constitutional structure",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional structure supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:1d65764b992c6badc9fb36b4",
+      "title": "Constitutional values",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutional values supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:36519d6431193c4c7cad9542",
+      "title": "Constitutionalism",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because constitutionalism supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 4,
+      "years": [2014, 2020, 2021, 2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ee457e16f9c6cbadd0a91e7a",
+      "title": "Council of Ministers",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because council of ministers supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2009, 2013, 2022],
+      "flaggedRows": 1,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e07b6f6f249255541539e569",
+      "title": "Criminal procedure",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because criminal procedure supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c0648495e7a07a5653cfdd51",
+      "title": "Criminal procedure and access to justice",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:7be7026abcca7453f28c495f",
+      "title": "Decentralization",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2022],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:3486c0cd901d6cf443b37332",
+      "title": "Democracy",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because democracy supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:8e0223603352833c3a26bde9",
+      "title": "Development planning governance",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because development planning governance supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:16e2c15cae67ac7bdd95a2d4",
+      "title": "Directive Principles",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 13,
+      "years": [2010, 2012, 2013, 2014, 2015, 2017, 2020, 2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e77f305b69776bc520aaacc8",
+      "title": "Dispute resolution",
+      "subject": "Polity",
+      "homeTopicId": "separation-of-powers",
+      "links": [
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2015, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c84ea849737508017a379a16",
+      "title": "Education governance",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because education governance supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2012],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:d7180cc88c8d8e549ee1961f",
+      "title": "Election Commission",
+      "subject": "Polity",
+      "homeTopicId": "constitutional-bodies",
+      "links": [
+        {
+          "topicId": "constitutional-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2018, 2022],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:6919f5b2d6d19240d39c85f7",
+      "title": "Election administration",
+      "subject": "Polity",
+      "homeTopicId": "elections",
+      "links": [
+        {
+          "topicId": "elections",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because election administration supports the study of elections & representation. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c92dadff944ac2c7ba6e9fcd",
+      "title": "Electoral and parliamentary rules",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because electoral and parliamentary rules supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:63a8a37bbefd8ed57ab5500b",
+      "title": "Electoral boundaries",
+      "subject": "Polity",
+      "homeTopicId": "elections",
+      "links": [
+        {
+          "topicId": "elections",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because electoral boundaries supports the study of elections & representation. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2012, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:410b2f5ce9d9828883bcc17e",
+      "title": "Electoral law",
+      "subject": "Polity",
+      "homeTopicId": "elections",
+      "links": [
+        {
+          "topicId": "elections",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 4,
+      "prelims": 2,
+      "years": [2017, 2019, 2020, 2021, 2022, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b8837eb0e61917dbc5c662bd",
+      "title": "Electoral reform",
+      "subject": "Polity",
+      "homeTopicId": "elections",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "elections",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "constitutional-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 3,
+      "prelims": 0,
+      "years": [2017, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:434314c7abc20632132133a1",
+      "title": "Electoral rights",
+      "subject": "Polity",
+      "homeTopicId": "elections",
+      "links": [
+        {
+          "topicId": "elections",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because electoral rights supports the study of elections & representation. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:880954d1d66c4c88b48d6453",
+      "title": "Emergency provisions",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 2,
+      "years": [2017, 2018],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:f34d8d2c49776d167f4b103d",
+      "title": "Environmental jurisprudence",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2022],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c97e482455fd40d61226d7b2",
+      "title": "Equality and reservation",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because equality and reservation supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:9e8277bb9588e26976145277",
+      "title": "Executive",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2014],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:4076cc60787cf27c6dc2f912",
+      "title": "Executive accountability",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because executive accountability supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2014, 2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:dcf9ae0eff24fc3d124d8a9c",
+      "title": "Executive clemency",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2014],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:d01a924e92565993d18957c0",
+      "title": "Federal disputes",
+      "subject": "Polity",
+      "homeTopicId": "separation-of-powers",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:28f16ff07b2b929150564de6",
+      "title": "Federal legislative lists",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because federal legislative lists supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:cb69a59a8cbba8b794cad38e",
+      "title": "Federal legislative powers",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because federal legislative powers supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2013, 2016],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:01b031dbf1a40e6b7aea2808",
+      "title": "Federal regulatory powers",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because federal regulatory powers supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c90e37fa41c19930c5a8eb5f",
+      "title": "Federalism",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 12,
+      "prelims": 3,
+      "years": [
+        2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024
+      ],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:1b2c7465a0184958924e76c9",
+      "title": "Financial legislation",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because financial legislation supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 4,
+      "years": [2013, 2018, 2023, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b3c149907ff9c821f9436de3",
+      "title": "Fiscal constitutional procedure",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because fiscal constitutional procedure supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2010],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:86f916bdf57b943aca28bbfe",
+      "title": "Fiscal federalism",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "constitutional-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 5,
+      "prelims": 0,
+      "years": [2013, 2017, 2021, 2023, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:d537e90d29dc0ed702629d18",
+      "title": "Fundamental Duties",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because fundamental duties supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 4,
+      "years": [2011, 2012, 2015, 2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:3dc9a2d227339195a31d5617",
+      "title": "Fundamental Rights",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 7,
+      "prelims": 7,
+      "years": [
+        2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024
+      ],
+      "flaggedRows": 0,
+      "status": "study-example",
+      "studyRoute": "gs2/polity/fundamental-rights",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:71879327c4b7d9c6d999a8ce",
+      "title": "Fundamental Rights and judicial review",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b399c9baefb653aef5c59b2d",
+      "title": "Gender justice",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:6e04d5093363287432ab33f1",
+      "title": "Governor",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2022],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:bfa186e8c51e59afb5c467ae",
+      "title": "Human rights",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because human rights supports the study of statutory & regulatory bodies. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2011],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:74bc0f875a60a7abe4d9d35b",
+      "title": "Human rights foundations",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because human rights foundations supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2020],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a9b41397e55bf69f2db1028e",
+      "title": "Informal authority",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2015],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b236c479718128dbce873125",
+      "title": "Institutional foundations",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because institutional foundations supports the study of statutory & regulatory bodies. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2013, 2023, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:7fda6e380e87e52b693559b0",
+      "title": "Judicial accountability",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because judicial accountability supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:3598f8f250bc9c67d27295d7",
+      "title": "Judicial activism",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2014],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:0588ba14fd9294a4736a3b3c",
+      "title": "Judicial appointments",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "comparative-constitutions",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2017, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:4c41206f34767a0536b29b8c",
+      "title": "Judicial independence",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because judicial independence supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2012],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:300df9ab867b4520d512effb",
+      "title": "Judicial organization",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because judicial organization supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2014],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:206c8af3ceae40aa211084f3",
+      "title": "Judicial powers",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because judicial powers supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:7a3e73c7d6fe88ab535bd83a",
+      "title": "Judicial review",
+      "subject": "Polity",
+      "homeTopicId": "separation-of-powers",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 4,
+      "years": [2016, 2017, 2018, 2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:45d73e15d348d7bc3b912127",
+      "title": "Judiciary",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 3,
+      "prelims": 3,
+      "years": [2015, 2021, 2022, 2023, 2024],
+      "flaggedRows": 1,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c203caa9dddd51469f8e029c",
+      "title": "Law officers",
+      "subject": "Polity",
+      "homeTopicId": "constitutional-bodies",
+      "links": [
+        {
+          "topicId": "constitutional-bodies",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because law officers supports the study of constitutional posts & bodies. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2013, 2022],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:2830d5e614358773a1355ed0",
+      "title": "Legislative procedure",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because legislative procedure supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 5,
+      "years": [2012, 2015, 2016, 2017, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:759a02da82843207fb575c66",
+      "title": "Legislator disqualification",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because legislator disqualification supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:df21d76eaf0717fcee842d21",
+      "title": "Legislatures",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:1d86df13450b3a03c7ae4732",
+      "title": "Local government",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 7,
+      "prelims": 0,
+      "years": [2015, 2017, 2018, 2019, 2020, 2023, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:415db28bd42c47c96a035733",
+      "title": "Local government finance",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because local government finance supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2010],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ee718f3f03bd011d69eb48a3",
+      "title": "Local self-government",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because local self-government supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:6b5172c613c80d53ffabe667",
+      "title": "Lok Sabha Deputy Speaker",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because lok sabha deputy speaker supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2022],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:006697192f52d45c2a0b67d3",
+      "title": "Lok Sabha Speaker",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because lok sabha speaker supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2012, 2024, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:53b24add341d429f91d80b0a",
+      "title": "National honours",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because national honours supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a6195047fbdce94ef686ff55",
+      "title": "National symbols",
+      "subject": "Polity",
+      "homeTopicId": "prelims-context",
+      "links": [],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:f8fdf90b164036c4386a6279",
+      "title": "Ordinance-making powers",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 1,
+      "years": [2015, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ace22e027cb0dce1403a2aed",
+      "title": "Panchayati Raj",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because panchayati raj supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 5,
+      "years": [2009, 2011, 2015, 2016, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:d01e659be96b801428c89b02",
+      "title": "Parliament",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "constitutional-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 12,
+      "prelims": 0,
+      "years": [2013, 2014, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e3c026df3bb26731333255fc",
+      "title": "Parliament and elections",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because parliament and elections supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2012],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a8d33566d839cc6d83d69740",
+      "title": "Parliamentary accountability",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because parliamentary accountability supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2011],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:4e3da02362fd9c4c20917e12",
+      "title": "Parliamentary committees",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 5,
+      "years": [2013, 2014, 2018, 2024, 2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:7be1d90ac491efe0502de540",
+      "title": "Parliamentary financial control",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because parliamentary financial control supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 4,
+      "years": [2011, 2012, 2015, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:856525fe39f6efdc09070e17",
+      "title": "Parliamentary government",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 3,
+      "years": [2015, 2017, 2020, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:500f0b6dcc5d8f4c835262f7",
+      "title": "Parliamentary opposition",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because parliamentary opposition supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2018],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:96dd48b57700fb2cc0dda753",
+      "title": "Parliamentary procedure",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because parliamentary procedure supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2012],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e483d065aedbbb2c9ce083af",
+      "title": "Parliamentary questions and accountability",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a04b91e638e3361a73fb0d86",
+      "title": "Parliamentary sessions",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because parliamentary sessions supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2020, 2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b0661ad92bdaef9a8c581de4",
+      "title": "Political concepts",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because political concepts supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 7,
+      "years": [2017, 2018, 2019, 2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ded36ea67e5a26c6f0abcc84",
+      "title": "Political eligibility",
+      "subject": "Polity",
+      "homeTopicId": "elections",
+      "links": [
+        {
+          "topicId": "elections",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because political eligibility supports the study of elections & representation. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2020],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:d83aeb38b077ad76bef4ca45",
+      "title": "Political parties",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2016],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:8df4dde7382fbd462500b8b0",
+      "title": "Political thought",
+      "subject": "Polity",
+      "homeTopicId": "prelims-context",
+      "links": [],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2011, 2020],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c3962731a01281f55e8d2e47",
+      "title": "Preamble",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because preamble supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 4,
+      "years": [2017, 2020, 2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:34cd18ca6d02395f14a47d9f",
+      "title": "President",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because president supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2012, 2023, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:785351af4be7f837798084e7",
+      "title": "Presidential election",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because presidential election supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2018, 2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:23b7a2f958b784275ea3923f",
+      "title": "Pressure groups",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 5,
+      "prelims": 0,
+      "years": [2013, 2017, 2019, 2021, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:36e1c717365504e2828a1dce",
+      "title": "Prime Minister",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because prime minister supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2012],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a42c169a731ba6076d78b10c",
+      "title": "Public financial accountability",
+      "subject": "Polity",
+      "homeTopicId": "constitutional-bodies",
+      "links": [
+        {
+          "topicId": "constitutional-bodies",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because public financial accountability supports the study of constitutional posts & bodies. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2012],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:97221c3c97ff7426413d4fa7",
+      "title": "Public financial institutions",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because public financial institutions supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2011],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:330cb05234b0ad85f900f932",
+      "title": "Quasi-judicial institutions",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2016],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:abf332c82299d4d2a6654230",
+      "title": "Rajya Sabha and elections",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because rajya sabha and elections supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a8161c1510af0eb38982be43",
+      "title": "Rajya Sabha powers",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because rajya sabha powers supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2012],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ad2791ba7896856e4af08d5d",
+      "title": "Regional institutions",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because regional institutions supports the study of statutory & regulatory bodies. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:2153e70f91eacca56b76853d",
+      "title": "Representation",
+      "subject": "Polity",
+      "homeTopicId": "elections",
+      "links": [
+        {
+          "topicId": "elections",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because representation supports the study of elections & representation. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:9f29910e07e22da4de8960e5",
+      "title": "Rights institutions",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "constitutional-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 3,
+      "prelims": 0,
+      "years": [2014, 2020, 2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b409b57530021fab586b3c3e",
+      "title": "Rule of law",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because rule of law supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2018, 2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:1eafe2f46c660909baa7ca1e",
+      "title": "Scheduled Tribes",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because scheduled tribes supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2024],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:63ea79efbb3ff536cf59f196",
+      "title": "Scheduled areas",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because scheduled areas supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 4,
+      "years": [2019, 2022, 2023, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:619f0dd9761ce4d4d7b43bb1",
+      "title": "Scheduled areas and tribal safeguards",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2026],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:324e8c69ffa1fb216ccb1a61",
+      "title": "Security and rights",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because security and rights supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2023],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a790908bde374500d098654c",
+      "title": "Separation of powers",
+      "subject": "Polity",
+      "homeTopicId": "separation-of-powers",
+      "links": [
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "executive-judiciary",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2019, 2020],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:939b1ec0d325197244e06a6e",
+      "title": "State Assembly Speaker",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because state assembly speaker supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2018],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:4418eded420babe9ecdd5c63",
+      "title": "State and territory executive",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because state and territory executive supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a7abae408f8c66d44b53d0d8",
+      "title": "State executive",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because state executive supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2014, 2018, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a7572432ff608e1fbc3c95c5",
+      "title": "State judicial institutions",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because state judicial institutions supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2009],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:469f529e7a8ac84a66dc9725",
+      "title": "State legislative procedure",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "legislatures",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because state legislative procedure supports the study of parliament & state legislatures. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:784a610b65e0e0f1c48930e5",
+      "title": "State legislatures",
+      "subject": "Polity",
+      "homeTopicId": "legislatures",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 1,
+      "years": [2015, 2021],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:c01a5ee775d19353d5ba8b15",
+      "title": "State reorganisation",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 1,
+      "years": [2013, 2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e84a9ae019590d90d28a7882",
+      "title": "Supreme Court jurisdiction",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because supreme court jurisdiction supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 3,
+      "years": [2010, 2012, 2014],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:47ea21d54fb145e4734a3c8b",
+      "title": "Tribal constitutional safeguards",
+      "subject": "Polity",
+      "homeTopicId": "constitution",
+      "links": [
+        {
+          "topicId": "constitution",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because tribal constitutional safeguards supports the study of constitution & its foundations. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2015],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:f3c9244f141d4735a4fd89d8",
+      "title": "Tribal local government",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because tribal local government supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2012, 2013],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:e68b4c5388259a5d36f7ecaf",
+      "title": "Tribunals",
+      "subject": "Polity",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "separation-of-powers",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 3,
+      "prelims": 0,
+      "years": [2018, 2019, 2025],
+      "flaggedRows": 1,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:3d830345fa414e490d4f947c",
+      "title": "Union Territory administration",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because union territory administration supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 1,
+      "years": [2009],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:fcb368367b145fa03ec4901c",
+      "title": "Union executive",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because union executive supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2014, 2015],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:7006ad174af022d0e6b45082",
+      "title": "Union executive organization",
+      "subject": "Polity",
+      "homeTopicId": "executive-judiciary",
+      "links": [
+        {
+          "topicId": "executive-judiciary",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because union executive organization supports the study of executive, judiciary & groups. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2009],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:8aaa3fe4ccedf156b46cd68d",
+      "title": "Union territories",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        },
+        {
+          "topicId": "legislatures",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b234ccdbcbae2a77143d8cd1",
+      "title": "Urban local government",
+      "subject": "Polity",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "editorial-placement",
+          "explanation": "Placed here for revision because urban local government supports the study of federalism & local government. The register does not itself tag this theme to this Mains bullet.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 0,
+      "prelims": 2,
+      "years": [2009, 2011],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:b346e1b5e8ededbd7842ace8",
+      "title": "Child protection",
+      "subject": "Social Justice",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2025],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:ebbd61b5b167ff3d0cad6a5b",
+      "title": "Rights institutions",
+      "subject": "Social Justice",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2018],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:a4c0b583672f7230d606b2cb",
+      "title": "Welfare implementation",
+      "subject": "Social Justice",
+      "homeTopicId": "federalism",
+      "links": [
+        {
+          "topicId": "federalism",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 2,
+      "prelims": 0,
+      "years": [2013, 2019],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    },
+    {
+      "id": "microtheme:745ac09eaad5d87816bbc55c",
+      "title": "Women's institutions",
+      "subject": "Social Justice",
+      "homeTopicId": "statutory-bodies",
+      "links": [
+        {
+          "topicId": "statutory-bodies",
+          "type": "register-tag",
+          "explanation": "The supplied question register links this theme to this syllabus bullet. This is an editorial PYQ mapping, not a legal relationship.",
+          "sourceIds": ["pyq-register-july-2026", "upsc-cse-2026"]
+        }
+      ],
+      "mains": 1,
+      "prelims": 0,
+      "years": [2017],
+      "flaggedRows": 0,
+      "status": "outline-only",
+      "sourceId": "pyq-register-july-2026"
+    }
+  ]
+}
