@@ -5,7 +5,9 @@
 Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/1
 Repository: https://github.com/drvarunkrishnakv/polity-atlas
 Branch: `feat/fundamental-rights-graph`. Assisting tool: Codex.
-Foundation commit: `826d9b9`. App commit and PR: see this branch's Git history / PR.
+Foundation commit: `826d9b9`. App implementation commit: `1718a3d`.
+PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/2 (open for user review).
+Later documentation-only commits may follow; use the actual branch head to resume.
 
 ## Completed
 
