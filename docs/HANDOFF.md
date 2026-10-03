@@ -4,7 +4,9 @@
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/5
 - Branch: `codex/show-complete-theme`, based on hover fix handover `44610b2`.
-  Assisting tool: Codex. Use the actual branch head when resuming.
+  Assisting tool: Codex. Implementation commit: `f8428d7`.
+- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/6 (open).
+  Later handover-only commits may follow; use the actual branch head when resuming.
 - All 41 concepts and 46 edges in the current example render immediately and
   remain present through selection, search, camera movement and Reset. Removed
   per-node Reveal controls and obsolete expansion logic. Academic records unchanged.
