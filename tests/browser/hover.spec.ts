@@ -13,7 +13,13 @@ test("hover keeps cards and edges visible without losing the pinned inspector", 
   const edgeCount = await page.locator(".react-flow__edge").count();
   expect(edgeCount).toBeGreaterThan(0);
   // Exercise card centres and all four boundaries, including wrapped titles.
-  for (const id of ["a14", "a21", "fr", "a25", "a29"]) {
+  for (const id of [
+    "right-equality",
+    "right-freedom",
+    "fr",
+    "right-religion",
+    "right-cultural",
+  ]) {
     const node = page.locator(`[data-concept="${id}"]`);
     const box = (await node.boundingBox())!;
     for (const [dx, dy] of [
@@ -67,5 +73,7 @@ test("hover keeps cards and edges visible without losing the pinned inspector", 
   });
   await page.mouse.move(5, 5);
   await expect(page.locator('[data-concept="fr"]')).toHaveClass(/active/);
-  await expect(page.locator('[data-concept="a29"]')).not.toHaveClass(/active/);
+  await expect(page.locator('[data-concept="right-cultural"]')).not.toHaveClass(
+    /active/,
+  );
 });

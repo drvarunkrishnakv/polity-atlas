@@ -10,6 +10,14 @@ details; hovering previews the direct neighbourhood only. Camera framing never
 changes which records are present. Off-screen nodes remain discoverable through
 the overview, topic index and linked names in the inspector.
 The selected restrained canvas mock is docs/design/selected-canvas-option-2.png.
+The approved refinement uses a neutral main topic, purple rights categories, blue
+Articles, amber judgments, teal applications and rose current-affairs examples.
+Every card also has a text type label; omitted Articles carry an explicit badge.
+
+The six categories form the teaching skeleton. Their Articles connect to cases
+and applications; substantive cross-links remain intact. Supporting and historical
+provisions occupy labelled reference areas and do not become extra rights categories.
+Hover preview is labelled independently from pinned details.
 
 ## Labels and evidence
 

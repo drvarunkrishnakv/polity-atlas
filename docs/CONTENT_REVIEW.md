@@ -1,17 +1,23 @@
 # Fundamental Rights example: content review
 
-Release: `2026.10.03.1`. Reviewed against identified sources on 2026-10-03.
+Release: `2026.10.04.1`. Original records checked 2026-10-03; category structure
+checked 2026-10-04. See the change history below for the affected records.
 Assisting author/reviewer: Codex. This is a source-grounded sample, not an exhaustive
 legal update service or a human-subject-expert certification.
 
 ## Coverage
 
-41 nodes; 46 explained edges; seven paraphrased Mains question angles. The provision
+47 nodes; 52 explained edges; seven paraphrased Mains question angles. The provision
 skeleton covers Articles 12–35, including 21A, 31A/B/C and historical omitted
 31, 31D and 32A. Additional nodes cover Article 226, Article 359, selected judicial
 interpretations and editorial applications. Case law coverage is intentionally selective.
 
 ## Evidence
+
+- Six-category classification: PIB, *70 Years of Indian Constitution*, page 59;
+  Article membership also follows the headings of Part III in the 2024 text.
+  Includes Article 21A within the freedom category. Supporting and omitted
+  provisions are presented separately; they are not additional rights categories.
 
 - Constitution: official Legislative Department 2024 English PDF, through the 106th
   Amendment. Part III and relevant Article 226 / 359 text. Do not infer later legal
@@ -49,3 +55,37 @@ or automatically imported. Current-affairs expansion remains a future manual bat
 Review the usefulness and density of this example before adding more judgments,
 current-affairs batches or other subjects. Re-check affected legal claims when adding
 new decisions or amendments; preserve unchanged record IDs and source provenance.
+
+
+## Change history
+
+### 2026.10.04.1 — Six-category teaching structure
+
+Reason: the flat Part III graph made individual provisions look like additional
+categories of Fundamental Rights. The user requested a clear teaching skeleton.
+Assisting author/reviewer: Codex. Structure checked on 2026-10-04.
+
+Sources: [PIB, 70 Years of Indian Constitution, p. 59](https://static.pib.gov.in/WriteReadData/ebooklat/Flip-Book/constfiles/files/basic-html/page59.html)
+and the existing official 2024 Constitution source (Part III headings and Articles).
+No claim of a fresh review of every legal development since the original release.
+
+- Added six category IDs: `right-equality`, `right-freedom`, `right-exploitation`,
+  `right-religion`, `right-cultural`, `right-remedies`.
+- Equality: 14–18. Freedom: 19–22 including 21A. Exploitation: 23–24.
+  Religion: 25–28. Cultural/educational: 29–30. Remedies: 32.
+- All 41 pre-existing concept IDs retained. Only the `fr` recall summary, meaning
+  and sources changed academically; other existing study prose is preserved.
+- Article 226 and Article 359 now use the Article type, rather than Context.
+  The content and their legal scope remain unchanged.
+- Added spatial memberships and repositioned cards for the teaching layout.
+  Reference regions distinguish supporting Articles 12, 13, 31A/B/C, 33–35 from
+  omitted Articles 31, 31D and 32A. Regions are presentation, not extra rights.
+- Retired the 30 `fr--<article-id>` display edges from the previous release.
+  Their broad Part III containment is not repudiated: 19 guarantees now sit under
+  the six category nodes, and 11 supporting/historical provisions use contextual
+  links from Constitution. New relationships have new IDs; no ID was repurposed.
+  The six `fr--right-*` edges introduce the categories. Prior records remain in Git.
+- All pre-existing cross-connection IDs, explanations and source references retained;
+  edge roles added to distinguish structural, contextual and substantive links.
+- Totals: 47 concepts, 52 explained relationships, seven unchanged PYQ angles.
+  No embeddings, corpus retrieval, private source publication or new case generation.

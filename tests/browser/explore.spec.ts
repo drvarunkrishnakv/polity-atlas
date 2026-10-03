@@ -29,8 +29,8 @@ test("paper to subject to graph; all concepts, select and reset", async ({
   await expect(page.getByRole("button", { name: /Reveal/ })).toHaveCount(0);
   await expect(page.locator('[data-concept="puttaswamy"]')).toBeVisible();
   await expect(page.locator('[data-concept="privacy"]')).toHaveCount(1);
-  await expect(page.locator(".concept-card")).toHaveCount(41);
-  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
+  await expect(page.locator(".concept-card")).toHaveCount(47);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(52);
   await page
     .getByRole("textbox", { name: "Search concepts" })
     .fill("Puttaswamy");
@@ -51,8 +51,8 @@ test("paper to subject to graph; all concepts, select and reset", async ({
   await expect(
     page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
   ).toBeVisible();
-  await expect(page.locator(".concept-card")).toHaveCount(41);
-  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
+  await expect(page.locator(".concept-card")).toHaveCount(47);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(52);
   expect(errors).toEqual([]);
 });
 test("search empty state, topic index, link explanation and responsive bounds", async ({
@@ -140,7 +140,7 @@ test("base view, keyboard node activation and inspector persistence", async ({
     fullPage: true,
   });
   if (test.info().project.name === "desktop") {
-    await page.locator('[data-concept="a14"]').hover();
+    await page.locator('[data-concept="right-freedom"]').hover();
     await expect(
       page.getByRole("heading", { name: "Article 21", exact: true }),
     ).toBeVisible();
@@ -174,8 +174,8 @@ test("privacy chain is present on arrival and framing only moves the camera", as
   page,
 }) => {
   await page.goto("/#/gs2/polity?node=a21");
-  await expect(page.locator(".concept-card")).toHaveCount(41);
-  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
+  await expect(page.locator(".concept-card")).toHaveCount(47);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(52);
   await expect(page.getByRole("button", { name: /Reveal/ })).toHaveCount(0);
   await expect(page.locator('[data-concept="puttaswamy"]')).not.toHaveClass(
     /dimmed/,
@@ -198,8 +198,8 @@ test("privacy chain is present on arrival and framing only moves the camera", as
   for (const id of ["a21", "puttaswamy", "privacy"]) {
     await expect(page.locator(`[data-concept="${id}"]`)).toBeInViewport();
   }
-  await expect(page.locator(".concept-card")).toHaveCount(41);
-  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
+  await expect(page.locator(".concept-card")).toHaveCount(47);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(52);
   await page.screenshot({
     path: `output/qa/${test.info().project.name}-privacy-chain.png`,
     fullPage: true,
@@ -209,6 +209,6 @@ test("privacy chain is present on arrival and framing only moves the camera", as
     page.getByRole("heading", { name: "Privacy", exact: true }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Reset", exact: true }).click();
-  await expect(page.locator(".concept-card")).toHaveCount(41);
+  await expect(page.locator(".concept-card")).toHaveCount(47);
   await expect(page.locator('[data-concept="privacy"]')).toHaveCount(1);
 });

@@ -50,13 +50,17 @@ explicit action. Never put provider credentials in frontend code.
 
 ## First example
 
-Open GS II → Polity. All 41 concepts and 46 links are already on the canvas.
-Select Article 21 → Puttaswamy → Privacy without revealing anything. Hover changes
+Open GS II → Polity. All 47 concepts and 52 links are already on the canvas.
+Start with the six rights categories, then select Right to Freedom → Article 21 →
+Puttaswamy → Privacy without revealing anything. Selecting a category frames its
+Articles. Node tints and text labels distinguish categories, Articles, judgments,
+applications, events and context. Supporting and omitted provisions sit in separate
+labelled reference areas. Hover changes
 highlighting; click/tap pins the inspector. “Frame connections” only moves the
 camera. Use the overview, pan/zoom or Fit graph to explore off-screen concepts,
 and “Why?” for relationship evidence. Reset preserves the complete graph.
 
 Desktop uses a right inspector; smaller screens support closing details and phones
 use a bottom sheet. The graph deliberately pans beyond the screen at readable zoom.
-The sample has 41 nodes, 46 relationships and seven Mains angles. Its current-affairs
+The sample has 47 nodes, 52 relationships and seven Mains angles. Its current-affairs
 example is dated 2024. See docs/CONTENT_REVIEW.md for scope and source limitations.

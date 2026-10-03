@@ -17,3 +17,10 @@
   selection pins details. Camera framing and the overview aid navigation without
   changing content visibility. Named gateways are reserved for real neighbouring
   microthemes; this single-theme example has none yet.
+
+- 2026-10-04: User approved six-category teaching structure and type-coloured boxes.
+  Categories precede Articles; cases and applications keep their cross-links.
+  Main topic is neutral; categories purple, Articles blue, judgments amber,
+  applications teal, current affairs rose. Labels supplement colour. Supporting
+  and omitted provisions are visibly separate. Hover preview and pinned details
+  have independent labels. No per-node disclosure or automatic corpus regeneration.

@@ -26,6 +26,16 @@ no longer controls rendering. Cross-microtheme links should become explicit name
 gateways only when a real destination and sourced relationship exist. This release
 contains one microtheme; no placeholder gateways or new academic edges are added.
 
+## Teaching structure and presentation
+
+Category records and sourced structural edges belong to the content release. Edge
+roles distinguish `structure`, `context` and `connection`; legal vs analytical
+classification remains separate. Existing Article IDs remain stable. Spatial
+regions and node-type labels/colours live in `graph/presentation.ts`; region boxes
+are not extra nodes or inferred academic links. All concepts still render at once.
+The initial desktop camera frames the topic and six categories. Selecting a category
+frames its Articles; phone navigation also exposes the six categories in the sidebar.
+
 ## Content changes
 
 Keep IDs stable. Increment a content release version, review changed nodes/edges,

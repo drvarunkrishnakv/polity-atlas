@@ -97,3 +97,23 @@ lower left. Physical-device and Safari validation remain outstanding.
 Final validation: `npm run check` passed; browser suite 22 passed, two mouse-only
 cases skipped on touch profiles. Evidence: `docs/design/complete-theme-desktop.png`,
 `docs/design/privacy-chain-desktop.png`, `docs/design/privacy-chain-phone.png`.
+
+
+## Six-category teaching graph — 2026-10-04
+
+User-approved change: the topic now introduces six purple rights-category cards,
+which connect to blue Article cards. Amber judgments, teal concepts/applications
+and rose dated events retain their cross-links. Every type has a text badge; main
+topic/category sizes reinforce hierarchy. Supporting and omitted provisions have
+separate labelled reference regions. No new per-node disclosure controls.
+
+Desktop starts with all six categories in view. On phone, readable card sizing and
+the six-category sidebar provide navigation; selecting a category frames its
+Articles. Verified the Freedom → Article 21 → Puttaswamy → Privacy interactions.
+Hover preview and pinned details have distinct labels. All 47 concepts and 52
+edges remain rendered; highlighting stays one hop. Physical devices/Safari remain
+unverified; the screenshots and browser profiles use Chromium.
+
+Final checks: `npm run check` passed (including nine content/graph tests); browser
+suite 25 passed, two mouse-only cases skipped. Evidence: `docs/design/six-categories-desktop.png`,
+`docs/design/typed-nodes-desktop.png`, `docs/design/freedom-articles-phone.png`.

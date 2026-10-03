@@ -17,6 +17,12 @@ export function validateGraph(graph: GraphRelease): string[] {
   for (const n of graph.nodes) {
     if (!n.title || !n.meaning || !n.bullets.length || !n.sources.length)
       errors.push(`Incomplete node: ${n.id}`);
+    if (
+      n.groupId &&
+      !ids.has(n.groupId) &&
+      !["supporting", "historical"].includes(n.groupId)
+    )
+      errors.push(`Unknown teaching group: ${n.id}`);
     if (n.sources.some((s) => !sourceIds.has(s)))
       errors.push(`Unknown source on ${n.id}`);
   }
@@ -30,6 +36,8 @@ export function validateGraph(graph: GraphRelease): string[] {
       e.evidence.some((s) => !sourceIds.has(s))
     )
       errors.push(`Unsupported edge: ${e.id}`);
+    if (e.role && !["structure", "context", "connection"].includes(e.role))
+      errors.push(`Invalid teaching role: ${e.id}`);
     if (!["direct", "analytical"].includes(e.classification))
       errors.push(`Invalid relationship: ${e.id}`);
   }
