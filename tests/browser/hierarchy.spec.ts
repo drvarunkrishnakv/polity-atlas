@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("six categories lead to Articles and coloured judgments without disclosure", async ({
   page,
 }) => {
-  await page.goto("/#/gs2/polity");
+  await page.goto("/#/gs2/polity/fundamental-rights");
   await expect(page.locator(".concept-card.kind-category")).toHaveCount(6);
   await expect(page.locator(".concept-card")).toHaveCount(47);
   await expect(page.locator(".react-flow__edge")).toHaveCount(52);

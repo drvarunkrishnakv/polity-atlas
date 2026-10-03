@@ -1,5 +1,41 @@
 # Handoff
 
+## Polity syllabus overview — 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/11
+- Branch: `codex/polity-syllabus-overview`, based on appearance handover `a67a75f`.
+  Assisting tool: Codex. Implementation commit: `5bddfa7`.
+- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/12 (open).
+  A handover-only commit follows; use the actual branch head when resuming.
+- Polity now opens a nine-topic syllabus overview. Topic canvases show all mapped
+  themes; selecting a theme opens its coverage outline. Search, sidebar lists,
+  back navigation, persistent appearance and old node bookmarks work. Fundamental
+  Rights has a dedicated route and a Polity breadcrumb back to the overview.
+- Separate catalogue `2026.10.04.1`: 139 Polity themes (118 Mains / 210 Prelims)
+  and 15 related-subject themes (30 / 16), preserving canonical IDs. Two Polity
+  themes remain Prelims context. Original tags and 87 new editorial placements
+  are visibly distinguished. Counts overlap across syllabus topics.
+- Reviewed the official 2026 notification and checked five imported register files
+  against their manifest hashes. Accepted per-question counts reconcile with the
+  catalogue. Three original source-quality flags remain disclosed. Private audit:
+  `output/polity-expansion/`; no raw source text or source manifests are published.
+- `npm run check`: passed (format, TypeScript, 14 unit tests, production build,
+  public audit). `npm run test:e2e`: 37 passed, two mouse-only cases skipped on
+  touch. Covers new hierarchy, bounded highlights, counts/references, status gates,
+  legacy bookmarks, reload/history, no overflow, both themes and the hover fix.
+- Screenshots: `docs/design/polity-{overview,theme}-{desktop,phone}.png`.
+  Chromium emulation only; physical devices and Safari remain untested. Vite reports
+  a >500 kB main bundle warning; it is not a build failure. Split catalogue/study
+  loading before substantial additional content releases.
+- Limits: this completes the agreed coverage-map step, not all Polity study notes.
+  Only Fundamental Rights has an authored study example. Mains register ends in
+  2025; 2026 Mains is not ingested. PYQ text and answers are not official-certified.
+  Governance/social justice/IR are outside this core Polity navigation scope.
+- Next: review the syllabus-to-theme structure, then author one coherent next
+  microtheme (DPSP/duties or constitutional amendment/basic structure), preserving
+  sourced connections and shared concept IDs. Do not bulk-generate unchecked graphs.
+  Review this PR into PR #10's branch; no merge or Firebase deployment performed.
+
 ## Dark/light appearance — 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/9
@@ -165,7 +201,7 @@ Keep this task branch for review. Do not bypass main protection. Next agent shou
 read the issue/PR, inspect `git status`, and continue from the actual branch head.
 No uncommitted private corpus file belongs in a handover commit.
 
-## Outstanding decisions / next work
+## Historical outstanding decisions from the initial example
 
 1. User tests Article 21 → Reveal connections → Puttaswamy → Privacy, then reviews
    the first PR before merging the app into main.

@@ -43,3 +43,21 @@ corrections. Do not regenerate the graph or embeddings on each import. A stale c
 must leave the current revision view while remaining in release history.
 
 Weekly manual import/review is a discussed workflow, not a configured schedule.
+
+## Syllabus catalogue versus study content
+
+The nine core Polity syllabus bullets are navigation anchors, not chapter headings.
+Keep official syllabus IDs and canonical microtheme IDs stable. Retain imported
+question-register mappings separately from editorial placements used to make
+Prelims-only themes discoverable under a Mains topic. Each placement has a type,
+explanation and source references. These are taxonomy links, not legal claims.
+
+Keep topic labels and short revision prompts original; link to the notification
+for exact official wording. Do not publish raw question/answer text or the private
+source manifests. Counts are accepted occurrences from the supplied register, not
+independently verified official exam frequency. Preserve quality flags, stage/year
+coverage and cross-subject ownership. Never add overlapping topic counts together.
+
+A theme outline is not a completed study graph. Enable study navigation only when
+an authored destination exists. The six-category teaching structure applies to
+Fundamental Rights; other themes will need their own source-reviewed structures.

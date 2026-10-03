@@ -23,8 +23,9 @@ of record visibility. Touch and keyboard selection have the same capabilities.
 Start at readable zoom, with an overview map and explicit camera controls for the
 full extent. Legacy `initialIds` remains validated for schema compatibility but
 no longer controls rendering. Cross-microtheme links should become explicit named
-gateways only when a real destination and sourced relationship exist. This release
-contains one microtheme; no placeholder gateways or new academic edges are added.
+gateways only when a real destination and sourced relationship exist. The detailed study release
+contains one microtheme; syllabus navigation is a separate catalogue and never
+pretends that mapped themes have authored academic connections.
 
 ## Teaching structure and presentation
 
@@ -60,3 +61,24 @@ storage exceptions fall back to dark and leave in-session switching available.
 `ThemeToggle` is shared by the library and graph. CSS tokens control surfaces,
 text and graph strokes; the minimap uses the same kind classes as concept cards.
 Appearance never changes the content release, traversal or graph positions.
+
+## Syllabus-first navigation
+
+`content/polity-catalog.json` is a separate coverage release: nine syllabus topics,
+154 stable theme IDs, accepted-register counts, original short prompts and explained
+syllabus mappings. `catalog.ts` validates references and resolves memberships.
+Navigation links use `register-tag` or `editorial-placement`; neither asserts a
+legal relationship. The original Fundamental Rights graph is unchanged.
+
+`PolityOverview` renders the selected syllabus scope, with measured dimensions
+retained on hover. All members of that navigation scope render immediately.
+Selecting a topic changes scope; selecting a theme pins its outline and moves the
+camera. No unauthored theme has an enabled study destination. Search and accessible
+sidebar lists provide access to off-screen members. Shared theme IDs appear under
+multiple topics without duplicating their source identity or occurrence counts.
+
+Routes: `#/gs2/polity` is the overview, `#/gs2/polity/topics/<topic-id>` is a topic,
+and `?theme=<stable-theme-id>` pins an outline. The study example lives at
+`#/gs2/polity/fundamental-rights`. Old `#/gs2/polity?node=...` links still open the
+study graph. The Polity breadcrumb returns to the overview. Browser history,
+reload and appearance persistence are covered by browser tests.

@@ -32,3 +32,16 @@ first-use default and store the choice in this browser. Both palettes retain the
 node-type hues and labels. Theme is presentation state above routing; switching
 must preserve selected concept and camera. No system-following or account-sync
 setting is introduced for this two-mode request.
+
+## 2026-10-04 — Syllabus coverage before bulk Polity authoring
+
+Replace the Polity-to-example shortcut with a syllabus overview and PYQ theme
+navigation. Use GS II bullets 1–9 for core Polity; retain overlaps from adjacent
+subjects and a separate supporting Prelims context. Governance/social justice/IR
+remain separate subject scopes. Preserve existing theme IDs and source tags while
+making any new Mains navigation placement explicit.
+
+Maintain a coverage catalogue independent from academic study graphs. An outline
+must never imply that Articles, judgments or current-affairs claims have been
+reviewed. Keep the current example intact and build further authored microthemes
+in affected-record batches after the coverage map is reviewed. No corpus rebuild.

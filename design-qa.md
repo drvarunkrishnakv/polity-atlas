@@ -130,3 +130,18 @@ suite 25 passed, two mouse-only cases skipped. Evidence: `docs/design/six-catego
   its undimmed card tint. Dimmed unrelated nodes intentionally recede.
 - Full browser suite: 31 passed, two hover-only cases skipped on touch. Desktop,
   Pixel 7 and iPad Chromium emulation; physical devices/Safari not checked.
+
+## Polity syllabus expansion — 2026-10-04
+
+- Reviewed overview and pinned-theme screens on desktop and phone. The restrained
+  circuit canvas, type colours, sidebar/bottom sheet and dark/light control persist.
+- The overview shows all nine syllabus topics. Each topic renders every assigned
+  theme immediately; source-tag versus editorial-placement semantics are inspectable.
+- Phone overview trades reading size for the whole structure; the scrollable topic
+  list, zoom and search provide readable navigation. Topic/theme selection centres
+  the camera at reading size. No records are hidden behind per-node reveal.
+- Available Fundamental Rights example has an explicit open action; unauthored
+  themes state that only their syllabus outline is available. No fake case notes.
+- 37 browser cases passed, two mouse-only cases skipped on touch. Four screenshots
+  saved as `docs/design/polity-{overview,theme}-{desktop,phone}.png`.
+- Physical-device/Safari checks and detailed content authoring remain outstanding.

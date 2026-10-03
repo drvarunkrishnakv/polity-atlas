@@ -170,7 +170,7 @@ export function GraphCanvas({
       history.replaceState(
         null,
         "",
-        `#/gs2/polity?node=${encodeURIComponent(id)}`,
+        `#/gs2/polity/fundamental-rights?node=${encodeURIComponent(id)}`,
       );
       if (center || graph.nodes.find((n) => n.id === id)?.kind === "category") {
         setTimeout(() => focusConcept(id), 50);
@@ -185,7 +185,7 @@ export function GraphCanvas({
     setIndexOpen(false);
     setDetailsOpen(true);
     setFocusVersion((v) => v + 1);
-    history.replaceState(null, "", "#/gs2/polity");
+    history.replaceState(null, "", "#/gs2/polity/fundamental-rights");
   };
   useEffect(() => {
     if (!initialized) return;
@@ -273,7 +273,7 @@ export function GraphCanvas({
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <button onClick={() => onNavigate("gs2")}>GS II</button>
           <span>/</span>
-          <span>Polity</span>
+          <button onClick={() => onNavigate("gs2/polity")}>Polity</button>
         </nav>
         <div className="header-actions">
           <div className="search-wrap">

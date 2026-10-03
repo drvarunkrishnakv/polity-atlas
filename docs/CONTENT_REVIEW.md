@@ -89,3 +89,47 @@ No claim of a fresh review of every legal development since the original release
   edge roles added to distinguish structural, contextual and substantive links.
 - Totals: 47 concepts, 52 explained relationships, seven unchanged PYQ angles.
   No embeddings, corpus retrieval, private source publication or new case generation.
+
+## Polity coverage catalogue — 2026.10.04.1
+
+This is a separate syllabus/navigation release, not an expansion of the detailed
+Fundamental Rights academic release. Checked the 2026 UPSC notification, printed
+page 34 (GS II bullets 1–9), against the copied syllabus witness. Original short
+labels/prompts link to the official text; no textbook passages are published.
+
+The imported canonical v3 register and both tagged CSVs match their manifest hashes.
+Each selected theme's counts were reconciled against accepted unique question
+occurrences: 139 Polity themes, 118 Mains and 210 Prelims; 15 adjacent-subject themes,
+30 Mains and 16 Prelims. 154 identities are retained. Mains spans 2013–2025; Prelims
+2009–2026. The 2026 Mains paper is not included in this snapshot.
+
+87 Mains navigation placements were added where no corresponding register tag
+exists. These are editorial placements, not retrospective claims that a Mains PYQ
+asked that theme. Existing tags remain intact. Vague labels were checked against
+associated question stems for navigation placement; official-paper/answer-key
+verification and detailed academic claim review remain outstanding.
+
+| GS II bullet | Navigation topic | Linked themes |
+| --- | --- | --- |
+| 1 | Constitution & its foundations | 49 |
+| 2 | Federalism & local government | 25 |
+| 3 | Separation of powers | 12 |
+| 4 | Comparing constitutions | 3 |
+| 5 | Parliament & State legislatures | 31 |
+| 6 | Executive, judiciary & groups | 35 |
+| 7 | Elections & representation | 7 |
+| 8 | Constitutional posts & bodies | 9 |
+| 9 | Statutory & regulatory bodies | 19 |
+
+Counts overlap. National symbols and Political thought are two additional Polity
+records kept as supporting Prelims context, not extra official Mains bullets.
+Three accepted source rows retain quality flags in Judiciary, Council of Ministers
+and Tribunals; they are disclosed on the affected theme outlines. No supplied
+answer is used as a new study claim. Per-question evidence, hashes and source
+lineage remain in the ignored local expansion audit.
+
+Only Fundamental Rights exposes a study route. Basic structure, DPSP, duties,
+federalism, institutions and other detailed notes/cases still need authoring and
+source review. Syllabus coverage must not be described as completed learning
+content. No embeddings, book corpus, Tracker snapshot or original graph records
+were regenerated or changed.

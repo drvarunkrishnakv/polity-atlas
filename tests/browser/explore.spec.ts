@@ -10,6 +10,15 @@ test("paper to subject to graph; all concepts, select and reset", async ({
   await page
     .getByRole("button", { name: /Polity Indian Constitution/ })
     .click();
+  await page
+    .getByRole("button", { name: "01 · Constitution & its foundations" })
+    .click();
+  await page
+    .getByRole("button", { name: /^Fundamental Rights 7 Mains/ })
+    .click();
+  await page
+    .getByRole("button", { name: "Open Fundamental Rights graph" })
+    .click();
   await expect(
     page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
   ).toBeVisible();
@@ -58,7 +67,7 @@ test("paper to subject to graph; all concepts, select and reset", async ({
 test("search empty state, topic index, link explanation and responsive bounds", async ({
   page,
 }) => {
-  await page.goto("/#/gs2/polity");
+  await page.goto("/#/gs2/polity/fundamental-rights");
   await page
     .getByRole("textbox", { name: "Search concepts" })
     .fill("not-a-concept-xyz");
@@ -97,7 +106,7 @@ test("search empty state, topic index, link explanation and responsive bounds", 
 test("direct link route and keyboard search; selection does not flood graph", async ({
   page,
 }) => {
-  await page.goto("/#/gs2/polity?node=a21");
+  await page.goto("/#/gs2/polity/fundamental-rights?node=a21");
   await expect(
     page.getByRole("heading", { name: "Article 21", exact: true }),
   ).toBeVisible();
@@ -119,7 +128,7 @@ test("direct link route and keyboard search; selection does not flood graph", as
 test("base view, keyboard node activation and inspector persistence", async ({
   page,
 }) => {
-  await page.goto("/#/gs2/polity");
+  await page.goto("/#/gs2/polity/fundamental-rights");
   await expect(
     page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
   ).toBeVisible();
@@ -148,7 +157,7 @@ test("base view, keyboard node activation and inspector persistence", async ({
 });
 
 test("touch selection and close/reopen details", async ({ page }) => {
-  await page.goto("/#/gs2/polity");
+  await page.goto("/#/gs2/polity/fundamental-rights");
   await expect(
     page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
   ).toBeVisible();
@@ -173,7 +182,7 @@ test("development server cannot expose workspace files outside the app", async (
 test("privacy chain is present on arrival and framing only moves the camera", async ({
   page,
 }) => {
-  await page.goto("/#/gs2/polity?node=a21");
+  await page.goto("/#/gs2/polity/fundamental-rights?node=a21");
   await expect(page.locator(".concept-card")).toHaveCount(47);
   await expect(page.locator(".react-flow__edge")).toHaveCount(52);
   await expect(page.getByRole("button", { name: /Reveal/ })).toHaveCount(0);

@@ -38,7 +38,7 @@ export function Library({
         <div className="paper-list">
           {(subject
             ? [
-                ["Polity", "Indian Constitution · Fundamental Rights"],
+                ["Polity", "Indian Constitution · syllabus & PYQ themes"],
                 ["Governance", "Public policy and institutions"],
                 ["International Relations", "India and the world"],
               ]
@@ -70,10 +70,10 @@ export function Library({
         <div className="sample-note">
           <span className="category-dot" />
           <p>
-            <strong>First study map: Fundamental Rights</strong>
+            <strong>Explore Polity through its syllabus</strong>
             <br />
-            Constitutional provisions, selected judgments and seven Mains
-            question angles. Expand connections at your own pace.
+            Nine syllabus topics, mapped PYQ themes and a Fundamental Rights
+            study example. Follow the structure before the details.
           </p>
         </div>
       </main>

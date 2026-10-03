@@ -17,6 +17,15 @@ test("theme persists across screens and reloads without moving the graph", async
   await page
     .getByRole("button", { name: /Polity Indian Constitution/ })
     .click();
+  await page
+    .getByRole("button", { name: "01 · Constitution & its foundations" })
+    .click();
+  await page
+    .getByRole("button", { name: /^Fundamental Rights 7 Mains/ })
+    .click();
+  await page
+    .getByRole("button", { name: "Open Fundamental Rights graph" })
+    .click();
   await expect(page.locator(".react-flow.light")).toBeVisible();
   await page
     .getByTestId("inspector")
@@ -108,7 +117,7 @@ test("theme still switches when persistent storage is unavailable", async ({
       throw new DOMException("Blocked", "SecurityError");
     };
   });
-  await page.goto("/#/gs2/polity?node=a21");
+  await page.goto("/#/gs2/polity/fundamental-rights?node=a21");
   await page.getByRole("button", { name: "Switch to light mode" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
   await expect(
