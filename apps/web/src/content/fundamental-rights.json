@@ -1,0 +1,1338 @@
+{
+  "schemaVersion": 1,
+  "version": "2026.10.03.1",
+  "title": "Fundamental Rights",
+  "scope": "Part III provision skeleton plus selected judgments, applications and PYQ angles; not an exhaustive case-law digest.",
+  "sourceCutoff": "Constitution: 2024 edition. Judgment/event examples: 2017 and 2024. No live current-affairs feed.",
+  "syllabus": {
+    "id": "syllabus:cse2026:GS2:01",
+    "title": "Indian Constitution",
+    "meaning": "Features, amendments, significant provisions and basic structure",
+    "microthemeId": "microtheme:3dc9a2d227339195a31d5617"
+  },
+  "sources": [
+    {
+      "id": "constitution",
+      "title": "Constitution of India · 2024 edition",
+      "url": "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2024/07/20240716890312078.pdf",
+      "locator": "Part III; relevant article and footnotes",
+      "edition": "Through the 106th Amendment; 2024 text",
+      "sha256": "819ba7adc5e5ae4063f26c82472283ba682ddb662e5a7f864cf26984d99b26ed"
+    },
+    {
+      "id": "privacy",
+      "title": "Supreme Court · Puttaswamy (2017)",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "locator": "Order of the Court; Chandrachud J., paras 24 and 325",
+      "edition": "24 August 2017",
+      "sha256": "5367b5b41e21f3d550e185242932b8f5796852de0fabac76699295a644055bf6"
+    },
+    {
+      "id": "bonds",
+      "title": "Supreme Court · Electoral Bonds (2024)",
+      "url": "https://api.sci.gov.in/supremecourt/2017/27935/27935_2017_1_1501_50573_Judgement_15-Feb-2024.pdf",
+      "locator": "Paras 216–217, PDF pp. 149–150",
+      "edition": "15 February 2024",
+      "sha256": "82bcf4466632b6d1e177335874b2c4b5c35c28b967aecd973ab70372e6901c54"
+    },
+    {
+      "id": "taxonomy",
+      "title": "Local PYQ microtheme register",
+      "url": null,
+      "locator": "microtheme:3dc9a2d227339195a31d5617; 7 Mains occurrences",
+      "edition": "July 2026 supplied register; demand evidence, not answer authority"
+    },
+    {
+      "id": "coelho",
+      "title": "Supreme Court · I. R. Coelho (2007)",
+      "url": "https://indiankanoon.org/doc/322504/",
+      "locator": "Conclusion (iii)–(iv); court judgment reproduced by Indian Kanoon",
+      "edition": "11 January 2007"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "constitution",
+      "title": "Constitution",
+      "meaning": "Rights, institutions and limits",
+      "kind": "foundation",
+      "position": {
+        "x": 60,
+        "y": 340
+      },
+      "bullets": [
+        "Part III sets out Fundamental Rights.",
+        "Read guarantees alongside their limits and remedies."
+      ],
+      "mains": "Begin with the constitutional guarantee, then test the restriction.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03"
+    },
+    {
+      "id": "fr",
+      "title": "Fundamental Rights",
+      "meaning": "Part III · Articles 12–35",
+      "kind": "theme",
+      "position": {
+        "x": 350,
+        "y": 330
+      },
+      "bullets": [
+        "Identify the right-holder, duty-bearer and guarantee.",
+        "Distinguish a restriction from a violation.",
+        "Finish with enforcement and an appropriate remedy."
+      ],
+      "mains": "Right → restriction → justification → remedy.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "microthemeId": "microtheme:3dc9a2d227339195a31d5617",
+      "syllabusId": "syllabus:cse2026:GS2:01"
+    },
+    {
+      "id": "a12",
+      "title": "Article 12",
+      "meaning": "Meaning of the State",
+      "kind": "article",
+      "position": {
+        "x": 100,
+        "y": 840
+      },
+      "bullets": [
+        "Identifies bodies covered by “State” in Part III.",
+        "The definition includes government and local or other authorities."
+      ],
+      "mains": "Identify who owes the constitutional obligation.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 12"
+    },
+    {
+      "id": "a13",
+      "title": "Article 13",
+      "meaning": "Laws tested against rights",
+      "kind": "article",
+      "position": {
+        "x": 380,
+        "y": 200
+      },
+      "bullets": [
+        "Inconsistent laws are void to the extent of inconsistency.",
+        "Constitutional amendments have a distinct framework under Article 368."
+      ],
+      "mains": "Identify the law and the precise right it abridges.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 13"
+    },
+    {
+      "id": "a14",
+      "title": "Article 14",
+      "meaning": "Equality before law",
+      "kind": "article",
+      "position": {
+        "x": 80,
+        "y": 100
+      },
+      "bullets": [
+        "Protects every person.",
+        "Pairs equality before law with equal protection of laws."
+      ],
+      "mains": "Ask whether different treatment has a defensible constitutional basis.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 14"
+    },
+    {
+      "id": "a15",
+      "title": "Article 15",
+      "meaning": "Non-discrimination",
+      "kind": "article",
+      "position": {
+        "x": 350,
+        "y": 90
+      },
+      "bullets": [
+        "Protects citizens against specified grounds of discrimination.",
+        "Clauses permit specified special provisions, including for women and children."
+      ],
+      "mains": "Distinguish prohibited discrimination from measures advancing substantive equality.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 15"
+    },
+    {
+      "id": "a16",
+      "title": "Article 16",
+      "meaning": "Public employment equality",
+      "kind": "article",
+      "position": {
+        "x": 620,
+        "y": 90
+      },
+      "bullets": [
+        "Guarantees citizens equality of opportunity in public employment.",
+        "Reservation-related clauses have distinct requirements."
+      ],
+      "mains": "Keep public employment separate from educational admission.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 16"
+    },
+    {
+      "id": "a17",
+      "title": "Article 17",
+      "meaning": "Abolition of untouchability",
+      "kind": "article",
+      "position": {
+        "x": 100,
+        "y": 945
+      },
+      "bullets": [
+        "Abolishes untouchability and forbids its practice.",
+        "Enforcement of resulting disabilities is an offence punishable by law."
+      ],
+      "mains": "Connect social equality with effective enforcement.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 17"
+    },
+    {
+      "id": "a18",
+      "title": "Article 18",
+      "meaning": "Abolition of titles",
+      "kind": "article",
+      "position": {
+        "x": 355,
+        "y": 945
+      },
+      "bullets": [
+        "The State cannot confer titles except military or academic distinctions.",
+        "Rules concerning foreign titles and benefits vary by citizenship and office."
+      ],
+      "mains": "Distinguish prohibited titles from permitted distinctions.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 18"
+    },
+    {
+      "id": "a19",
+      "title": "Article 19",
+      "meaning": "Six freedoms of citizens",
+      "kind": "article",
+      "position": {
+        "x": 800,
+        "y": 245
+      },
+      "bullets": [
+        "Includes expression, assembly, association, movement, residence and profession.",
+        "Each freedom has its own constitutionally specified restrictions."
+      ],
+      "mains": "Name the freedom and its relevant restriction clause; avoid a generic public-interest claim.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 19"
+    },
+    {
+      "id": "a20",
+      "title": "Article 20",
+      "meaning": "Safeguards in conviction",
+      "kind": "article",
+      "position": {
+        "x": 810,
+        "y": 390
+      },
+      "bullets": [
+        "Protects against retrospective criminal punishment and double jeopardy.",
+        "An accused cannot be compelled to be a witness against themselves."
+      ],
+      "mains": "Separate the three safeguards instead of treating them as interchangeable.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 20"
+    },
+    {
+      "id": "a21",
+      "title": "Article 21",
+      "meaning": "Life and personal liberty",
+      "kind": "article",
+      "position": {
+        "x": 660,
+        "y": 530
+      },
+      "bullets": [
+        "Protects every person.",
+        "Deprivation must follow a legally valid procedure."
+      ],
+      "mains": "Start with liberty, examine the procedure, then connect the relevant judicial interpretation.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 21"
+    },
+    {
+      "id": "a21A",
+      "title": "Article 21A",
+      "meaning": "Education for ages 6–14",
+      "kind": "article",
+      "position": {
+        "x": 355,
+        "y": 600
+      },
+      "bullets": [
+        "Requires free and compulsory education for children aged six to fourteen.",
+        "The manner of provision is determined by law."
+      ],
+      "mains": "Connect the guarantee to access and implementation barriers.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 21A"
+    },
+    {
+      "id": "a22",
+      "title": "Article 22",
+      "meaning": "Arrest and detention safeguards",
+      "kind": "article",
+      "position": {
+        "x": 355,
+        "y": 1050
+      },
+      "bullets": [
+        "Ordinary arrest protections include information, counsel and production before a magistrate.",
+        "Preventive detention follows a separate constitutional framework."
+      ],
+      "mains": "Distinguish ordinary arrest safeguards from preventive-detention rules.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 22"
+    },
+    {
+      "id": "a23",
+      "title": "Article 23",
+      "meaning": "Freedom from exploitation",
+      "kind": "article",
+      "position": {
+        "x": 610,
+        "y": 1050
+      },
+      "bullets": [
+        "Prohibits trafficking, begar and similar forced labour.",
+        "Compulsory public service is subject to the stated non-discrimination condition."
+      ],
+      "mains": "Connect coercion and vulnerability with enforcement.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 23"
+    },
+    {
+      "id": "a24",
+      "title": "Article 24",
+      "meaning": "Protection from hazardous work",
+      "kind": "article",
+      "position": {
+        "x": 865,
+        "y": 1050
+      },
+      "bullets": [
+        "Bars employment of children below fourteen in factories, mines or other hazardous employment.",
+        "Broader statutory protection must be distinguished from this constitutional text."
+      ],
+      "mains": "Link protection from exploitation to education and social support.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 24"
+    },
+    {
+      "id": "a25",
+      "title": "Article 25",
+      "meaning": "Conscience and religious practice",
+      "kind": "article",
+      "position": {
+        "x": 80,
+        "y": 590
+      },
+      "bullets": [
+        "Protects all persons, subject to public order, morality, health and other Part III provisions.",
+        "Preserves specified regulatory and social-reform powers."
+      ],
+      "mains": "State both the guarantee and its express limitations.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 25"
+    },
+    {
+      "id": "a26",
+      "title": "Article 26",
+      "meaning": "Religious denomination rights",
+      "kind": "article",
+      "position": {
+        "x": 100,
+        "y": 1155
+      },
+      "bullets": [
+        "Protects denominational religious affairs and related institutional interests.",
+        "Subject to public order, morality and health."
+      ],
+      "mains": "Distinguish individual conscience from denominational autonomy.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 26"
+    },
+    {
+      "id": "a27",
+      "title": "Article 27",
+      "meaning": "Taxes and religious promotion",
+      "kind": "article",
+      "position": {
+        "x": 355,
+        "y": 1155
+      },
+      "bullets": [
+        "Bars compulsion to pay taxes specifically appropriated to promote or maintain a particular religion.",
+        "Read the provision’s specific tax-purpose requirement."
+      ],
+      "mains": "Avoid equating every religion-related expenditure with an Article 27 violation.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 27"
+    },
+    {
+      "id": "a28",
+      "title": "Article 28",
+      "meaning": "Religious instruction in institutions",
+      "kind": "article",
+      "position": {
+        "x": 610,
+        "y": 1155
+      },
+      "bullets": [
+        "Rules differ by state maintenance, administration, recognition and aid.",
+        "The article includes an endowment exception and consent safeguards."
+      ],
+      "mains": "Identify the type of institution before applying the rule.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 28"
+    },
+    {
+      "id": "a29",
+      "title": "Article 29",
+      "meaning": "Culture and admission safeguards",
+      "kind": "article",
+      "position": {
+        "x": 40,
+        "y": 450
+      },
+      "bullets": [
+        "Protects a section of citizens with a distinct language, script or culture.",
+        "Clause (2) addresses admission discrimination in state-maintained or aided institutions."
+      ],
+      "mains": "Do not assume every Article 29 protection is confined to minorities.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 29"
+    },
+    {
+      "id": "a30",
+      "title": "Article 30",
+      "meaning": "Minority educational institutions",
+      "kind": "article",
+      "position": {
+        "x": 1120,
+        "y": 1155
+      },
+      "bullets": [
+        "Religious and linguistic minorities may establish and administer educational institutions.",
+        "State aid cannot discriminate merely on minority management."
+      ],
+      "mains": "Connect cultural autonomy with educational governance.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 30"
+    },
+    {
+      "id": "a31",
+      "title": "Article 31",
+      "meaning": "Property provision · omitted",
+      "kind": "article",
+      "position": {
+        "x": 100,
+        "y": 1260
+      },
+      "bullets": [
+        "Article 31 was omitted by the 44th Amendment.",
+        "The constitutional property guarantee is now in Article 300A, outside Part III."
+      ],
+      "mains": "Do not describe property as a current Fundamental Right.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 31"
+    },
+    {
+      "id": "a31A",
+      "title": "Article 31A",
+      "meaning": "Specified laws protected",
+      "kind": "article",
+      "position": {
+        "x": 355,
+        "y": 1260
+      },
+      "bullets": [
+        "Protects specified categories of laws against Articles 14 and 19 challenges, subject to conditions.",
+        "Read the listed categories and provisos."
+      ],
+      "mains": "Identify the exact constitutional protection before claiming immunity.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 31A"
+    },
+    {
+      "id": "a31B",
+      "title": "Article 31B",
+      "meaning": "Ninth Schedule protection",
+      "kind": "article",
+      "position": {
+        "x": 610,
+        "y": 1260
+      },
+      "bullets": [
+        "Concerns listed Acts and Regulations.",
+        "Under I. R. Coelho (2007), Ninth Schedule insertions on or after 24 April 1973 remain subject to basic-structure review."
+      ],
+      "mains": "Do not assume a Ninth Schedule entry ends all constitutional scrutiny.",
+      "sources": ["constitution", "coelho"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 31B; I. R. Coelho conclusions (iii)–(iv)"
+    },
+    {
+      "id": "a31C",
+      "title": "Article 31C",
+      "meaning": "Directive-principle protection",
+      "kind": "article",
+      "position": {
+        "x": 865,
+        "y": 1260
+      },
+      "bullets": [
+        "Operative protection concerns laws giving effect to Article 39(b) or (c).",
+        "The 2024 edition records judicial invalidation of the attempted extension to all DPSPs."
+      ],
+      "mains": "Specify the directive principle and avoid claiming blanket immunity for all welfare laws.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 31C"
+    },
+    {
+      "id": "a32",
+      "title": "Article 32",
+      "meaning": "Constitutional remedies",
+      "kind": "article",
+      "position": {
+        "x": 80,
+        "y": 230
+      },
+      "bullets": [
+        "Guarantees access to the Supreme Court to enforce Part III rights.",
+        "The Court can issue appropriate directions, orders and writs."
+      ],
+      "mains": "End with the enforceable right and the remedy sought.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 32"
+    },
+    {
+      "id": "a33",
+      "title": "Article 33",
+      "meaning": "Rights in specified services",
+      "kind": "article",
+      "position": {
+        "x": 100,
+        "y": 1365
+      },
+      "bullets": [
+        "Parliament may modify rights for specified forces and related services.",
+        "The purpose is proper discharge of duties and maintenance of discipline."
+      ],
+      "mains": "State the institutional context and constitutional purpose of modification.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 33"
+    },
+    {
+      "id": "a34",
+      "title": "Article 34",
+      "meaning": "Martial-law context",
+      "kind": "article",
+      "position": {
+        "x": 355,
+        "y": 1365
+      },
+      "bullets": [
+        "Parliament may provide indemnity and validate specified acts in a martial-law area.",
+        "This is distinct from the emergency provisions."
+      ],
+      "mains": "Keep martial law and constitutional emergency analytically separate.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 34"
+    },
+    {
+      "id": "a35",
+      "title": "Article 35",
+      "meaning": "Parliament’s legislative role",
+      "kind": "article",
+      "position": {
+        "x": 610,
+        "y": 1365
+      },
+      "bullets": [
+        "Reserves lawmaking on specified Part III matters to Parliament.",
+        "Includes matters referred to in Articles 16(3), 32(3), 33 and 34."
+      ],
+      "mains": "Identify legislative competence as well as the substantive right.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 35"
+    },
+    {
+      "id": "dpsp",
+      "title": "Directive Principles",
+      "meaning": "Part IV · goals of governance",
+      "kind": "foundation",
+      "position": {
+        "x": 1090,
+        "y": 745
+      },
+      "bullets": [
+        "Article 37 distinguishes non-enforceability from their fundamental role in governance.",
+        "Article 31C concerns specified connections to Article 39(b) and (c)."
+      ],
+      "mains": "Examine how rights and policy goals can be pursued together.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Articles 37, 39, 31C"
+    },
+    {
+      "id": "a226",
+      "title": "Article 226",
+      "meaning": "High Court writ jurisdiction",
+      "kind": "foundation",
+      "position": {
+        "x": -180,
+        "y": 235
+      },
+      "bullets": [
+        "High Courts can issue writs for Fundamental Rights and for other purposes."
+      ],
+      "mains": "Distinguish the scope of Article 226 from Article 32.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 226"
+    },
+    {
+      "id": "a359",
+      "title": "Article 359",
+      "meaning": "Emergency enforcement limits",
+      "kind": "foundation",
+      "position": {
+        "x": 1050,
+        "y": 400
+      },
+      "bullets": [
+        "A Presidential order can suspend access to courts for specified rights during an emergency.",
+        "Articles 20 and 21 are excluded from this power."
+      ],
+      "mains": "Distinguish the right from the ability to move a court to enforce it.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 359(1)"
+    },
+    {
+      "id": "equality",
+      "title": "Substantive equality",
+      "meaning": "Addressing unequal starting points",
+      "kind": "application",
+      "position": {
+        "x": 340,
+        "y": -90
+      },
+      "bullets": [
+        "Formal equal treatment and corrective measures answer different problems.",
+        "Article 15 contains specific enabling provisions."
+      ],
+      "mains": "Explain how a targeted measure advances equality, then examine its design.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "relationNote": "Editorial application; not an independent constitutional article."
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy",
+      "meaning": "Dignity and personal autonomy",
+      "kind": "application",
+      "position": {
+        "x": 1070,
+        "y": 610
+      },
+      "bullets": [
+        "Privacy is protected within Part III.",
+        "Restrictions require constitutional justification."
+      ],
+      "mains": "Identify the intrusion, its purpose and the safeguards against disproportionate interference.",
+      "sources": ["privacy"],
+      "reviewedOn": "2026-10-03"
+    },
+    {
+      "id": "maneka",
+      "title": "Maneka Gandhi (1978)",
+      "meaning": "Fair procedure; connected rights",
+      "kind": "judgment",
+      "position": {
+        "x": 1050,
+        "y": 95
+      },
+      "bullets": [
+        "Article 21 procedure must be fair, just and reasonable.",
+        "Read Articles 14, 19 and 21 together where applicable."
+      ],
+      "mains": "Use Maneka Gandhi (1978) to connect procedural fairness with liberty and equality.",
+      "sources": ["privacy"],
+      "reviewedOn": "2026-10-03",
+      "fullTitle": "Maneka Gandhi v. Union of India",
+      "date": "1978-01-25",
+      "locator": "Puttaswamy (2017), Chandrachud J., para 23, PDF pp. 22–23: discussion of Maneka Gandhi",
+      "status": "Historical holding; supported here by later Supreme Court discussion."
+    },
+    {
+      "id": "puttaswamy",
+      "title": "Puttaswamy (2017)",
+      "meaning": "Privacy as a fundamental right",
+      "kind": "judgment",
+      "position": {
+        "x": 1030,
+        "y": 525
+      },
+      "bullets": [
+        "The nine-judge Bench recognised constitutional protection for privacy.",
+        "Privacy is not absolute; restrictions need justification."
+      ],
+      "mains": "In Puttaswamy (2017), the Supreme Court recognised privacy as a fundamental right.",
+      "sources": ["privacy"],
+      "reviewedOn": "2026-10-03",
+      "fullTitle": "Justice K. S. Puttaswamy (Retd.) and Another v. Union of India and Others",
+      "date": "2017-08-24",
+      "locator": "Order of the Court; Chandrachud J., para 325",
+      "status": "2017 privacy ruling; distinguish it from the 2018 Aadhaar decision."
+    },
+    {
+      "id": "bonds",
+      "title": "Electoral Bonds (2024)",
+      "meaning": "Political funding and disclosure",
+      "kind": "judgment",
+      "position": {
+        "x": 1080,
+        "y": 260
+      },
+      "bullets": [
+        "Non-disclosure provisions violated Article 19(1)(a).",
+        "Unlimited corporate contributions were held arbitrary under Article 14."
+      ],
+      "mains": "Use the 2024 electoral-bonds judgment to connect transparency, equality and democratic accountability.",
+      "sources": ["bonds"],
+      "reviewedOn": "2026-10-03",
+      "fullTitle": "Association for Democratic Reforms and Another v. Union of India and Others",
+      "date": "2024-02-15",
+      "locator": "Paras 216–217; PDF pp. 149–150",
+      "status": "Dated judgment example; not a live current-affairs feed."
+    },
+    {
+      "id": "disclosure",
+      "title": "Funding disclosure",
+      "meaning": "Transparency in electoral finance",
+      "kind": "event",
+      "position": {
+        "x": 1320,
+        "y": 390
+      },
+      "bullets": [
+        "The 2024 judgment directed disclosure of electoral-bond funding information.",
+        "This is a dated application of constitutional scrutiny."
+      ],
+      "mains": "Connect a concrete funding-disclosure example to the voter’s right to information.",
+      "sources": ["bonds"],
+      "reviewedOn": "2026-10-03",
+      "date": "2024-02-15",
+      "status": "Historical current-affairs example, preserved with its date."
+    },
+    {
+      "id": "a31D",
+      "title": "Article 31D",
+      "meaning": "Anti-national activities · omitted",
+      "kind": "article",
+      "position": {
+        "x": 1380,
+        "y": 1100
+      },
+      "bullets": [
+        "Omitted by the 43rd Amendment.",
+        "Included for historical orientation, not as an operative provision."
+      ],
+      "mains": "Distinguish historical restrictions from the current constitutional framework.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 31D and omission footnote"
+    },
+    {
+      "id": "a32A",
+      "title": "Article 32A",
+      "meaning": "State-law review exclusion · omitted",
+      "kind": "article",
+      "position": {
+        "x": 1380,
+        "y": 1210
+      },
+      "bullets": [
+        "Omitted by the 43rd Amendment.",
+        "Included for historical orientation, not as an operative provision."
+      ],
+      "mains": "Distinguish historical restrictions from the current constitutional framework.",
+      "sources": ["constitution"],
+      "reviewedOn": "2026-10-03",
+      "locator": "Article 32A and omission footnote"
+    }
+  ],
+  "edges": [
+    {
+      "id": "constitution--fr",
+      "source": "constitution",
+      "target": "fr",
+      "label": "contains",
+      "explanation": "Part III of the Constitution sets out Fundamental Rights.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a12",
+      "source": "fr",
+      "target": "a12",
+      "label": "contains",
+      "explanation": "Part III includes Article 12.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a13",
+      "source": "fr",
+      "target": "a13",
+      "label": "contains",
+      "explanation": "Part III includes Article 13.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a14",
+      "source": "fr",
+      "target": "a14",
+      "label": "contains",
+      "explanation": "Part III includes Article 14.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a15",
+      "source": "fr",
+      "target": "a15",
+      "label": "contains",
+      "explanation": "Part III includes Article 15.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a16",
+      "source": "fr",
+      "target": "a16",
+      "label": "contains",
+      "explanation": "Part III includes Article 16.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a17",
+      "source": "fr",
+      "target": "a17",
+      "label": "contains",
+      "explanation": "Part III includes Article 17.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a18",
+      "source": "fr",
+      "target": "a18",
+      "label": "contains",
+      "explanation": "Part III includes Article 18.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a19",
+      "source": "fr",
+      "target": "a19",
+      "label": "contains",
+      "explanation": "Part III includes Article 19.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a20",
+      "source": "fr",
+      "target": "a20",
+      "label": "contains",
+      "explanation": "Part III includes Article 20.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a21",
+      "source": "fr",
+      "target": "a21",
+      "label": "contains",
+      "explanation": "Part III includes Article 21.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a21A",
+      "source": "fr",
+      "target": "a21A",
+      "label": "contains",
+      "explanation": "Part III includes Article 21A.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a22",
+      "source": "fr",
+      "target": "a22",
+      "label": "contains",
+      "explanation": "Part III includes Article 22.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a23",
+      "source": "fr",
+      "target": "a23",
+      "label": "contains",
+      "explanation": "Part III includes Article 23.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a24",
+      "source": "fr",
+      "target": "a24",
+      "label": "contains",
+      "explanation": "Part III includes Article 24.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a25",
+      "source": "fr",
+      "target": "a25",
+      "label": "contains",
+      "explanation": "Part III includes Article 25.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a26",
+      "source": "fr",
+      "target": "a26",
+      "label": "contains",
+      "explanation": "Part III includes Article 26.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a27",
+      "source": "fr",
+      "target": "a27",
+      "label": "contains",
+      "explanation": "Part III includes Article 27.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a28",
+      "source": "fr",
+      "target": "a28",
+      "label": "contains",
+      "explanation": "Part III includes Article 28.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a29",
+      "source": "fr",
+      "target": "a29",
+      "label": "contains",
+      "explanation": "Part III includes Article 29.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a30",
+      "source": "fr",
+      "target": "a30",
+      "label": "contains",
+      "explanation": "Part III includes Article 30.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a31",
+      "source": "fr",
+      "target": "a31",
+      "label": "contains",
+      "explanation": "Part III includes Article 31. It is omitted in the current text.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a31A",
+      "source": "fr",
+      "target": "a31A",
+      "label": "contains",
+      "explanation": "Part III includes Article 31A.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a31B",
+      "source": "fr",
+      "target": "a31B",
+      "label": "contains",
+      "explanation": "Part III includes Article 31B.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a31C",
+      "source": "fr",
+      "target": "a31C",
+      "label": "contains",
+      "explanation": "Part III includes Article 31C.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a32",
+      "source": "fr",
+      "target": "a32",
+      "label": "contains",
+      "explanation": "Part III includes Article 32.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a33",
+      "source": "fr",
+      "target": "a33",
+      "label": "contains",
+      "explanation": "Part III includes Article 33.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a34",
+      "source": "fr",
+      "target": "a34",
+      "label": "contains",
+      "explanation": "Part III includes Article 34.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a35",
+      "source": "fr",
+      "target": "a35",
+      "label": "contains",
+      "explanation": "Part III includes Article 35.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a14--maneka",
+      "source": "a14",
+      "target": "maneka",
+      "label": "read together",
+      "explanation": "The discussion of Maneka Gandhi connects equality with fair procedure and liberty.",
+      "evidence": ["privacy"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a19--maneka",
+      "source": "a19",
+      "target": "maneka",
+      "label": "read together",
+      "explanation": "Article 19 scrutiny remains relevant where a measure also affects liberty.",
+      "evidence": ["privacy"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a21--maneka",
+      "source": "a21",
+      "target": "maneka",
+      "label": "interpreted by",
+      "explanation": "Maneka Gandhi requires a fair, just and reasonable procedure.",
+      "evidence": ["privacy"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a21--puttaswamy",
+      "source": "a21",
+      "target": "puttaswamy",
+      "label": "interpreted by",
+      "explanation": "The Court located privacy in life and liberty and the freedoms of Part III.",
+      "evidence": ["privacy"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "puttaswamy--privacy",
+      "source": "puttaswamy",
+      "target": "privacy",
+      "label": "recognises",
+      "explanation": "The nine-judge ruling recognises the constitutional right to privacy.",
+      "evidence": ["privacy"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a19--bonds",
+      "source": "a19",
+      "target": "bonds",
+      "label": "applied in",
+      "explanation": "The non-disclosure provisions were invalidated under Article 19(1)(a).",
+      "evidence": ["bonds"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a14--bonds",
+      "source": "a14",
+      "target": "bonds",
+      "label": "applied in",
+      "explanation": "The unlimited corporate-contribution amendment was invalidated under Article 14.",
+      "evidence": ["bonds"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "bonds--disclosure",
+      "source": "bonds",
+      "target": "disclosure",
+      "label": "directed",
+      "explanation": "Paragraph 217 directs funding disclosure to give effect to the ruling.",
+      "evidence": ["bonds"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a15--equality",
+      "source": "a15",
+      "target": "equality",
+      "label": "illustrates",
+      "explanation": "Special provisions under Article 15 help explain substantive equality.",
+      "evidence": ["constitution"],
+      "classification": "analytical",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a14--equality",
+      "source": "a14",
+      "target": "equality",
+      "label": "compare",
+      "explanation": "Compare general equality with targeted measures under Article 15.",
+      "evidence": ["constitution"],
+      "classification": "analytical",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a32--a226",
+      "source": "a32",
+      "target": "a226",
+      "label": "compare remedies",
+      "explanation": "Article 226 extends to Fundamental Rights and other purposes; Article 32 concerns Part III enforcement.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a20--a359",
+      "source": "a20",
+      "target": "a359",
+      "label": "protected exception",
+      "explanation": "Article 359(1) excludes Articles 20 and 21.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a21--a359",
+      "source": "a21",
+      "target": "a359",
+      "label": "protected exception",
+      "explanation": "Article 359(1) excludes Articles 20 and 21.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a31C--dpsp",
+      "source": "a31C",
+      "target": "dpsp",
+      "label": "specified protection",
+      "explanation": "Operative Article 31C protection concerns Article 39(b) and (c), not all DPSPs.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "a21A--a24",
+      "source": "a21A",
+      "target": "a24",
+      "label": "complements",
+      "explanation": "Education and protection from hazardous child employment can support one another in a Mains analysis.",
+      "evidence": ["constitution"],
+      "classification": "analytical",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a31D",
+      "source": "fr",
+      "target": "a31D",
+      "label": "historical provision",
+      "explanation": "The current Part III text records Article 31D as omitted by the 43rd Amendment.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    },
+    {
+      "id": "fr--a32A",
+      "source": "fr",
+      "target": "a32A",
+      "label": "historical provision",
+      "explanation": "The current Part III text records Article 32A as omitted by the 43rd Amendment.",
+      "evidence": ["constitution"],
+      "classification": "direct",
+      "reviewStatus": "source-checked"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "pyq_july2026:3cdfecc43da56057b6b2db19",
+      "year": 2023,
+      "angle": "Expanding life and liberty",
+      "conceptId": "a21",
+      "source": "taxonomy",
+      "note": "Paraphrased demand from supplied register; not an official answer or verified paper transcription."
+    },
+    {
+      "id": "pyq_july2026:b2f0548ea0082ad9b2f545ce",
+      "year": 2022,
+      "angle": "Movement and residence: limits",
+      "conceptId": "a19",
+      "source": "taxonomy",
+      "note": "Paraphrased demand from supplied register; not an official answer or verified paper transcription."
+    },
+    {
+      "id": "pyq_july2026:5d9f1c44c8f83939effd81d5",
+      "year": 2017,
+      "angle": "Privacy and the scope of rights",
+      "conceptId": "puttaswamy",
+      "source": "taxonomy",
+      "note": "Paraphrased demand from supplied register; not an official answer or verified paper transcription."
+    },
+    {
+      "id": "pyq_july2026:05fc9d625bdc860631470ef9",
+      "year": 2015,
+      "angle": "Environment and Article 21",
+      "conceptId": "a21",
+      "source": "taxonomy",
+      "note": "Paraphrased demand from supplied register; not an official answer or verified paper transcription."
+    },
+    {
+      "id": "pyq_july2026:2614c61072daa795ccebbc9c",
+      "year": 2014,
+      "angle": "Expression and its limits",
+      "conceptId": "a19",
+      "source": "taxonomy",
+      "note": "Paraphrased demand from supplied register; not an official answer or verified paper transcription."
+    },
+    {
+      "id": "pyq_july2026:25e1a3ac4a4267e1a4b22b74",
+      "year": 2013,
+      "angle": "Section 66A and expression",
+      "conceptId": "a19",
+      "source": "taxonomy",
+      "note": "Paraphrased demand from supplied register; not an official answer or verified paper transcription."
+    },
+    {
+      "id": "pyq_july2026:43240bed11206aa0fa445f75",
+      "year": 2024,
+      "angle": "Privacy and prenatal DNA testing",
+      "conceptId": "privacy",
+      "source": "taxonomy",
+      "note": "Paraphrased demand from supplied register; not an official answer or verified paper transcription."
+    }
+  ],
+  "initialIds": [
+    "constitution",
+    "fr",
+    "a13",
+    "a14",
+    "a15",
+    "a16",
+    "a19",
+    "a20",
+    "a21",
+    "a21A",
+    "a25",
+    "a29",
+    "a32",
+    "dpsp"
+  ]
+}

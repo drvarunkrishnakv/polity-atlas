@@ -21,6 +21,7 @@ Node.js 22.12+ and npm are required.
 npm ci
 npm run dev
 npm run check
+npx playwright install chromium
 npm run test:e2e
 ```
 
@@ -46,3 +47,14 @@ Read `AGENTS.md` before editing. One issue and branch per task; independent work
 for simultaneous agents. Pull requests, automated checks and previews precede
 merging. Main is protected on the public remote. Production release is a separate,
 explicit action. Never put provider credentials in frontend code.
+
+## First example
+
+Open GS II → Polity. Search for Article 21, select it, and reveal its connections.
+Hover changes highlighting; click/tap pins the inspector. Use “Why?” to inspect
+a relationship, the topic index for all provisions, and Reset for the base view.
+
+Desktop uses a right inspector; smaller screens support closing details and phones
+use a bottom sheet. The graph deliberately pans beyond the screen at readable zoom.
+The sample has 41 nodes, 46 relationships and seven Mains angles. Its current-affairs
+example is dated 2024. See docs/CONTENT_REVIEW.md for scope and source limitations.

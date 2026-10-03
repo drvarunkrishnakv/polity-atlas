@@ -1,0 +1,7 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Enable owner-scoped reads only when authentication and publishing are wired.
+    match /{document=**} { allow read, write: if false; }
+  }
+}
