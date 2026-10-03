@@ -9,6 +9,7 @@ import {
   type NodeProps,
   type Node,
   type Edge,
+  type OnNodesChange,
 } from "@xyflow/react";
 import {
   MagnifyingGlass,
@@ -91,6 +92,25 @@ export function GraphCanvas({
     : "fr";
   const [selected, setSelected] = useState<string | null>(validInitial);
   const [hovered, setHovered] = useState<string | null>(null);
+  const [measurements, setMeasurements] = useState<
+    Record<string, NonNullable<ConceptNode["measured"]>>
+  >({});
+  // Controlled nodes must retain React Flow's measured dimensions. Dropping
+  // them on hover hides the cards for remeasurement and interrupts pointer entry.
+  const onNodesChange = useCallback<OnNodesChange<ConceptNode>>((changes) => {
+    setMeasurements((current) => {
+      let next = current;
+      for (const change of changes) {
+        if (change.type !== "dimensions" || !change.dimensions) continue;
+        const previous = current[change.id];
+        const { width, height } = change.dimensions;
+        if (previous?.width === width && previous?.height === height) continue;
+        if (next === current) next = { ...current };
+        next[change.id] = { width, height };
+      }
+      return next;
+    });
+  }, []);
   const [visible, setVisible] = useState(() => [
     ...new Set([...graph.initialIds, validInitial]),
   ]);
@@ -172,6 +192,7 @@ export function GraphCanvas({
       id: concept.id,
       type: "concept",
       position: concept.position,
+      measured: measurements[concept.id],
       data: {
         concept,
         active: active === concept.id,
@@ -343,6 +364,7 @@ export function GraphCanvas({
               nodes={nodes}
               edges={edges}
               nodeTypes={nodeTypes}
+              onNodesChange={onNodesChange}
               fitView
               fitViewOptions={{ padding: 0.12, maxZoom: 1.15 }}
               minZoom={0.2}

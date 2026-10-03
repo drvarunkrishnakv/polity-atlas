@@ -1,5 +1,27 @@
 # Handoff
 
+## Hover flicker follow-up — 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/3
+- Branch: `codex/fix-hover-flicker`, based on `bfe97a7` of the still-open app PR #2.
+  Assisting tool: Codex. Use `git rev-parse HEAD` for the current fix commit.
+- Root cause reproduced in Chromium: hover rebuilt controlled nodes without their
+  measured dimensions, temporarily hiding cards and removing edges. Hiding the
+  hovered card also cleared the hover state.
+- Fix: retain dimensions reported by React Flow's `onNodesChange`; keep content
+  records and selection semantics unchanged. No corpus or CSS changes.
+- Regression: test card centres and four edges across five nodes, checking every
+  animation frame for lost highlights, hidden nodes or disappearing connections;
+  verify stable bounds, pinned inspector and returning to selection on pointer exit.
+- Checks: `npm run check` passed (format, TypeScript, six unit tests, build, public
+  audit). `npm run test:e2e`: 19 passed, two hover-only cases skipped on touch
+  profiles. Existing desktop/phone/tablet interaction tests passed.
+- Screenshots: `docs/design/hover-fixed-desktop.png` and
+  `docs/design/hover-fixed-phone.png`; Chromium emulation, not physical devices.
+- Next: review the fix PR into the original feature branch, then review app PR #2
+  into main. Firebase deployment remains unconfigured and unauthorized by this fix.
+
+
 ## Current task and ownership
 
 Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/1
