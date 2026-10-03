@@ -1,6 +1,6 @@
 import { resolve } from "node:path";
 import { test, expect } from "@playwright/test";
-test("paper to subject to graph; select, expand and reset", async ({
+test("paper to subject to graph; all concepts, select and reset", async ({
   page,
 }) => {
   const errors: string[] = [];
@@ -26,9 +26,11 @@ test("paper to subject to graph; select, expand and reset", async ({
   await expect(
     page.getByRole("heading", { name: "Article 21", exact: true }),
   ).toBeVisible();
-  await page.getByRole("button", { name: /Reveal .* more on canvas/ }).click();
+  await expect(page.getByRole("button", { name: /Reveal/ })).toHaveCount(0);
   await expect(page.locator('[data-concept="puttaswamy"]')).toBeVisible();
-  await expect(page.locator('[data-concept="privacy"]')).toHaveCount(0);
+  await expect(page.locator('[data-concept="privacy"]')).toHaveCount(1);
+  await expect(page.locator(".concept-card")).toHaveCount(41);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
   await page
     .getByRole("textbox", { name: "Search concepts" })
     .fill("Puttaswamy");
@@ -49,6 +51,8 @@ test("paper to subject to graph; select, expand and reset", async ({
   await expect(
     page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
   ).toBeVisible();
+  await expect(page.locator(".concept-card")).toHaveCount(41);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
   expect(errors).toEqual([]);
 });
 test("search empty state, topic index, link explanation and responsive bounds", async ({
@@ -129,7 +133,7 @@ test("base view, keyboard node activation and inspector persistence", async ({
   await expect(
     page.getByRole("heading", { name: "Article 21", exact: true }),
   ).toBeVisible();
-  await page.getByRole("button", { name: /Reveal .* more on canvas/ }).click();
+  await expect(page.getByRole("button", { name: /Reveal/ })).toHaveCount(0);
   await page.waitForTimeout(400);
   await page.screenshot({
     path: `output/qa/${test.info().project.name}-expanded.png`,
@@ -164,4 +168,47 @@ test("development server cannot expose workspace files outside the app", async (
   const response = await request.get("/@fs/" + resolve("README.md"));
   expect(response.status()).toBe(403);
   expect(await response.text()).not.toContain("## Product contract");
+});
+
+test("privacy chain is present on arrival and framing only moves the camera", async ({
+  page,
+}) => {
+  await page.goto("/#/gs2/polity?node=a21");
+  await expect(page.locator(".concept-card")).toHaveCount(41);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
+  await expect(page.getByRole("button", { name: /Reveal/ })).toHaveCount(0);
+  await expect(page.locator('[data-concept="puttaswamy"]')).not.toHaveClass(
+    /dimmed/,
+  );
+  await expect(page.locator('[data-concept="privacy"]')).toHaveClass(/dimmed/);
+  await page
+    .getByTestId("inspector")
+    .getByRole("button", { name: "Puttaswamy (2017) interpreted by" })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "Puttaswamy (2017)", exact: true }),
+  ).toBeVisible();
+  await expect(page.locator('[data-concept="privacy"]')).not.toHaveClass(
+    /dimmed/,
+  );
+  await page
+    .getByRole("button", { name: "Frame connections", exact: true })
+    .click();
+  await page.waitForTimeout(400);
+  for (const id of ["a21", "puttaswamy", "privacy"]) {
+    await expect(page.locator(`[data-concept="${id}"]`)).toBeInViewport();
+  }
+  await expect(page.locator(".concept-card")).toHaveCount(41);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(46);
+  await page.screenshot({
+    path: `output/qa/${test.info().project.name}-privacy-chain.png`,
+    fullPage: true,
+  });
+  await page.locator('[data-concept="privacy"]').click();
+  await expect(
+    page.getByRole("heading", { name: "Privacy", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Reset", exact: true }).click();
+  await expect(page.locator(".concept-card")).toHaveCount(41);
+  await expect(page.locator('[data-concept="privacy"]')).toHaveCount(1);
 });

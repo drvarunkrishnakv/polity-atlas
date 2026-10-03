@@ -4,7 +4,7 @@
 
 - `apps/web`: TypeScript, React, Vite and React Flow. Browser-only exploration.
 - `apps/web/src/content`: original curated graph release; stable node/edge/source IDs.
-- `apps/web/src/graph`: pure selection, bounded highlighting and expansion functions.
+- `apps/web/src/graph`: pure selection, bounded highlighting and graph validation.
 - `tooling`: public content validation and publication checks.
 - `tests`: integration/browser tests. Private source files are never CI dependencies.
 - Ignored `data`, `config`, `scripts`: existing independent Python retrieval corpus.
@@ -14,10 +14,17 @@ so every clone runs without a Firebase account. Firebase Hosting config is inclu
 Firestore and Authentication are the chosen future private publishing boundary,
 not a pretend backend or required dependency for this sample. No live AI per hover.
 
-Only selected subjects/neighbourhoods should be loaded as the corpus grows. Never
-render thousands of records simply because they exist. Canvas is a graph, not a tree;
-multiple paths and cross-links are supported. Direct-neighbour highlighting is
-independent of expansion. Touch and keyboard selection have the same capabilities.
+Load one curated microtheme at a time as the corpus grows. Render its complete
+node and edge set; never hide records behind per-node expansion or recursively
+light up the corpus. Canvas is a graph, not a tree; multiple paths and cross-links
+are supported. Direct-neighbour highlighting and camera framing are independent
+of record visibility. Touch and keyboard selection have the same capabilities.
+
+Start at readable zoom, with an overview map and explicit camera controls for the
+full extent. Legacy `initialIds` remains validated for schema compatibility but
+no longer controls rendering. Cross-microtheme links should become explicit named
+gateways only when a real destination and sourced relationship exist. This release
+contains one microtheme; no placeholder gateways or new academic edges are added.
 
 ## Content changes
 

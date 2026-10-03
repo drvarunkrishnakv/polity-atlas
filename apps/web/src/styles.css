@@ -556,7 +556,7 @@ p {
   color: #8eabc3;
   padding-top: 0;
 }
-.expand-button {
+.frame-button {
   margin-top: 13px;
   width: 100%;
   display: flex;
@@ -1015,7 +1015,7 @@ p {
 
 .graph-viewport {
   position: absolute;
-  inset: 106px 0 66px;
+  inset: 132px 0 66px;
 }
 .react-flow__attribution {
   bottom: 2px !important;
@@ -1067,4 +1067,49 @@ p {
 }
 .node-meaning {
   font-size: 11px;
+}
+
+/* The overview makes off-screen concepts discoverable without hiding nodes. */
+.canvas-heading .scope-status {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+}
+.react-flow__minimap {
+  background: #0c141c;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.react-flow__minimap svg {
+  width: 138px;
+  height: 90px;
+}
+@media (max-width: 700px) {
+  .react-flow__minimap.react-flow__panel {
+    width: 82px;
+    margin: 6px;
+    left: 0;
+    right: auto;
+  }
+  .react-flow__minimap svg {
+    width: 80px;
+    height: 55px;
+  }
+  .canvas-heading .scope-status {
+    font-size: 9px;
+  }
+  .graph-viewport {
+    top: 112px;
+  }
+}
+
+.react-flow__minimap {
+  margin-bottom: 24px;
+}
+.react-flow__minimap::before {
+  content: "Whole theme";
+  display: block;
+  padding: 5px 7px 0;
+  font-size: 9px;
+  color: var(--muted);
 }

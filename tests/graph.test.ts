@@ -1,11 +1,7 @@
 import { describe, it, expect } from "vitest";
 import data from "../apps/web/src/content/fundamental-rights.json";
 import type { GraphRelease } from "../apps/web/src/content/types";
-import {
-  neighbours,
-  expand,
-  validateGraph,
-} from "../apps/web/src/graph/explore";
+import { neighbours, validateGraph } from "../apps/web/src/graph/explore";
 const graph = data as GraphRelease;
 describe("Published knowledge graph", () => {
   it("has stable, unique, source-backed records and valid references", () =>
@@ -57,12 +53,11 @@ describe("Published knowledge graph", () => {
     expect(related.has("a15")).toBe(false);
     expect(related.has("privacy")).toBe(false);
   });
-  it("expands the chosen neighbourhood only and preserves existing nodes", () => {
-    const result = expand("a21", ["fr", "a14"], graph.edges);
-    expect(result).toContain("a14");
-    expect(result).toContain("puttaswamy");
-    expect(result).not.toContain("privacy");
-    expect(expand("a21", result, graph.edges)).toEqual(result);
+  it("connects the already-loaded privacy chain without recursive highlighting", () => {
+    expect(neighbours("puttaswamy", graph.edges)).toEqual(
+      new Set(["puttaswamy", "a21", "privacy"]),
+    );
+    expect(neighbours("privacy", graph.edges).has("a21")).toBe(false);
   });
   it("rejects broken references and unsupported edges", () => {
     const broken = structuredClone(graph);

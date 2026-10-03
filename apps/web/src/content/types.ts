@@ -49,6 +49,7 @@ export interface GraphRelease {
   nodes: Concept[];
   edges: Connection[];
   sources: Source[];
+  /** Legacy view metadata; the entire microtheme now renders on arrival. */
   initialIds: string[];
   pyqs: {
     id: string;
