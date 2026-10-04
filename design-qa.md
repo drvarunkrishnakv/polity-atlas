@@ -145,3 +145,23 @@ suite 25 passed, two mouse-only cases skipped. Evidence: `docs/design/six-catego
 - 37 browser cases passed, two mouse-only cases skipped on touch. Four screenshots
   saved as `docs/design/polity-{overview,theme}-{desktop,phone}.png`.
 - Physical-device/Safari checks and detailed content authoring remain outstanding.
+
+
+## On-demand screens — 2026-10-04
+
+- Preserved the selected canvas, full theme membership and node-type colours.
+- Independently reviewed desktop overview and phone Privacy chain captures at
+  `docs/design/on-demand-desktop-polity-overview.png` and
+  `docs/design/on-demand-phone-privacy-chain.png`.
+- Simulated a failed production study-chunk request; reviewed recovery screenshots
+  `docs/design/on-demand-error-{desktop,phone}.png`. Concise recovery text and
+  buttons stay within viewport (1586px desktop, 412px phone); technical diagnostics
+  remain in the console. These screenshots show an intentionally induced failure.
+- Full independent browser run: 55 passed, two mouse-only cases skipped on touch.
+  Includes dark/light persistence, all 47 study nodes/52 links, bounded hover,
+  fresh canonical/legacy bookmarks, failed-import reload, and delayed imports.
+- Independently observed production JS requests: home/GS II fetch only entry;
+  overview fetches catalogue and engine; study fetches study records and engine.
+  Entry falls from 582.73kB to 212.63kB (raw), 156.78kB to 66.52kB (gzip).
+  These are payload measurements, not a device speed benchmark.
+- Chromium emulation only; physical devices and Safari remain untested.

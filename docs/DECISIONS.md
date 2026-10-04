@@ -45,3 +45,12 @@ Maintain a coverage catalogue independent from academic study graphs. An outline
 must never imply that Articles, judgments or current-affairs claims have been
 reviewed. Keep the current example intact and build further authored microthemes
 in affected-record batches after the coverage map is reviewed. No corpus rebuild.
+
+## 2026-10-04 — Load each graph screen with its own dataset
+
+Home and GS II stay in the entry and download neither React Flow, the syllabus
+catalogue, nor the Fundamental Rights graph. Overview and topic routes load the
+catalogue screen only. Study routes, including legacy `?node=` links, load the
+study screen and its graph only. Each screen owns its React Flow provider and
+validates its own data. A stale load must not replace a newer route. Failures
+remain on screen, with Reload and Back to library. No router or global store.

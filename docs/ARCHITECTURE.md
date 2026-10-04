@@ -82,3 +82,21 @@ and `?theme=<stable-theme-id>` pins an outline. The study example lives at
 `#/gs2/polity/fundamental-rights`. Old `#/gs2/polity?node=...` links still open the
 study graph. The Polity breadcrumb returns to the overview. Browser history,
 reload and appearance persistence are covered by browser tests.
+
+## On-demand screen loading
+
+The entry renders the library only. `App` statically imports the library and a
+small route loader. It dynamically imports two screen modules and does not
+import React Flow, the catalogue, or the study graph. `OverviewScreen` validates
+`polity-catalog.json` and renders the syllabus map inside its own
+`ReactFlowProvider` (`key` is the topic id, or `overview`). `StudyScreen`
+validates the Fundamental Rights release through the graph repository and
+renders that canvas inside its own provider. Neither screen imports the other
+dataset.
+
+Query-only changes, including `?theme=` and legacy `?node=`, keep the same
+screen module. `ThemeProvider` stays above both screens, so appearance does not
+remount the graph. A load that finishes after its route changed is ignored.
+Pending and failed loads stay visible: Back to library is available in both,
+and Reload retries a failed import or validation. The bundle size warning is
+left in place; splitting is not hidden by raising `chunkSizeWarningLimit`.
