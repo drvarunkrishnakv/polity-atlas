@@ -23,9 +23,8 @@ of record visibility. Touch and keyboard selection have the same capabilities.
 Start at readable zoom, with an overview map and explicit camera controls for the
 full extent. Legacy `initialIds` remains validated for schema compatibility but
 no longer controls rendering. Cross-microtheme links should become explicit named
-gateways only when a real destination and sourced relationship exist. The detailed study release
-contains one microtheme; syllabus navigation is a separate catalogue and never
-pretends that mapped themes have authored academic connections.
+gateways only when a real destination and sourced relationship exist. Detailed study maps are authored separately from syllabus navigation. Outline-only
+themes never claim academic connections that have not been authored.
 
 ## Teaching structure and presentation
 
@@ -100,3 +99,45 @@ remount the graph. A load that finishes after its route changed is ignored.
 Pending and failed loads stay visible: Back to library is available in both,
 and Reload retries a failed import or validation. The bundle size warning is
 left in place; splitting is not hidden by raising `chunkSizeWarningLimit`.
+
+## Constitution study maps
+
+`content/foundations.json` is the shared constitution bank. It is a separate
+release from `fundamental-rights.json`. A map lists canonical concept and edge
+IDs. `projectMap` builds one `GraphRelease` from those records only: stable IDs
+and meaning are copied, sources are limited to IDs the selected records use,
+and no edge is added unless its ID is on the map. Positions come from
+`graph/layout.ts`. The Fundamental Rights file keeps its authored coordinates.
+
+`content/study-index.json` is the overview's route table. An entry maps one or
+more canonical microtheme IDs to `gs2/polity/study/<slug>` and a title. Two
+catalogue IDs may alias one map. The overview reads this file and the catalogue
+only; it does not import the bank. Home, GS II, syllabus screens and the
+Fundamental Rights route do not download the bank.
+
+Catalogue status `study-map` is valid only when `studyRoute` matches the index.
+`study-example` remains `gs2/polity/fundamental-rights`. Outline themes have no
+study route. The constitution topic lists home themes and related themes
+separately. Its coverage line counts home themes that currently have a study
+example or study map. It does not treat the other syllabus themes as authored.
+
+`#/gs2/polity/study/<slug>` loads `FoundationScreen`, validates the bank and the
+projected graph, and mounts a new React Flow provider for that slug. Selection
+and Reset stay on that path. The topic breadcrumb opens
+`gs2/polity/topics/constitution`. An unknown slug stays on a recovery screen.
+The first bank release covers 37 home identities in 36 maps. The original rights
+release supplies the remaining home identity. Bank validation checks references,
+evidence metadata and projected geometry; unit tests additionally check canonical
+identity, full home coverage, connectedness and the core teaching families.
+
+
+Topic layouts use balanced left/right teaching groups around the root. Descendants
+extend outwards in bounded grids. Context and case nodes remain present outside
+the first teaching ring; framing and the minimap make the full map navigable.
+Coordinates are derived presentation data, never graph edges or evidence.
+A concept may specify a more precise type label (clause, Schedule, statute,
+constitutional Part or historical milestone) without changing traversal semantics.
+
+PYQ angles may carry a Mains/Prelims stage from the source register. The original
+rights release is untouched. Study metadata is small enough for syllabus screens;
+the full bank is a separate lazy chunk, loaded only by a foundation study route.

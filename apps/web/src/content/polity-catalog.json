@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.04.1",
+  "version": "2026.10.04.2",
   "reviewedOn": "2026-10-04",
   "title": "Polity syllabus map",
   "scope": "GS II bullets 1–9 form the Polity navigation spine. Governance, social justice and international relations remain separate subjects; existing overlapping PYQ themes are shown as related themes. National symbols and political thought remain Prelims context, not invented Mains syllabus bullets.",
@@ -227,8 +227,9 @@
       "prelims": 0,
       "years": [2019, 2025],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-morality"
     },
     {
       "id": "microtheme:804d81bb555b5e3064f882e6",
@@ -593,8 +594,9 @@
       "prelims": 1,
       "years": [2021],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/citizenship"
     },
     {
       "id": "microtheme:729cf48f7dcc1b60bc3e5f20",
@@ -671,8 +673,9 @@
       "prelims": 3,
       "years": [2013, 2023, 2024],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitution-making"
     },
     {
       "id": "microtheme:34d6e3ff5d72c612894a8938",
@@ -697,8 +700,9 @@
       "prelims": 5,
       "years": [2013, 2019, 2022, 2023, 2024, 2025],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-amendment"
     },
     {
       "id": "microtheme:f02c0708969a6e63504534e0",
@@ -717,8 +721,9 @@
       "prelims": 1,
       "years": [2019],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/ninth-schedule"
     },
     {
       "id": "microtheme:a47fce66b70745f3af028ba0",
@@ -763,8 +768,9 @@
       "prelims": 1,
       "years": [2026],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/commencement-repeal"
     },
     {
       "id": "microtheme:c3c94f6635b8e4706b38c1c0",
@@ -789,8 +795,9 @@
       "prelims": 0,
       "years": [2015, 2016],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-history"
     },
     {
       "id": "microtheme:d61035419d9947c5cca201e3",
@@ -829,8 +836,9 @@
       "prelims": 1,
       "years": [2024],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-languages"
     },
     {
       "id": "microtheme:a3a1ac01d2874c2c60ad8eb1",
@@ -855,8 +863,9 @@
       "prelims": 0,
       "years": [2025],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-morality"
     },
     {
       "id": "microtheme:3e0e6e49e64da9083ccf7932",
@@ -895,8 +904,9 @@
       "prelims": 0,
       "years": [2016, 2021],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/principles"
     },
     {
       "id": "microtheme:ab4bbb3b5b488d9fd7648790",
@@ -915,8 +925,9 @@
       "prelims": 1,
       "years": [2025],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-provisions"
     },
     {
       "id": "microtheme:4c151a40114a66773378a049",
@@ -935,8 +946,9 @@
       "prelims": 2,
       "years": [2022, 2024],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-remedies"
     },
     {
       "id": "microtheme:d45ad59a671b13757e4d8e99",
@@ -955,8 +967,9 @@
       "prelims": 1,
       "years": [2021],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-property"
     },
     {
       "id": "microtheme:fe254ebcb09f69a6474906a3",
@@ -975,8 +988,9 @@
       "prelims": 1,
       "years": [2020],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-safeguards"
     },
     {
       "id": "microtheme:f456be7c19b4544f3a10a2c1",
@@ -995,8 +1009,9 @@
       "prelims": 1,
       "years": [2024],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-structure"
     },
     {
       "id": "microtheme:1d65764b992c6badc9fb36b4",
@@ -1015,8 +1030,9 @@
       "prelims": 1,
       "years": [2013],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutional-values"
     },
     {
       "id": "microtheme:36519d6431193c4c7cad9542",
@@ -1035,8 +1051,9 @@
       "prelims": 4,
       "years": [2014, 2020, 2021, 2023],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/constitutionalism"
     },
     {
       "id": "microtheme:ee457e16f9c6cbadd0a91e7a",
@@ -1095,8 +1112,9 @@
       "prelims": 1,
       "years": [2026],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/access-to-justice"
     },
     {
       "id": "microtheme:7be7026abcca7453f28c495f",
@@ -1135,8 +1153,9 @@
       "prelims": 1,
       "years": [2017],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/democracy"
     },
     {
       "id": "microtheme:8e0223603352833c3a26bde9",
@@ -1175,8 +1194,9 @@
       "prelims": 13,
       "years": [2010, 2012, 2013, 2014, 2015, 2017, 2020, 2021],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/directive-principles"
     },
     {
       "id": "microtheme:e77f305b69776bc520aaacc8",
@@ -1221,8 +1241,9 @@
       "prelims": 1,
       "years": [2012],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/education-governance"
     },
     {
       "id": "microtheme:d7180cc88c8d8e549ee1961f",
@@ -1399,8 +1420,9 @@
       "prelims": 2,
       "years": [2017, 2018],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/emergency-provisions"
     },
     {
       "id": "microtheme:f34d8d2c49776d167f4b103d",
@@ -1425,8 +1447,9 @@
       "prelims": 0,
       "years": [2022],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/environmental-jurisprudence"
     },
     {
       "id": "microtheme:c97e482455fd40d61226d7b2",
@@ -1445,8 +1468,9 @@
       "prelims": 1,
       "years": [2023],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/equality-reservation"
     },
     {
       "id": "microtheme:9e8277bb9588e26976145277",
@@ -1729,8 +1753,9 @@
       "prelims": 4,
       "years": [2011, 2012, 2015, 2017],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/fundamental-duties"
     },
     {
       "id": "microtheme:3dc9a2d227339195a31d5617",
@@ -1772,8 +1797,9 @@
       "prelims": 1,
       "years": [2026],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/article-13-review"
     },
     {
       "id": "microtheme:b399c9baefb653aef5c59b2d",
@@ -1792,8 +1818,9 @@
       "prelims": 0,
       "years": [2023],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/gender-justice"
     },
     {
       "id": "microtheme:6e04d5093363287432ab33f1",
@@ -1858,8 +1885,9 @@
       "prelims": 1,
       "years": [2020],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/human-rights-foundations"
     },
     {
       "id": "microtheme:a9b41397e55bf69f2db1028e",
@@ -2300,8 +2328,9 @@
       "prelims": 1,
       "years": [2021],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/national-honours"
     },
     {
       "id": "microtheme:a6195047fbdce94ef686ff55",
@@ -2603,8 +2632,9 @@
       "prelims": 7,
       "years": [2017, 2018, 2019, 2021],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/political-concepts"
     },
     {
       "id": "microtheme:ded36ea67e5a26c6f0abcc84",
@@ -2676,8 +2706,9 @@
       "prelims": 4,
       "years": [2017, 2020, 2021],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/preamble"
     },
     {
       "id": "microtheme:34cd18ca6d02395f14a47d9f",
@@ -2942,8 +2973,9 @@
       "prelims": 2,
       "years": [2018, 2023],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/rule-of-law"
     },
     {
       "id": "microtheme:1eafe2f46c660909baa7ca1e",
@@ -2962,8 +2994,9 @@
       "prelims": 1,
       "years": [2024],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/scheduled-tribes"
     },
     {
       "id": "microtheme:63ea79efbb3ff536cf59f196",
@@ -2982,8 +3015,9 @@
       "prelims": 4,
       "years": [2019, 2022, 2023, 2025],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/scheduled-areas"
     },
     {
       "id": "microtheme:619f0dd9761ce4d4d7b43bb1",
@@ -3002,8 +3036,9 @@
       "prelims": 1,
       "years": [2026],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/scheduled-areas-and-tribes"
     },
     {
       "id": "microtheme:324e8c69ffa1fb216ccb1a61",
@@ -3022,8 +3057,9 @@
       "prelims": 1,
       "years": [2023],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/security-and-rights"
     },
     {
       "id": "microtheme:a790908bde374500d098654c",
@@ -3234,8 +3270,9 @@
       "prelims": 1,
       "years": [2015],
       "flaggedRows": 0,
-      "status": "outline-only",
-      "sourceId": "pyq-register-july-2026"
+      "status": "study-map",
+      "sourceId": "pyq-register-july-2026",
+      "studyRoute": "gs2/polity/study/tribal-safeguards"
     },
     {
       "id": "microtheme:f3c9244f141d4735a4fd89d8",

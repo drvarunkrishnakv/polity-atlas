@@ -70,6 +70,9 @@ test("home and GS II do not download graph screens or datasets", async ({
     "GraphCanvas",
     "PolityOverview",
     "fundamental-rights.json",
+    "foundations.json",
+    "study-index.json",
+    "FoundationScreen",
     "polity-catalog.json",
     "xyflow",
   ])
@@ -91,6 +94,7 @@ test("overview loads the catalogue and not the study graph", async ({
   expect(seen).toContain("xyflow");
   expect(seen).not.toContain("StudyScreen");
   expect(seen).not.toContain("fundamental-rights.json");
+  expect(seen).not.toContain("foundations.json");
   expect(seen).not.toContain("GraphCanvas");
 });
 
@@ -107,6 +111,9 @@ test("canonical and legacy study links load the graph and not the catalogue", as
   expect(seen).toContain("xyflow");
   expect(seen).not.toContain("OverviewScreen");
   expect(seen).not.toContain("polity-catalog.json");
+  expect(seen).not.toContain("foundations.json");
+  expect(seen).not.toContain("study-index.json");
+  expect(seen).not.toContain("FoundationScreen");
   expect(seen).not.toContain("PolityOverview");
   await page.reload();
   await expect(page.locator(".concept-card")).toHaveCount(47);
@@ -123,6 +130,7 @@ test("canonical and legacy study links load the graph and not the catalogue", as
   seen = joined(legacyUrls);
   expect(seen).toContain("fundamental-rights.json");
   expect(seen).not.toContain("polity-catalog.json");
+  expect(seen).not.toContain("foundations.json");
   expect(seen).not.toContain("OverviewScreen");
   await legacy.reload();
   await expect(

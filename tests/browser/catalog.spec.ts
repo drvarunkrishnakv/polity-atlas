@@ -38,6 +38,11 @@ test("syllabus overview opens theme outlines and the existing rights graph", asy
   await expect(
     page.getByRole("heading", { name: /Mapped themes/ }),
   ).toBeVisible();
+  await expect(
+    page.getByText(/of \d+ home themes have study maps/),
+  ).toBeVisible();
+  await expect(page.getByText(/Home themes ·/)).toBeVisible();
+  await expect(page.getByText(/Related themes ·/)).toBeVisible();
   await page
     .getByRole("button", { name: /^Fundamental Duties 0 Mains/ })
     .click();
@@ -47,10 +52,16 @@ test("syllabus overview opens theme outlines and the existing rights graph", asy
   await expect(
     page.getByText("Editorial revision placement", { exact: true }),
   ).toBeVisible();
-  await expect(page.getByText(/Detailed provisions, judgments/)).toBeVisible();
-  await expect(page.getByRole("button", { name: /Open .* graph/ })).toHaveCount(
-    0,
-  );
+  await page
+    .getByRole("button", { name: "Open Fundamental Duties map" })
+    .click();
+  await expect(page.locator('[data-concept="a51A-k"]')).toHaveCount(1);
+  await page
+    .getByRole("button", {
+      name: "Constitution & its foundations",
+      exact: true,
+    })
+    .click();
   await page
     .getByRole("textbox", { name: "Search Polity themes" })
     .fill("Fundamental Rights");

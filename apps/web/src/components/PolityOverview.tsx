@@ -24,9 +24,12 @@ import {
 import {
   catalog,
   contextTopic,
+  coverageLine,
+  homeAndRelated,
   topicThemes,
   type CatalogTheme,
 } from "../content/catalog";
+import { studyForTheme } from "../content/study-index";
 import { ThemeToggle } from "./ThemeToggle";
 import { useTheme } from "../theme/ThemeProvider";
 import "@xyflow/react/dist/style.css";
@@ -127,7 +130,9 @@ export function PolityOverview({
         label:
           t.status === "study-example"
             ? "Study example available"
-            : "PYQ theme · outline",
+            : t.status === "study-map"
+              ? "Study map available"
+              : "PYQ theme · outline",
         editorial:
           t.links.find((l) => l.topicId === topic.id)?.type ===
           "editorial-placement",
@@ -245,6 +250,28 @@ export function PolityOverview({
       )
     : [];
   const title = selectedTheme?.title || topic?.title || "Polity syllabus map";
+  const constitution =
+    topic?.id === "constitution" ? homeAndRelated(topic.id) : null;
+  const themeButton = (t: CatalogTheme) => (
+    <button key={t.id} onClick={() => openTheme(t)}>
+      <strong>{t.title}</strong>
+      <small>
+        {t.mains} Mains · {t.prelims} Prelims
+        {t.subject !== "Polity" ? ` · ${t.subject}` : ""}
+      </small>
+      <span>
+        {t.status === "study-example"
+          ? "Study example available →"
+          : t.status === "study-map"
+            ? "Study map available →"
+            : "Theme outline →"}
+      </span>
+    </button>
+  );
+  const studyExamples = catalog.themes.filter(
+    (t) => t.status === "study-example",
+  );
+  const studyMaps = catalog.themes.filter((t) => t.status === "study-map");
   return (
     <div className="app-shell coverage-shell">
       <header className="topbar">
@@ -428,7 +455,8 @@ export function PolityOverview({
               <>
                 <section>
                   <h2>Study map</h2>
-                  {selectedTheme.studyRoute ? (
+                  {selectedTheme.status === "study-example" &&
+                  selectedTheme.studyRoute ? (
                     <>
                       <p className="mains">
                         The Fundamental Rights example connects six rights
@@ -440,6 +468,23 @@ export function PolityOverview({
                         onClick={() => onNavigate(selectedTheme.studyRoute!)}
                       >
                         Open Fundamental Rights graph <ArrowRight size={18} />
+                      </button>
+                    </>
+                  ) : selectedTheme.status === "study-map" &&
+                    selectedTheme.studyRoute ? (
+                    <>
+                      <p className="mains">
+                        {studyForTheme(selectedTheme.id)?.title ??
+                          selectedTheme.title}{" "}
+                        is a reviewed study map for this theme.
+                      </p>
+                      <button
+                        className="frame-button"
+                        onClick={() => onNavigate(selectedTheme.studyRoute!)}
+                      >
+                        Open {studyForTheme(selectedTheme.id)?.title ?? "study"}{" "}
+                        map
+                        <ArrowRight size={18} />
                       </button>
                     </>
                   ) : (
@@ -517,26 +562,33 @@ export function PolityOverview({
                 </section>
                 <section>
                   <h2>Mapped themes · {themes.length}</h2>
+                  {constitution && (
+                    <p className="mains">{coverageLine("constitution")}</p>
+                  )}
                   <p className="muted">
                     Select a theme for its syllabus links and study-map status.
                     Related subjects keep their original identity.
                   </p>
-                  <div className="coverage-list">
-                    {themes.map((t) => (
-                      <button key={t.id} onClick={() => openTheme(t)}>
-                        <strong>{t.title}</strong>
-                        <small>
-                          {t.mains} Mains · {t.prelims} Prelims
-                          {t.subject !== "Polity" ? ` · ${t.subject}` : ""}
-                        </small>
-                        <span>
-                          {t.status === "study-example"
-                            ? "Study example available →"
-                            : "Theme outline →"}
-                        </span>
-                      </button>
-                    ))}
-                  </div>
+                  {constitution ? (
+                    <>
+                      <p className="coverage-section">
+                        Home themes · {constitution.home.length}
+                      </p>
+                      <div className="coverage-list">
+                        {constitution.home.map(themeButton)}
+                      </div>
+                      <p className="coverage-section">
+                        Related themes · {constitution.related.length}
+                      </p>
+                      <div className="coverage-list">
+                        {constitution.related.map(themeButton)}
+                      </div>
+                    </>
+                  ) : (
+                    <div className="coverage-list">
+                      {themes.map(themeButton)}
+                    </div>
+                  )}
                 </section>
               </>
             ) : (
@@ -564,8 +616,9 @@ export function PolityOverview({
                     Another 15 related themes connect from other subjects.
                   </p>
                   <p className="muted">
-                    One study example is available: Fundamental Rights. Other
-                    themes currently have a syllabus outline.
+                    {studyExamples.length === 1 && studyMaps.length === 0
+                      ? "One study example is available: Fundamental Rights. Other themes currently have a syllabus outline."
+                      : `${studyExamples.length + new Set(studyMaps.map((theme) => theme.studyRoute)).size} detailed study maps are available. Other themes retain a syllabus outline.`}
                   </p>
                   <button
                     className="frame-button"

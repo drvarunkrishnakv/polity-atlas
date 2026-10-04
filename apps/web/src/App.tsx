@@ -4,8 +4,25 @@ import { RouteScreen } from "./routing/RouteScreen";
 
 const loadStudy = () =>
   import("./screens/StudyScreen").then((module) => module.StudyScreen);
+const loadFoundation = () =>
+  import("./screens/FoundationScreen").then(
+    (module) => module.FoundationScreen,
+  );
 const loadOverview = () =>
   import("./screens/OverviewScreen").then((module) => module.OverviewScreen);
+
+function foundationSlug(path: string): string | null {
+  if (path === "gs2/polity/study") return "";
+  const prefix = "gs2/polity/study/";
+  if (!path.startsWith(prefix)) return null;
+  const rest = path.slice(prefix.length);
+  if (!rest || rest.includes("/")) return "";
+  try {
+    return decodeURIComponent(rest);
+  } catch {
+    return "";
+  }
+}
 
 export function App() {
   const [route, setRoute] = useState(location.hash.slice(2));
@@ -32,6 +49,18 @@ export function App() {
         failureTitle="Study map unavailable"
         onLibrary={onLibrary}
         render={(Screen) => <Screen onNavigate={navigate} />}
+      />
+    );
+  const slug = foundationSlug(path);
+  if (slug !== null)
+    return (
+      <RouteScreen
+        key="foundation"
+        routeKey={`foundation:${slug}`}
+        load={loadFoundation}
+        failureTitle="Study map unavailable"
+        onLibrary={onLibrary}
+        render={(Screen) => <Screen slug={slug} onNavigate={navigate} />}
       />
     );
   if (path === "gs2/polity" || path.startsWith("gs2/polity/topics/")) {

@@ -1,3 +1,98 @@
+# Constitution foundations: content review
+
+Release: `2026.10.04-foundations.1`, checked 2026-10-04.
+Assisting tools: Grok CLI (`grok-4.7`, `xhigh`) drafted the bank; Codex checked
+sources, corrected and broadened the study records, integrated and tested them.
+Source-checked means agent inspection of cited evidence, not independent legal
+expert certification.
+
+## Scope and counts
+
+- 36 new maps cover 37 home microtheme identities; two constitutional-morality
+  identities share one map. Together with Fundamental Rights, all 38 home identities
+  of Constitution & its foundations have a study destination.
+- 234 concepts, 367 explained edges, 27 source records and 84 paraphrased question
+  angles (14 Mains / 70 Prelims). These are question occurrences in this batch,
+  not a claim about exam frequency or official answer-key correctness.
+- 21 concepts are exact reuses of the original rights records, excluding layout
+  fields. The original 47-node / 52-edge rights release is unchanged.
+- Eleven related themes remain assigned to their later home-topic passes. The other
+  eight syllabus topics and the final cross-topic gateway review are unfinished.
+
+## Evidence and review
+
+Every home theme was matched to its supplied question identities and private book
+retrieval candidates. Broad retrieval sometimes returned headings, so actual book
+pages and targeted primary texts were inspected before authoring. Similarity was
+never accepted as evidence for an academic edge. Raw questions, source passages,
+retrieval logs, PDFs and vectors remain private; no embeddings were regenerated.
+
+The public bank contains original short summaries and a bibliography with URLs,
+editions, source hashes and concept-specific Article/page/paragraph locators.
+Principal evidence:
+
+- Legislative Department, Constitution of India, May 2024 text through the 106th
+  Amendment: relevant Articles, Parts, Schedules and amendment footnotes. This
+  edition alone does not establish developments after its cutoff.
+- M. Laxmikanth, Indian Polity, eighth edition: historical development and making,
+  PDF pp. 12–48; writ distinctions, pp. 147–148. The private book is not published.
+- Official Supreme Court texts: Kesavananda, Minerva Mills, Bommai, Coelho,
+  D.K. Basu, Balaji Raghavan, Vishaka, NALSA, Navtej and Vellore Citizens.
+  Coelho is pinned to paragraph 152; NALSA to paragraph 129; Balaji to paragraph 32.
+- Property Owners Association (2024), CJI paragraph 229; Davinder Singh (2024),
+  CJI paragraph 205; Janhit Abhiyan (2022), majority conclusions. Their holdings
+  are distinguished from one another and from separate opinions.
+- Ramakrishna Mission v Kago Kunya (2019), paragraphs 21–35: the public-duty
+  qualification for Article 226 mandamus. Rajendra N. Shah (2021), majority
+  paragraph 80: Part IXB's limited operation.
+- OHCHR's official UDHR text and CBSE Legal Studies XI, Chapter 1: international
+  human-rights comparison and the political concept of a State. Comparative links
+  do not imply automatic incorporation into domestic law.
+- MHA Citizenship Act compilation and the 11 March 2024 rules. A private Tracker
+  candidate led to checking the 19 August 2026 Gazette instruments: G.S.R. 742(E),
+  rule 11A(6), and S.O. 4583(E). The event describes a specified territorial
+  processing change, not a change to substantive eligibility or Article 11.
+- BPRD's annotated BNSS edition, sections 173–174: cognizable information and the
+  separate non-cognizable procedure. The source is labelled as the BPRD edition.
+
+The Constitution's Fundamental Duties page and the textbook's 1935 Act page were
+also visually inspected against rendered PDFs. This is not a claim that every page
+of every source received a visual transcription audit.
+
+## Corrections to the initial draft
+
+The initial draft overfit several notes to Prelims options and left broad themes
+thin. Review replaced option logic with reusable concepts and Mains reasoning;
+added every operative DPSP Article, all eleven duty clauses, the five writs,
+historical milestones, constitution-making stages, four Preamble values, the
+Parts/Schedules overview, citizenship provisions and language safeguards.
+
+Specific corrections include Article 358's emergency-recital condition, the
+conditional devolution of Panchayat education functions, Fifth/Sixth Schedule
+powers, the scope of mandamus, NALSA's self-identified gender holding, and the
+distinction between historical milestones and current affairs. Editorial teaching
+groups are labelled analytical, rather than represented as legal classifications.
+
+## Boundaries and next updates
+
+This release provides a coherent revision structure, selected judgments and dated
+examples. It is not an exhaustive legal database or a fully updated 2026 statement
+of every law. Current affairs are deliberately selective: two citizenship milestones
+in the new bank and the existing electoral-funding example in Fundamental Rights.
+A weekly Tracker import/approval pipeline is not configured.
+
+PYQ angles indicate demand, not complete model answers. For example, the tribal
+safeguards map covers constitutional status, territory and representation; it does
+not certify every tax proposition appearing in a multi-statement question. New
+statutory or judicial claims require a separate affected-record source review.
+
+Versions and stable IDs allow later additions without rebuilding the corpus.
+Cross-topic connections must be separately justified and reviewed when the other
+home-topic maps exist. Coverage counts must continue to distinguish authored maps,
+canonical identities and related topics.
+
+---
+
 # Fundamental Rights example: content review
 
 Release: `2026.10.04.1`. Original records checked 2026-10-03; category structure

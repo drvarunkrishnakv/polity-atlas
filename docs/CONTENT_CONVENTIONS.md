@@ -61,3 +61,23 @@ coverage and cross-subject ownership. Never add overlapping topic counts togethe
 A theme outline is not a completed study graph. Enable study navigation only when
 an authored destination exists. The six-category teaching structure applies to
 Fundamental Rights; other themes will need their own source-reviewed structures.
+
+
+## First-topic authoring contract
+
+Use the home-topic assignment to decide an authoring batch. Related themes keep
+their own identity and later home pass. A study map may serve multiple catalogue
+identities when they describe the same theme; count maps and identities separately.
+Home coverage means an authored, source-reviewed revision map exists. It does not
+mean exhaustive case-law coverage or that all PYQ answers have been certified.
+
+Keep canonical Article records shared across maps. Map membership selects which
+explained edges apply in that context. Do not generate a relationship merely
+because two records coexist in the bank. The final cross-topic pass must review
+both the explanation and destination before publishing a gateway.
+
+Historical Acts and constitutional milestones use Context with a precise text
+label. Only dated topical examples use Current affairs. Schedules, statutes and
+clauses retain explicit labels instead of all being called Articles. Short Mains
+prompts should explain an analytical use; option-elimination notes belong in PYQ
+context, not the core teaching skeleton.

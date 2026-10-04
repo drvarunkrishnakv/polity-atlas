@@ -54,3 +54,27 @@ catalogue screen only. Study routes, including legacy `?node=` links, load the
 study screen and its graph only. Each screen owns its React Flow provider and
 validates its own data. A stale load must not replace a newer route. Failures
 remain on screen, with Reload and Back to library. No router or global store.
+
+## 2026-10-04 — Shared constitution bank, separate study maps
+
+Further constitution microthemes are projections of one reviewed bank, not
+copies of the Fundamental Rights file. A map includes only the node and edge
+IDs it lists. Shared concept IDs stay stable across maps. Catalogue aliases may
+point two microtheme IDs at one slug. The study index is the only overview
+metadata for those routes; the bank loads when `#/gs2/polity/study/<slug>`
+opens. Each slug gets its own React Flow provider. The empty scaffold is not
+reviewed content, and similarity or co-membership must not invent edges.
+
+
+### First-topic shared bank and outward teaching layout — 2026-10-04
+
+The authoring unit is a home microtheme within one syllabus topic. Several maps
+may reuse a concept without duplicating its identity. The first bank uses 36 map
+projections for 37 identities, alongside the unchanged Fundamental Rights release.
+The final cross-topic integration remains a later source-reviewed pass.
+
+Initial testing showed a single horizontal row made the main headings too small.
+Balanced groups around the root keep the teaching skeleton readable, with details
+extending outwards and all records present. Selection frames groups; one-hop hover
+and pinned details remain separate. Historical milestones use Context, and optional
+specific type labels distinguish Schedules, statutes and Article clauses.
