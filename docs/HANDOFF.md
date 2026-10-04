@@ -4,7 +4,10 @@
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/15
 - Branch: `codex/constitution-foundations`, based on `d4acd51` from PR #14.
-  Implementation is ready for a stacked PR on `codex/graph-on-demand`.
+  Implementation commit: `646de27`.
+  PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/16
+  (stacked on `codex/graph-on-demand`, PR #14). A documentation checkpoint
+  commit follows; resume from the actual branch head.
   No merge, production deployment or remote-protection changes.
 - Assisting tools: Grok CLI (`grok-4.7`, `xhigh`) drafted the engine and content
   in isolated worktrees. Codex independently reviewed, corrected and broadened
