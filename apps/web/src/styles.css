@@ -734,6 +734,24 @@ p {
 .loading {
   padding: 60px;
 }
+.loading h1 + p,
+.loading .route-error-detail {
+  margin-top: 12px;
+}
+.route-error-detail {
+  max-width: 62ch;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+.route-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+.route-actions button {
+  padding: 0 14px;
+}
 .react-flow__panel.top.left {
   display: none;
 }
