@@ -1,5 +1,47 @@
 # Handoff
 
+## On-demand graph screens / Grok coding pilot — 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/13
+- Branch: `codex/graph-on-demand`, based on `3fe9624` of
+  `codex/polity-syllabus-overview`. Implementation commit: `8480840`.
+- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/14 (stacked on PR #12).
+  A handover-only commit follows; resume from the actual branch head.
+- Assisting tools: Grok CLI (`grok-4.7`, `xhigh`) wrote code and review corrections
+  in an isolated worktree. Codex specified scope, reviewed, independently tested,
+  captured screenshots and prepared the PR. No automatic merge or deployment.
+- App entry now imports only the library and small route loader. Two dynamically
+  imported screen modules own React Flow and their respective dataset/validation.
+  Home and GS II download neither engine nor catalogue/study records. Overview
+  and study routes exclude each other's content. No content records changed.
+- Loading/failure states permit Back to library; failures offer Reload. Stale
+  loads cannot replace a newer route. Technical details stay in the console.
+  Fresh canonical/legacy bookmarks, theme persistence, full graph membership,
+  bounded highlighting and prior camera/selection behaviour are preserved.
+- Independent `npm run check` passed: format, TypeScript, 14 unit tests, build,
+  public audit. Full browser suite using the isolated worktree server on 4175:
+  `npx playwright test --config output/grok-pilot/independent.config.ts` —
+  55 passed, two mouse-only cases skipped on touch. Normal CI uses
+  `npm run test:e2e` on 4173; the override avoids testing the primary checkout.
+- Production request inspection on 4176 verified home, GS II, overview, canonical
+  study and legacy study URLs. The pre-change negative control failed correctly.
+  Entry JavaScript: 582.73 → 212.63 kB raw; 156.78 → 66.52 kB gzip.
+  Study chunk 63.79 kB; overview 112.39 kB; shared graph engine 196.23 kB.
+  No raised chunk warning threshold. This measures payload, not device speed.
+- Screenshots: `docs/design/on-demand-*`; recovery screenshots intentionally
+  simulate a failed chunk. Visual review and responsive widths pass in Chromium
+  emulation; physical devices and Safari remain untested.
+- Pilot required steering after excessive initial exploration, explicit per-run
+  edit permissions, and review fixes to bookmark/slow-response tests and error
+  presentation. Existing global Grok configuration was not changed. Continue with
+  small bounded assignments and independent verification; do not infer that xhigh
+  is the most efficient setting from this single run. Usage/transcripts remain
+  in ignored local output, not in the public repository.
+- Local production preview: http://localhost:4176/#/gs2/polity . Existing 4173
+  remains the previous primary checkout. No larger feature has been assigned.
+- Next: review this pilot PR and orchestration assessment before assigning another
+  bounded change. Full Polity authoring remains at the previous coverage checkpoint.
+
 ## Polity syllabus overview — 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/11
