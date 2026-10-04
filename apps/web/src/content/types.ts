@@ -11,6 +11,8 @@ export interface Concept {
   title: string;
   meaning: string;
   kind: Kind;
+  /** More precise visible label for schedules, statutes and historical milestones. */
+  typeLabel?: string;
   position: { x: number; y: number };
   groupId?: string;
   bullets: string[];
@@ -62,9 +64,17 @@ export interface GraphRelease {
   pyqs: {
     id: string;
     year: number;
+    stage?: "mains" | "prelims";
     angle: string;
     conceptId: string;
     source: string;
     note: string;
   }[];
+  /** Defaults to the Fundamental Rights theme when omitted. */
+  rootId?: string;
+  /** Presentation only. The rights release leaves this unset. */
+  display?: {
+    family?: "rights" | "topic";
+    topic?: { id: string; title: string };
+  };
 }

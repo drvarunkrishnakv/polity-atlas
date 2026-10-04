@@ -45,7 +45,11 @@ export function StudyScreen({
   if (!graph) return <RouteNotice busy onLibrary={() => onNavigate("")} />;
   return (
     <ReactFlowProvider>
-      <GraphCanvas graph={graph} onNavigate={onNavigate} />
+      <GraphCanvas
+        graph={graph}
+        studyPath="gs2/polity/fundamental-rights"
+        onNavigate={onNavigate}
+      />
     </ReactFlowProvider>
   );
 }

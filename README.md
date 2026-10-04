@@ -27,7 +27,7 @@ npm run test:e2e
 
 The app is in `apps/web`; curated, versioned content is separate from components.
 The Polity overview maps nine syllabus topics and 154 unique PYQ themes.
-Fundamental Rights is the first available detailed study example. See `docs/HANDOFF.md` for exact
+The first topic, Constitution & its foundations, now has 37 detailed maps covering its 38 home microtheme identities. See `docs/HANDOFF.md` for exact
 implementation and verification status, and `docs/ARCHITECTURE.md` for boundaries.
 
 ## Public code, private corpus
@@ -80,3 +80,22 @@ Desktop uses a right inspector; smaller screens support closing details and phon
 use a bottom sheet. The graph deliberately pans beyond the screen at readable zoom.
 The sample has 47 nodes, 52 relationships and seven Mains angles. Its current-affairs
 example is dated 2024. See docs/CONTENT_REVIEW.md for scope and source limitations.
+
+## Constitution foundations release
+
+From GS II → Polity → Constitution & its foundations, select a home theme and
+open its study map. There are 36 new maps plus the original Fundamental Rights
+map; the two constitutional-morality register identities share one destination.
+The 11 related themes retain their later home-topic authoring passes.
+
+The new bank contains 234 canonical concepts, 367 explained relationships and
+84 short PYQ angles, labelled Mains or Prelims. Shared Articles keep their existing
+identities. All eleven duty clauses, the full Directive Principles Article family,
+all five writs, constitutional history and making, Parts and Schedules, amendments,
+and selected cases and dated citizenship developments are included. This is
+curated revision coverage, not every judgment or a complete current-law service.
+
+The map loads on demand. Its headings surround the topic and details extend
+outwards; select a heading to frame its group. Every node is already present.
+Source dates remain visible. Dark/light appearance, bookmarks, direct-neighbour
+highlighting and the responsive inspector work across the new maps.

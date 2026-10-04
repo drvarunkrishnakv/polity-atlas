@@ -6,7 +6,7 @@ import {
   CornersOut,
   X,
 } from "@phosphor-icons/react";
-import { kindStyle } from "../graph/presentation";
+import { graphFamily, graphRootId, kindLabel } from "../graph/presentation";
 import type { Concept, GraphRelease } from "../content/types";
 export function Inspector({
   concept,
@@ -25,28 +25,34 @@ export function Inspector({
   useEffect(() => {
     panel.current?.scrollTo({ top: 0 });
   }, [concept.id]);
+  const family = graphFamily(graph);
+  const rootId = graphRootId(graph);
   const allRelated = graph.edges.filter(
     (e) => e.source === concept.id || e.target === concept.id,
   );
-  const related =
-    concept.kind === "theme"
-      ? allRelated.filter((e) => e.role === "structure")
-      : allRelated;
-  const contextLinks =
-    concept.kind === "theme"
-      ? allRelated.filter((e) => e.role === "context")
-      : [];
+  const isRightsRoot = family === "rights" && concept.kind === "theme";
+  const organise =
+    concept.id === rootId && (isRightsRoot || family === "topic");
+  const structure = allRelated.filter((e) => e.role === "structure");
+  const useStructure = isRightsRoot || (organise && structure.length > 0);
+  const related = useStructure ? structure : allRelated;
+  const contextLinks = useStructure
+    ? allRelated.filter((e) => e.role !== "structure")
+    : [];
   const pyqs = graph.pyqs.filter(
-    (q) => q.conceptId === concept.id || concept.id === "fr",
+    (q) => q.conceptId === concept.id || concept.id === rootId,
   );
+  const connectionTitle = !organise
+    ? "Direct connections"
+    : family === "rights"
+      ? "Six rights categories"
+      : useStructure
+        ? "Themes in this map"
+        : "Direct connections";
   const connections = (
     <section>
       <div className="section-heading">
-        <h2>
-          {concept.kind === "theme"
-            ? "Six rights categories"
-            : "Direct connections"}
-        </h2>
+        <h2>{connectionTitle}</h2>
         <span>{related.length}</span>
       </div>
       <div className="connections">
@@ -107,7 +113,9 @@ export function Inspector({
         )!;
         return (
           <div className="context-link" key={e.id}>
-            <span>Constitutional context</span>
+            <span>
+              {family === "rights" ? "Constitutional context" : e.label}
+            </span>
             <button onClick={() => onSelect(n.id)}>{n.title}</button>
             <p>{e.explanation}</p>
           </div>
@@ -122,8 +130,8 @@ export function Inspector({
         <CornersOut size={17} />
       </button>
       <p className="muted source-note">
-        All connections in this example are already on the canvas. Select a name
-        to move to it.
+        All connections in this map are already on the canvas. Select a name to
+        move to it.
       </p>
     </section>
   );
@@ -145,23 +153,33 @@ export function Inspector({
         </button>
       </div>
       <span className={`inspector-kind kind-${concept.kind}`}>
-        {kindStyle[concept.kind].label}
+        {concept.typeLabel ?? kindLabel(concept.kind, family)}
       </span>
       <h1>{concept.title}</h1>
       <p className="meaning">{concept.meaning}</p>
       {concept.date && (
         <p className="date">
           {concept.date} ·{" "}
-          {concept.kind === "event" ? "Dated example" : "Judgment"}
+          {concept.kind === "event"
+            ? "Dated example"
+            : concept.kind === "judgment"
+              ? "Judgment"
+              : "Historical milestone"}
         </p>
       )}
-      {concept.kind === "theme" && (
+      {isRightsRoot && (
         <p className="teaching-note">
           Start with a rights category, then follow its Articles. Judgments and
           applications connect across these groups.
         </p>
       )}
-      {concept.kind === "theme" && connections}
+      {organise && family === "topic" && (
+        <p className="teaching-note">
+          Start with the organising themes, then follow Articles, judgments and
+          applications. Cross-links stay on the canvas.
+        </p>
+      )}
+      {organise && connections}
       <section>
         <h2>Quick recall</h2>
         <ul className="recall">
@@ -177,7 +195,7 @@ export function Inspector({
           <p className="muted">{concept.relationNote}</p>
         )}
       </section>
-      {concept.kind !== "theme" && connections}
+      {!organise && connections}
       {pyqs.length > 0 && (
         <section>
           <h2>PYQ angles</h2>
@@ -188,12 +206,17 @@ export function Inspector({
               onClick={() => onSelect(q.conceptId)}
             >
               <span>{q.year}</span>
-              {q.angle}
+              <span className="pyq-angle">
+                {q.stage
+                  ? `${q.stage === "mains" ? "Mains" : "Prelims"} · `
+                  : ""}
+                {q.angle}
+              </span>
             </button>
           ))}
           <p className="muted source-note">
-            Paraphrased from your supplied Mains register. These indicate
-            question demand, not model answers.
+            Paraphrased from your supplied PYQ register. These indicate question
+            demand, not model answers.
           </p>
         </section>
       )}

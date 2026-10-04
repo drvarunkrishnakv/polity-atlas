@@ -28,7 +28,13 @@ import {
 } from "@phosphor-icons/react";
 import type { Concept, GraphRelease } from "../content/types";
 import { neighbours } from "../graph/explore";
-import { cardWidth, kindStyle, teachingRegions } from "../graph/presentation";
+import {
+  cardWidth,
+  graphFamily,
+  graphRootId,
+  kindLabel,
+  teachingRegions,
+} from "../graph/presentation";
 import { Inspector } from "./Inspector";
 import "@xyflow/react/dist/style.css";
 type ConceptNode = Node<
@@ -36,6 +42,7 @@ type ConceptNode = Node<
     concept: Concept;
     active: boolean;
     dimmed: boolean;
+    family: "rights" | "topic";
     onSelect: (id: string) => void;
   },
   "concept"
@@ -65,7 +72,7 @@ function ConceptCard({ data }: NodeProps<ConceptNode>) {
       <span className="category-dot" />
       <div className="card-copy">
         <span className="node-type">
-          {kindStyle[concept.kind].label}
+          {concept.typeLabel ?? kindLabel(concept.kind, data.family)}
           {concept.groupId === "historical" ? " · omitted" : ""}
           {concept.kind === "event" && concept.date
             ? ` · ${concept.date.slice(0, 4)}`
@@ -83,8 +90,17 @@ function ConceptCard({ data }: NodeProps<ConceptNode>) {
   );
 }
 const nodeTypes = { concept: ConceptCard };
-const categories = [
+const rightsLegend = [
   ["category", "Rights categories"],
+  ["article", "Articles"],
+  ["judgment", "Judgments"],
+  ["application", "Concepts / uses"],
+  ["event", "Current affairs"],
+  ["foundation", "Context"],
+];
+const topicLegend = [
+  ["theme", "Themes"],
+  ["category", "Categories"],
   ["article", "Articles"],
   ["judgment", "Judgments"],
   ["application", "Concepts / uses"],
@@ -94,17 +110,21 @@ const categories = [
 export function GraphCanvas({
   graph,
   onNavigate,
+  studyPath,
 }: {
   graph: GraphRelease;
   onNavigate: (path: string) => void;
+  studyPath: string;
 }) {
   const { theme } = useTheme();
+  const family = graphFamily(graph);
+  const rootId = graphRootId(graph);
   const initialId = new URLSearchParams(location.hash.split("?")[1]).get(
     "node",
   );
-  const validInitial = graph.nodes.some((n) => n.id === initialId)
-    ? initialId!
-    : "fr";
+  const [validInitial] = useState(() =>
+    graph.nodes.some((n) => n.id === initialId) ? initialId! : rootId,
+  );
   const [selected, setSelected] = useState<string | null>(validInitial);
   const [hovered, setHovered] = useState<string | null>(null);
   const [measurements, setMeasurements] = useState<
@@ -136,13 +156,17 @@ export function GraphCanvas({
   const focusConcept = useCallback(
     (id: string) => {
       const n = graph.nodes.find((n) => n.id === id)!;
-      if (n.kind === "category" || (n.kind === "theme" && innerWidth > 700)) {
+      if (
+        n.kind === "category" ||
+        (n.kind === "theme" && innerWidth > (family === "topic" ? 1100 : 700))
+      ) {
         const children = graph.edges
           .filter((e) => e.source === id && e.role === "structure")
           .map((e) => ({ id: e.target }));
         fitView({
           nodes: [{ id }, ...children],
           padding: 0.22,
+          minZoom: family === "topic" ? 0.6 : 0.22,
           maxZoom: 1,
           duration: 240,
         });
@@ -153,7 +177,7 @@ export function GraphCanvas({
         });
       }
     },
-    [graph, fitView, setCenter],
+    [graph, fitView, setCenter, family],
   );
   const active = hovered || selected;
   const lit = useMemo(
@@ -170,27 +194,27 @@ export function GraphCanvas({
       history.replaceState(
         null,
         "",
-        `#/gs2/polity/fundamental-rights?node=${encodeURIComponent(id)}`,
+        `#/${studyPath}?node=${encodeURIComponent(id)}`,
       );
       if (center || graph.nodes.find((n) => n.id === id)?.kind === "category") {
         setTimeout(() => focusConcept(id), 50);
       }
     },
-    [graph.nodes, focusConcept],
+    [graph.nodes, focusConcept, studyPath],
   );
   const reset = () => {
-    setSelected("fr");
+    setSelected(rootId);
     setHovered(null);
     setQuery("");
     setIndexOpen(false);
     setDetailsOpen(true);
     setFocusVersion((v) => v + 1);
-    history.replaceState(null, "", "#/gs2/polity/fundamental-rights");
+    history.replaceState(null, "", `#/${studyPath}`);
   };
   useEffect(() => {
     if (!initialized) return;
-    focusConcept(focusVersion ? "fr" : validInitial);
-  }, [initialized, focusVersion, focusConcept]);
+    focusConcept(focusVersion ? rootId : validInitial);
+  }, [initialized, focusVersion, focusConcept, rootId, validInitial]);
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -213,6 +237,7 @@ export function GraphCanvas({
       concept,
       active: active === concept.id,
       dimmed: !!active && !lit.has(concept.id),
+      family,
       onSelect: (id) => select(id, false),
     },
     ariaLabel: `${concept.title}: ${concept.meaning}`,
@@ -256,8 +281,16 @@ export function GraphCanvas({
     };
   });
   const inspected = graph.nodes.find(
-    (n) => n.id === (selected || hovered || "fr"),
+    (n) => n.id === (selected || hovered || rootId),
   )!;
+  const categories = graph.nodes.filter((node) => node.kind === "category");
+  const scopeStatus =
+    family === "rights"
+      ? `${categories.length} rights categories · ${graph.nodes.length} concepts · ${graph.edges.length} links on canvas`
+      : categories.length
+        ? `${categories.length} categories · ${graph.nodes.length} concepts · ${graph.edges.length} links on canvas`
+        : `${graph.nodes.length} concepts · ${graph.edges.length} links on canvas`;
+  const legend = family === "rights" ? rightsLegend : topicLegend;
   const matches = graph.nodes.filter((n) =>
     (n.title + " " + n.meaning + " " + n.bullets.join(" "))
       .toLowerCase()
@@ -274,6 +307,18 @@ export function GraphCanvas({
           <button onClick={() => onNavigate("gs2")}>GS II</button>
           <span>/</span>
           <button onClick={() => onNavigate("gs2/polity")}>Polity</button>
+          {graph.display?.topic && (
+            <>
+              <span>/</span>
+              <button
+                onClick={() =>
+                  onNavigate(`gs2/polity/topics/${graph.display!.topic!.id}`)
+                }
+              >
+                {graph.display.topic.title}
+              </button>
+            </>
+          )}
         </nav>
         <div className="header-actions">
           <div className="search-wrap">
@@ -311,7 +356,11 @@ export function GraphCanvas({
                     </button>
                   ))
                 ) : (
-                  <p>No matching concepts. Try “privacy” or “Article 21”.</p>
+                  <p>
+                    {family === "rights"
+                      ? "No matching concepts. Try “privacy” or “Article 21”."
+                      : "No matching concepts in this study map."}
+                  </p>
                 )}
               </div>
             )}
@@ -327,11 +376,11 @@ export function GraphCanvas({
       <div className={`workspace ${detailsOpen ? "details-open" : ""}`}>
         <main
           className="canvas-area"
-          aria-label="Fundamental Rights knowledge graph"
+          aria-label={`${graph.title} knowledge graph`}
         >
           <div className="canvas-toolbar">
             <div className="legend">
-              {categories.map(([kind, title]) => (
+              {legend.map(([kind, title]) => (
                 <span key={kind} className={`legend-item kind-${kind}`}>
                   <span className="category-dot" />
                   {title}
@@ -349,13 +398,16 @@ export function GraphCanvas({
             </button>
           </div>
           <div className="canvas-heading">
-            <span className="eyebrow">Indian Constitution</span>
+            <span className="eyebrow">
+              {family === "rights"
+                ? "Indian Constitution"
+                : (graph.display?.topic?.title ?? "Indian Constitution")}
+            </span>
             <span>
-              Fundamental Rights <small>· Part III</small>
-              <small className="scope-status">
-                6 rights categories · {graph.nodes.length} concepts ·{" "}
-                {graph.edges.length} links on canvas
-              </small>
+              {graph.title}
+              {family === "rights" ? <small> · Part III</small> : null}
+              <small className="scope-status">{scopeStatus}</small>
+              <small className="source-cutoff">{graph.sourceCutoff}</small>
             </span>
           </div>
           <div className="highlight-status" data-testid="highlight-status">
@@ -373,7 +425,7 @@ export function GraphCanvas({
           {indexOpen && (
             <div className="topic-index">
               <div className="section-heading">
-                <h2>Fundamental Rights</h2>
+                <h2>{graph.title}</h2>
                 <button
                   className="icon-button"
                   aria-label="Close index"
@@ -382,9 +434,13 @@ export function GraphCanvas({
                   <X size={18} />
                 </button>
               </div>
-              <p>Part III provisions and selected connections</p>
+              <p>
+                {family === "rights"
+                  ? "Part III provisions and selected connections"
+                  : graph.scope}
+              </p>
               {graph.nodes
-                .filter((n) => n.id !== "constitution")
+                .filter((n) => family !== "rights" || n.id !== "constitution")
                 .map((n) => (
                   <button key={n.id} onClick={() => select(n.id)}>
                     <strong>{n.title}</strong>
@@ -488,7 +544,7 @@ export function GraphCanvas({
             <button
               className="reopen-details"
               onClick={() => {
-                setSelected(selected || "fr");
+                setSelected(selected || rootId);
                 setDetailsOpen(true);
               }}
             >

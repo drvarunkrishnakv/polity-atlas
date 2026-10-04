@@ -1,5 +1,59 @@
 # Handoff
 
+## Constitution foundations — reviewed first-topic release, 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/15
+- Branch: `codex/constitution-foundations`, based on `d4acd51` from PR #14.
+  Implementation commit: `646de27`.
+  PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/16
+  (stacked on `codex/graph-on-demand`, PR #14). A documentation checkpoint
+  commit follows; resume from the actual branch head.
+  No merge, production deployment or remote-protection changes.
+- Assisting tools: Grok CLI (`grok-4.7`, `xhigh`) drafted the engine and content
+  in isolated worktrees. Codex independently reviewed, corrected and broadened
+  records, revised the layout, integrated, tested and documented the release.
+- Constitution & its foundations now has 36 new maps for 37 home identities,
+  plus the unchanged Fundamental Rights map: 38/38 home identities have a study
+  destination. The two constitutional-morality identities share one map.
+  Eleven related themes remain part of their later home-topic authoring passes.
+- New bank: 234 concepts, 367 explained edges, 27 sources, 84 paraphrased PYQ
+  angles (14 Mains / 70 Prelims). Twenty-one concepts reuse the original rights
+  records verbatim, excluding layout fields. IDs, register totals and existing
+  taxonomy placements are preserved.
+- Added lazy study routes and a small separate route index. Layout and one-hop
+  highlighting remain independent from content. The whole selected map is present;
+  heading selection frames details. Outward teaching groups replace a long strip.
+  Portrait tablet and phone views centre a readable topic; the inspector lists
+  its groups. Precise labels distinguish clauses, Schedules and historical context.
+- Sources were retrieved for all home themes, then checked against actual book
+  pages and primary texts. Review corrected narrow option-based notes and several
+  legal distinctions. See `docs/CONTENT_REVIEW.md` for evidence and limitations.
+  Embeddings and the private corpus were not regenerated or published.
+- Validation: `npm run check` passes format, types, 22 unit tests, production build
+  and public boundary audit. Full isolated browser run:
+  `npx playwright test --config output/grok-pilot/independent.config.ts` —
+  71 passed, four mouse-only tests skipped on touch profiles.
+  Following the final tablet-camera and Mains-prompt refinements, the targeted
+  catalogue/study suite passed: 22 tests, two mouse-only touch skips.
+  Command: the same isolated config with `tests/browser/catalog.spec.ts` and
+  `tests/browser/study-maps.spec.ts`.
+- All 36 new routes were exercised with full node/edge membership on desktop,
+  Pixel 7 and iPad Chromium profiles. Canonical-record, coverage, connectivity,
+  core-family and bounded-neighbour tests pass. Hover checks retain measured
+  dimensions and pinned details. Screenshots are in `docs/design/foundations-*`.
+  Physical devices and Safari remain untested.
+- Review server: http://localhost:4177/ . Earlier 4173 serves the primary checkout;
+  do not use it to verify this branch. The isolated browser server uses 4175.
+- Limitations: Constitution text cutoff is May 2024; case coverage is selective
+  through November 2024. Two dated citizenship examples include an August 2026
+  Gazette update; this is not an exhaustive current-law or current-affairs feed.
+  Official PYQ transcription/answer keys were not re-certified. The weekly Tracker
+  automation and cross-topic gateways remain unbuilt.
+- Next concrete authoring batch: topic 2, Federalism & local government, with
+  21 home identities. Inventory and review these against private sources, keep
+  canonical Articles shared, and use a topic-scoped bank. Continue through the
+  remaining seven topics before the separately reviewed cross-topic link pass.
+
 ## On-demand graph screens / Grok coding pilot — 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/13

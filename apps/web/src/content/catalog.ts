@@ -1,4 +1,5 @@
 import data from "./polity-catalog.json";
+import { studyForTheme, studyIndex, studyRoute } from "./study-index";
 export interface SyllabusTopic {
   id: string;
   syllabusId: string;
@@ -26,7 +27,7 @@ export interface CatalogTheme {
   prelims: number;
   years: number[];
   flaggedRows: number;
-  status: "study-example" | "outline-only";
+  status: "study-example" | "study-map" | "outline-only";
   studyRoute?: string;
   sourceId: string;
 }
@@ -42,10 +43,24 @@ export const contextTopic = {
     "These are not additional official Mains syllabus bullets.",
   ],
 };
+export const RIGHTS_STUDY_ROUTE = "gs2/polity/fundamental-rights";
 export const topicThemes = (id: string) =>
   catalog.themes.filter(
     (t) => t.homeTopicId === id || t.links.some((l) => l.topicId === id),
   );
+export function homeAndRelated(topicId: string) {
+  const themes = topicThemes(topicId);
+  const home = themes.filter((theme) => theme.homeTopicId === topicId);
+  const related = themes.filter((theme) => theme.homeTopicId !== topicId);
+  const studied = home.filter(
+    (theme) => theme.status === "study-map" || theme.status === "study-example",
+  );
+  return { themes, home, related, studied };
+}
+export function coverageLine(topicId: string) {
+  const { home, related, studied } = homeAndRelated(topicId);
+  return `${studied.length} of ${home.length} home themes have study maps; ${related.length} related themes`;
+}
 export function validateCatalog(release: typeof catalog = catalog) {
   const errors: string[] = [];
   const topics = new Set(release.topics.map((t) => t.id));
@@ -79,11 +94,13 @@ export function validateCatalog(release: typeof catalog = catalog) {
         errors.push(`Invalid mapping ${t.id}`);
     if (t.status === "outline-only" && t.studyRoute)
       errors.push(`Unbuilt destination ${t.id}`);
-    if (
-      t.status === "study-example" &&
-      t.studyRoute !== "gs2/polity/fundamental-rights"
-    )
+    if (t.status === "study-example" && t.studyRoute !== RIGHTS_STUDY_ROUTE)
       errors.push(`Unknown study route ${t.id}`);
+    if (t.status === "study-map") {
+      const entry = studyForTheme(t.id);
+      if (!t.studyRoute || !entry || t.studyRoute !== entry.route)
+        errors.push(`Unreviewed study map ${t.id}`);
+    }
     if (
       ![t.mains, t.prelims, t.flaggedRows].every(
         (n) => Number.isInteger(n) && n >= 0,
@@ -91,5 +108,15 @@ export function validateCatalog(release: typeof catalog = catalog) {
     )
       errors.push(`Invalid counts ${t.id}`);
   }
+  for (const entry of studyIndex.maps)
+    for (const id of entry.microthemeIds) {
+      const theme = release.themes.find((item) => item.id === id);
+      if (
+        !theme ||
+        theme.status !== "study-map" ||
+        theme.studyRoute !== studyRoute(entry.slug)
+      )
+        errors.push(`Unreviewed study map ${id}`);
+    }
   return errors;
 }

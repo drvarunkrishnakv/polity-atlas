@@ -1,9 +1,15 @@
 import { describe, it, expect } from "vitest";
 import {
   catalog,
+  coverageLine,
+  homeAndRelated,
   validateCatalog,
   topicThemes,
 } from "../apps/web/src/content/catalog";
+import {
+  studyForTheme,
+  validateStudyIndex,
+} from "../apps/web/src/content/study-index";
 import graph from "../apps/web/src/content/fundamental-rights.json";
 
 describe("Polity syllabus coverage", () => {
@@ -55,10 +61,21 @@ describe("Polity syllabus coverage", () => {
       topicThemes("prelims-context").every((t) => t.links.length === 0),
     ).toBe(true);
   });
-  it("only exposes an existing study destination and never publishes source passages", () => {
-    expect(catalog.themes.filter((t) => t.studyRoute).map((t) => t.id)).toEqual(
-      [graph.syllabus.microthemeId],
+  it("only exposes reviewed study destinations and never publishes source passages", () => {
+    expect(validateStudyIndex()).toEqual([]);
+    const routed = catalog.themes.filter((t) => t.studyRoute);
+    expect(routed.find((t) => t.status === "study-example")?.id).toBe(
+      graph.syllabus.microthemeId,
     );
+    for (const theme of routed) {
+      if (theme.status === "study-example") {
+        expect(theme.studyRoute).toBe("gs2/polity/fundamental-rights");
+        expect(theme.id).toBe(graph.syllabus.microthemeId);
+        continue;
+      }
+      expect(theme.status).toBe("study-map");
+      expect(studyForTheme(theme.id)?.route).toBe(theme.studyRoute);
+    }
     const json = JSON.stringify(catalog);
     expect(json).not.toMatch(/"(?:question|answer|source_path|record_ids)":/);
     expect(json).not.toMatch(/data\/|\/Users\/|\/Volumes\//);
@@ -77,5 +94,36 @@ describe("Polity syllabus coverage", () => {
     expect(
       validateCatalog(broken).some((e) => e.startsWith("Unbuilt destination")),
     ).toBe(true);
+    const unreviewed = structuredClone(catalog);
+    unreviewed.themes[1].status = "study-map";
+    unreviewed.themes[1].studyRoute = "gs2/polity/study/not-reviewed";
+    expect(
+      validateCatalog(unreviewed).some((e) =>
+        e.startsWith("Unreviewed study map"),
+      ),
+    ).toBe(true);
+  });
+  it("counts constitution home and related themes from metadata", () => {
+    const { themes, home, related, studied } = homeAndRelated("constitution");
+    expect(themes).toHaveLength(49);
+    expect(home).toHaveLength(38);
+    expect(related).toHaveLength(11);
+    expect(home.length + related.length).toBe(themes.length);
+    expect(studied.every((theme) => theme.homeTopicId === "constitution")).toBe(
+      true,
+    );
+    expect(coverageLine("constitution")).toBe(
+      `${studied.length} of 38 home themes have study maps; 11 related themes`,
+    );
+    expect(catalog.themes).toHaveLength(154);
+    expect(studied.length).toBeLessThan(154);
+    for (const topic of catalog.topics) {
+      if (topic.id === "constitution") continue;
+      for (const theme of topicThemes(topic.id)) {
+        if (theme.status === "study-example" || theme.status === "study-map")
+          continue;
+        expect(theme.status).toBe("outline-only");
+      }
+    }
   });
 });

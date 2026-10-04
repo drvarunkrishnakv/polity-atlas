@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "maps": [
+    {
+      "slug": "principles",
+      "title": "Constitutional principles",
+      "microthemeIds": ["microtheme:0018b78cdf24beb7591884c7"]
+    },
+    {
+      "slug": "directive-principles",
+      "title": "Directive Principles",
+      "microthemeIds": ["microtheme:16e2c15cae67ac7bdd95a2d4"]
+    },
+    {
+      "slug": "constitutional-values",
+      "title": "Constitutional values",
+      "microthemeIds": ["microtheme:1d65764b992c6badc9fb36b4"]
+    },
+    {
+      "slug": "constitutionalism",
+      "title": "Constitutionalism",
+      "microthemeIds": ["microtheme:36519d6431193c4c7cad9542"]
+    },
+    {
+      "slug": "democracy",
+      "title": "Democracy",
+      "microthemeIds": ["microtheme:3486c0cd901d6cf443b37332"]
+    },
+    {
+      "slug": "preamble",
+      "title": "Preamble",
+      "microthemeIds": ["microtheme:c3962731a01281f55e8d2e47"]
+    },
+    {
+      "slug": "commencement-repeal",
+      "title": "Commencement and repeal",
+      "microthemeIds": ["microtheme:7fcb384207a954260270cd8d"]
+    },
+    {
+      "slug": "constitutional-amendment",
+      "title": "Constitutional amendment",
+      "microthemeIds": ["microtheme:34d6e3ff5d72c612894a8938"]
+    },
+    {
+      "slug": "ninth-schedule",
+      "title": "Ninth Schedule history",
+      "microthemeIds": ["microtheme:f02c0708969a6e63504534e0"]
+    },
+    {
+      "slug": "constitutional-safeguards",
+      "title": "Constitutional safeguards",
+      "microthemeIds": ["microtheme:fe254ebcb09f69a6474906a3"]
+    },
+    {
+      "slug": "constitutional-structure",
+      "title": "Constitutional structure",
+      "microthemeIds": ["microtheme:f456be7c19b4544f3a10a2c1"]
+    },
+    {
+      "slug": "constitutional-history",
+      "title": "Constitutional history",
+      "microthemeIds": ["microtheme:c3c94f6635b8e4706b38c1c0"]
+    },
+    {
+      "slug": "constitution-making",
+      "title": "Constitution making",
+      "microthemeIds": ["microtheme:8e07cc7e7d3278699a18ea56"]
+    },
+    {
+      "slug": "constitutional-morality",
+      "title": "Constitutional morality",
+      "microthemeIds": [
+        "microtheme:89b54b741cde68ab404fe2bd",
+        "microtheme:a3a1ac01d2874c2c60ad8eb1"
+      ]
+    },
+    {
+      "slug": "fundamental-duties",
+      "title": "Fundamental Duties",
+      "microthemeIds": ["microtheme:d537e90d29dc0ed702629d18"]
+    },
+    {
+      "slug": "constitutional-provisions",
+      "title": "Constitutional provisions",
+      "microthemeIds": ["microtheme:ab4bbb3b5b488d9fd7648790"]
+    },
+    {
+      "slug": "human-rights-foundations",
+      "title": "Human rights foundations",
+      "microthemeIds": ["microtheme:74bc0f875a60a7abe4d9d35b"]
+    },
+    {
+      "slug": "political-concepts",
+      "title": "Political concepts",
+      "microthemeIds": ["microtheme:b0661ad92bdaef9a8c581de4"]
+    },
+    {
+      "slug": "rule-of-law",
+      "title": "Rule of law",
+      "microthemeIds": ["microtheme:b409b57530021fab586b3c3e"]
+    },
+    {
+      "slug": "constitutional-remedies",
+      "title": "Constitutional remedies",
+      "microthemeIds": ["microtheme:4c151a40114a66773378a049"]
+    },
+    {
+      "slug": "article-13-review",
+      "title": "Fundamental rights and judicial review",
+      "microthemeIds": ["microtheme:71879327c4b7d9c6d999a8ce"]
+    },
+    {
+      "slug": "security-and-rights",
+      "title": "Security and rights",
+      "microthemeIds": ["microtheme:324e8c69ffa1fb216ccb1a61"]
+    },
+    {
+      "slug": "emergency-provisions",
+      "title": "Emergency provisions",
+      "microthemeIds": ["microtheme:880954d1d66c4c88b48d6453"]
+    },
+    {
+      "slug": "constitutional-property",
+      "title": "Constitutional rights to property",
+      "microthemeIds": ["microtheme:d45ad59a671b13757e4d8e99"]
+    },
+    {
+      "slug": "scheduled-tribes",
+      "title": "Scheduled Tribes",
+      "microthemeIds": ["microtheme:1eafe2f46c660909baa7ca1e"]
+    },
+    {
+      "slug": "tribal-safeguards",
+      "title": "Tribal constitutional safeguards",
+      "microthemeIds": ["microtheme:47ea21d54fb145e4734a3c8b"]
+    },
+    {
+      "slug": "scheduled-areas-and-tribes",
+      "title": "Scheduled areas and tribal safeguards",
+      "microthemeIds": ["microtheme:619f0dd9761ce4d4d7b43bb1"]
+    },
+    {
+      "slug": "scheduled-areas",
+      "title": "Scheduled Areas",
+      "microthemeIds": ["microtheme:63ea79efbb3ff536cf59f196"]
+    },
+    {
+      "slug": "constitutional-languages",
+      "title": "Constitutional languages",
+      "microthemeIds": ["microtheme:6cbd3c141384c45b7d57c5a6"]
+    },
+    {
+      "slug": "national-honours",
+      "title": "National honours",
+      "microthemeIds": ["microtheme:53b24add341d429f91d80b0a"]
+    },
+    {
+      "slug": "citizenship",
+      "title": "Citizenship",
+      "microthemeIds": ["microtheme:b7be21a887147ac1dc45d18e"]
+    },
+    {
+      "slug": "access-to-justice",
+      "title": "Criminal procedure and access to justice",
+      "microthemeIds": ["microtheme:c0648495e7a07a5653cfdd51"]
+    },
+    {
+      "slug": "education-governance",
+      "title": "Education governance",
+      "microthemeIds": ["microtheme:c84ea849737508017a379a16"]
+    },
+    {
+      "slug": "equality-reservation",
+      "title": "Equality and reservation",
+      "microthemeIds": ["microtheme:c97e482455fd40d61226d7b2"]
+    },
+    {
+      "slug": "gender-justice",
+      "title": "Gender justice",
+      "microthemeIds": ["microtheme:b399c9baefb653aef5c59b2d"]
+    },
+    {
+      "slug": "environmental-jurisprudence",
+      "title": "Environmental jurisprudence",
+      "microthemeIds": ["microtheme:f34d8d2c49776d167f4b103d"]
+    }
+  ]
+}
