@@ -20,12 +20,10 @@ test("theme persists across screens and reloads without moving the graph", async
   await page
     .getByRole("button", { name: "01 · Constitution & its foundations" })
     .click();
-  await page
-    .getByRole("button", { name: /^Fundamental Rights 7 Mains/ })
-    .click();
-  await page
-    .getByRole("button", { name: "Open Fundamental Rights graph" })
-    .click();
+  await expect(
+    page.getByRole("combobox", { name: "Explore theme" }),
+  ).toBeVisible();
+  await page.goto("/#/gs2/polity/fundamental-rights");
   await expect(page.locator(".react-flow.light")).toBeVisible();
   await page
     .getByTestId("inspector")

@@ -40,7 +40,11 @@ export function Inspector({
     ? allRelated.filter((e) => e.role !== "structure")
     : [];
   const pyqs = graph.pyqs.filter(
-    (q) => q.conceptId === concept.id || concept.id === rootId,
+    (q) =>
+      q.conceptId === concept.id ||
+      (concept.id === rootId &&
+        (!graph.display?.focusNodeIds ||
+          graph.display.focusNodeIds.includes(q.conceptId))),
   );
   const connectionTitle = !organise
     ? "Direct connections"

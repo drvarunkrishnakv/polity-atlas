@@ -81,3 +81,10 @@ label. Only dated topical examples use Current affairs. Schedules, statutes and
 clauses retain explicit labels instead of all being called Articles. Short Mains
 prompts should explain an analytical use; option-elimination notes belong in PYQ
 context, not the core teaching skeleton.
+
+
+The Constitution syllabus-topic screen now composes all its authored maps. Theme
+focus is a view on that full union, not a separate content release or disclosure
+step. Seven navigation groups organise exploration without asserting legal edges.
+Composition version `2026.10.04-foundations.1+inline-topic.1` changes presentation
+and evidence-reference disambiguation only; the canonical releases stay unchanged.

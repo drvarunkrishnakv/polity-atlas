@@ -75,6 +75,8 @@ export interface GraphRelease {
   /** Presentation only. The rights release leaves this unset. */
   display?: {
     family?: "rights" | "topic";
+    focusNodeIds?: string[];
+    focusSlug?: string;
     topic?: { id: string; title: string };
   };
 }

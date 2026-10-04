@@ -141,3 +141,29 @@ constitutional Part or historical milestone) without changing traversal semantic
 PYQ angles may carry a Mains/Prelims stage from the source register. The original
 rights release is untouched. Study metadata is small enough for syllabus screens;
 the full bank is a separate lazy chunk, loaded only by a foundation study route.
+
+
+## Inline syllabus-topic canvas — 2026-10-04
+
+The Constitution topic route now lazy-loads `TopicScreen`, rather than rendering
+`PolityOverview`'s theme catalogue. Other unauthored topics retain the catalogue.
+`content/topic-graph.ts` composes the existing foundations and rights releases by
+canonical identity: 260 unique concepts and 419 existing edges. No relationships
+are inferred from co-membership. Conflicting source records are namespaced in the
+composition so the original locators/URLs remain attached to their evidence.
+Canonical content JSON files are unchanged.
+
+`graph/topic-layout.ts` places the focused theme in its authored teaching layout
+and all other concepts in surrounding blocks. Shared nodes appear once, retaining
+edges across maps. Theme selection changes this focus layout, without changing
+membership. Ordinary selection and hover keep positions stable. The Topic index
+and Explore theme selector provide seven editorial reading groups; these are
+navigation organisation, not additional academic edges. Fit graph includes the
+complete topic at overview scale; readable detail requires focus or zoom.
+
+Old `?theme=<microtheme-id>` links resolve directly to their teaching focus.
+New bookmarks preserve both `focus=<slug>` and `node=<canonical-id>`. Standalone
+study routes remain supported. The initial topic focus is the Preamble, not a
+claim that all 260 concepts fit legibly in one viewport. Related unauthored themes
+remain available as labelled home-topic outlines in the index. Root PYQ prompts
+are scoped to the focused node family rather than all questions in the bank.
