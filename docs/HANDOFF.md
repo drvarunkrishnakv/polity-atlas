@@ -4,7 +4,10 @@
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/17
 - Branch: `codex/inline-topic-graph`, based on `48da912` from PR #16.
-  Assisting tool for this correction: Codex. PR/commit checkpoint follows.
+  Implementation commit: `48e9e41`.
+  PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/18
+  (stacked on PR #16). Assisting tool for this correction: Codex.
+  A documentation checkpoint follows; resume from the actual branch head.
 - User correction: the syllabus topic must show study connections immediately,
   without requiring a separate Open map action. Constitution now lazy-loads a
   combined graph with 260 canonical concepts and all 419 existing edges.
