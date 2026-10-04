@@ -78,3 +78,13 @@ Balanced groups around the root keep the teaching skeleton readable, with detail
 extending outwards and all records present. Selection frames groups; one-hop hover
 and pinned details remain separate. Historical milestones use Context, and optional
 specific type labels distinguish Schedules, statutes and Article clauses.
+
+
+## 2026-10-04 — Study connections inside the syllabus topic (issue #17)
+
+The owner rejected the topic catalogue requiring an Open map action. Authored
+syllabus topics must open study connections directly. Constitution composes its
+existing banks, reuses shared identities and provides in-canvas theme focus.
+Focus changes layout, never graph membership; hover remains one hop. Standalone
+routes remain compatible, but are not a required navigation step. Untouched
+syllabus topics remain explicit outlines until their content is authored.

@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { useTheme } from "../theme/ThemeProvider";
 import { useEffect, useMemo, useState, useCallback } from "react";
@@ -111,14 +112,27 @@ export function GraphCanvas({
   graph,
   onNavigate,
   studyPath,
+  focusControl,
+  onSelectTheme,
+  indexGroups,
+  indexExtras,
+  initialIndexOpen = false,
 }: {
   graph: GraphRelease;
   onNavigate: (path: string) => void;
   studyPath: string;
+  focusControl?: ReactNode;
+  indexExtras?: ReactNode;
+  initialIndexOpen?: boolean;
+  onSelectTheme?: (id: string) => boolean;
+  indexGroups?: { title: string; ids: string[] }[];
 }) {
   const { theme } = useTheme();
   const family = graphFamily(graph);
   const rootId = graphRootId(graph);
+  const focusQuery = graph.display?.focusSlug
+    ? `focus=${encodeURIComponent(graph.display.focusSlug)}&`
+    : "";
   const initialId = new URLSearchParams(location.hash.split("?")[1]).get(
     "node",
   );
@@ -147,7 +161,7 @@ export function GraphCanvas({
     });
   }, []);
   const [query, setQuery] = useState("");
-  const [indexOpen, setIndexOpen] = useState(false);
+  const [indexOpen, setIndexOpen] = useState(initialIndexOpen);
   const [detailsOpen, setDetailsOpen] = useState(true);
   const [focusVersion, setFocusVersion] = useState(0);
   const { fitView, setCenter, zoomIn, zoomOut } = useReactFlow<ConceptNode>();
@@ -186,6 +200,7 @@ export function GraphCanvas({
   );
   const select = useCallback(
     (id: string, center = true) => {
+      if (onSelectTheme?.(id)) return;
       setSelected(id);
       setHovered(null);
       setDetailsOpen(true);
@@ -194,13 +209,13 @@ export function GraphCanvas({
       history.replaceState(
         null,
         "",
-        `#/${studyPath}?node=${encodeURIComponent(id)}`,
+        `#/${studyPath}?${focusQuery}node=${encodeURIComponent(id)}`,
       );
       if (center || graph.nodes.find((n) => n.id === id)?.kind === "category") {
         setTimeout(() => focusConcept(id), 50);
       }
     },
-    [graph.nodes, focusConcept, studyPath],
+    [graph.nodes, focusConcept, studyPath, onSelectTheme, focusQuery],
   );
   const reset = () => {
     setSelected(rootId);
@@ -209,7 +224,11 @@ export function GraphCanvas({
     setIndexOpen(false);
     setDetailsOpen(true);
     setFocusVersion((v) => v + 1);
-    history.replaceState(null, "", `#/${studyPath}`);
+    history.replaceState(
+      null,
+      "",
+      `#/${studyPath}${focusQuery ? "?" + focusQuery.slice(0, -1) : ""}`,
+    );
   };
   useEffect(() => {
     if (!initialized) return;
@@ -284,8 +303,9 @@ export function GraphCanvas({
     (n) => n.id === (selected || hovered || rootId),
   )!;
   const categories = graph.nodes.filter((node) => node.kind === "category");
-  const scopeStatus =
-    family === "rights"
+  const scopeStatus = focusControl
+    ? `Whole topic · ${graph.nodes.length} concepts · ${graph.edges.length} connections`
+    : family === "rights"
       ? `${categories.length} rights categories · ${graph.nodes.length} concepts · ${graph.edges.length} links on canvas`
       : categories.length
         ? `${categories.length} categories · ${graph.nodes.length} concepts · ${graph.edges.length} links on canvas`
@@ -373,12 +393,15 @@ export function GraphCanvas({
           </button>
         </div>
       </header>
-      <div className={`workspace ${detailsOpen ? "details-open" : ""}`}>
+      <div
+        className={`workspace ${focusControl ? "topic-workspace" : ""} ${detailsOpen ? "details-open" : ""}`}
+      >
         <main
           className="canvas-area"
           aria-label={`${graph.title} knowledge graph`}
         >
           <div className="canvas-toolbar">
+            {focusControl}
             <div className="legend">
               {legend.map(([kind, title]) => (
                 <span key={kind} className={`legend-item kind-${kind}`}>
@@ -404,7 +427,9 @@ export function GraphCanvas({
                 : (graph.display?.topic?.title ?? "Indian Constitution")}
             </span>
             <span>
-              {graph.title}
+              {focusControl
+                ? graph.nodes.find((n) => n.id === rootId)?.title
+                : graph.title}
               {family === "rights" ? <small> · Part III</small> : null}
               <small className="scope-status">{scopeStatus}</small>
               <small className="source-cutoff">{graph.sourceCutoff}</small>
@@ -439,14 +464,34 @@ export function GraphCanvas({
                   ? "Part III provisions and selected connections"
                   : graph.scope}
               </p>
-              {graph.nodes
-                .filter((n) => family !== "rights" || n.id !== "constitution")
-                .map((n) => (
-                  <button key={n.id} onClick={() => select(n.id)}>
-                    <strong>{n.title}</strong>
-                    <small>{n.meaning}</small>
-                  </button>
-                ))}
+              {indexExtras}
+              {indexGroups?.map((group) => (
+                <section key={group.title}>
+                  <h2>{group.title}</h2>
+                  {group.ids.map((id) => {
+                    const n = graph.nodes.find((n) => n.id === id)!;
+                    return (
+                      <button
+                        key={id}
+                        aria-label={n.title}
+                        onClick={() => select(id)}
+                      >
+                        <strong>{n.title}</strong>
+                        <small>{n.meaning}</small>
+                      </button>
+                    );
+                  })}
+                </section>
+              ))}
+              {!indexGroups &&
+                graph.nodes
+                  .filter((n) => family !== "rights" || n.id !== "constitution")
+                  .map((n) => (
+                    <button key={n.id} onClick={() => select(n.id)}>
+                      <strong>{n.title}</strong>
+                      <small>{n.meaning}</small>
+                    </button>
+                  ))}
             </div>
           )}
           <div className="graph-viewport">
@@ -455,7 +500,7 @@ export function GraphCanvas({
               edges={edges}
               nodeTypes={nodeTypes}
               onNodesChange={onNodesChange}
-              minZoom={0.2}
+              minZoom={focusControl ? 0.005 : 0.2}
               maxZoom={1.8}
               nodesConnectable={false}
               nodesFocusable={false}

@@ -29,65 +29,26 @@ test("syllabus overview opens theme outlines and the existing rights graph", asy
   await page
     .getByRole("button", { name: "01 · Constitution & its foundations" })
     .click();
+  const focus = page.getByRole("combobox", { name: "Explore theme" });
+  await expect(focus).toHaveValue("preamble");
   await expect(
-    page.getByRole("heading", {
-      name: "Constitution & its foundations",
-      exact: true,
-    }),
-  ).toBeVisible();
-  await expect(
-    page.getByRole("heading", { name: /Mapped themes/ }),
-  ).toBeVisible();
-  await expect(
-    page.getByText(/of \d+ home themes have study maps/),
-  ).toBeVisible();
-  await expect(page.getByText(/Home themes ·/)).toBeVisible();
-  await expect(page.getByText(/Related themes ·/)).toBeVisible();
-  await page
-    .getByRole("button", { name: /^Fundamental Duties 0 Mains/ })
-    .click();
+    page.getByRole("button", { name: /^Open .* (map|graph)$/ }),
+  ).toHaveCount(0);
+  await focus.selectOption("fundamental-duties");
   await expect(
     page.getByRole("heading", { name: "Fundamental Duties", exact: true }),
   ).toBeVisible();
-  await expect(
-    page.getByText("Editorial revision placement", { exact: true }),
-  ).toBeVisible();
-  await page
-    .getByRole("button", { name: "Open Fundamental Duties map" })
-    .click();
   await expect(page.locator('[data-concept="a51A-k"]')).toHaveCount(1);
-  await page
-    .getByRole("button", {
-      name: "Constitution & its foundations",
-      exact: true,
-    })
-    .click();
-  await page
-    .getByRole("textbox", { name: "Search Polity themes" })
-    .fill("Fundamental Rights");
-  await page
-    .getByRole("region", { name: "Theme search results" })
-    .getByRole("button", {
-      name: "Fundamental Rights Polity · 7 Mains · 7 Prelims",
-      exact: true,
-    })
-    .click();
+  await focus.selectOption("fundamental-rights");
   await expect(
-    page.getByText("Existing PYQ mapping", { exact: true }),
+    page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
   ).toBeVisible();
+  expect(page.url()).toContain("/topics/constitution");
   await page.getByRole("button", { name: "Switch to light mode" }).click();
-  await page.waitForTimeout(300);
   await page.screenshot({
     path: `output/qa/${test.info().project.name}-polity-theme.png`,
     fullPage: true,
   });
-  await page
-    .getByRole("button", { name: "Open Fundamental Rights graph" })
-    .click();
-  await expect(page.locator(".concept-card")).toHaveCount(47);
-  await expect(
-    page.getByRole("heading", { name: "Six rights categories" }),
-  ).toBeVisible();
   await page.getByRole("button", { name: "Polity", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Polity syllabus map" }),

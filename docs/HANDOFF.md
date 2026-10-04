@@ -1,5 +1,43 @@
 # Handoff
 
+## Inline Constitution topic graph — 2026-10-04
+
+- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/17
+- Branch: `codex/inline-topic-graph`, based on `48da912` from PR #16.
+  Implementation commit: `48e9e41`.
+  PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/18
+  (stacked on PR #16). Assisting tool for this correction: Codex.
+  A documentation checkpoint follows; resume from the actual branch head.
+- User correction: the syllabus topic must show study connections immediately,
+  without requiring a separate Open map action. Constitution now lazy-loads a
+  combined graph with 260 canonical concepts and all 419 existing edges.
+- Explore theme, the grouped Topic index, or clicking another theme focuses it
+  on the same topic route. The initial focus is Preamble. All records remain on
+  canvas; focus deliberately rearranges the layout for readability, whereas
+  ordinary selection/hover retain positions. Shared Articles occur once.
+- Saved microtheme links resolve to their focus directly. New bookmarks preserve
+  both theme focus and selected node. Legacy standalone routes still work.
+  Eleven unauthored related themes retain home-topic outline links in the index.
+- Canonical content JSON is unchanged. The union preserves original edge evidence,
+  namespacing differing source records so their locators and URLs remain intact.
+  Composition and spatial layout are separate. No new academic edges, corpus
+  regeneration, source re-review, merge or deployment.
+- Validation: `npm run check` passed format, TypeScript, 24 unit tests, production
+  build and public audit. Full browser suite: 75 passed, six mouse-only touch
+  skips. After final bookmark, index accessibility and mobile fit refinements,
+  `tests/browser/topic-graph.spec.ts` passed seven tests with two mouse-only touch
+  skips. Isolated browser config:
+  `output/grok-pilot/independent.config.ts` (port 4175).
+- Visual QA: desktop, phone and tablet dark/light screenshots under `output/qa/`
+  with `inline-topic-` prefix. Tablet legend wrapping was corrected. Physical
+  devices and Safari remain untested. Review server remains http://localhost:4177/.
+- Limits: this is the existing authored Constitution content composed into one
+  topic view, not completion of other syllabus topics or a new cross-topic edge
+  authoring pass. Whole-topic fit is an overview; choose a theme or zoom for
+  readable detail. Existing source cutoffs and selective case/event coverage apply.
+- Next: user reviews this corrected interaction before the Federalism content batch.
+
+
 ## Constitution foundations — reviewed first-topic release, 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/15

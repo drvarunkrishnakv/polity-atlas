@@ -65,8 +65,10 @@ against official papers. Raw texts and per-question audit trails remain private.
 
 ## First study example
 
-From Constitution & its foundations, choose Fundamental Rights → Open Fundamental
-Rights graph. All 47 concepts and 52 links are already on the canvas.
+In the Constitution topic, select Fundamental Rights through Explore theme or the
+Topic index. Its connections are already on the same canvas. The standalone
+`#/gs2/polity/fundamental-rights` example remains available with 47 concepts and
+52 links; the following describes that smaller view.
 Start with the six rights categories, then select Right to Freedom → Article 21 →
 Puttaswamy → Privacy without revealing anything. Selecting a category frames its
 Articles. Node tints and text labels distinguish categories, Articles, judgments,
@@ -83,8 +85,10 @@ example is dated 2024. See docs/CONTENT_REVIEW.md for scope and source limitatio
 
 ## Constitution foundations release
 
-From GS II → Polity → Constitution & its foundations, select a home theme and
-open its study map. There are 36 new maps plus the original Fundamental Rights
+GS II → Polity → Constitution & its foundations opens the connected study content
+directly. Use Explore theme or Topic index to focus a teaching structure on that
+same canvas; there is no Open map step. The initial view starts with the Preamble.
+All 260 canonical concepts and 419 existing connections stay present. There are 36 new maps plus the original Fundamental Rights
 map; the two constitutional-morality register identities share one destination.
 The 11 related themes retain their later home-topic authoring passes.
 

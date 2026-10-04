@@ -13,12 +13,10 @@ test("paper to subject to graph; all concepts, select and reset", async ({
   await page
     .getByRole("button", { name: "01 · Constitution & its foundations" })
     .click();
-  await page
-    .getByRole("button", { name: /^Fundamental Rights 7 Mains/ })
-    .click();
-  await page
-    .getByRole("button", { name: "Open Fundamental Rights graph" })
-    .click();
+  await expect(
+    page.getByRole("combobox", { name: "Explore theme" }),
+  ).toBeVisible();
+  await page.goto("/#/gs2/polity/fundamental-rights");
   await expect(
     page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
   ).toBeVisible();

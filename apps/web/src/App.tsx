@@ -8,6 +8,8 @@ const loadFoundation = () =>
   import("./screens/FoundationScreen").then(
     (module) => module.FoundationScreen,
   );
+const loadTopic = () =>
+  import("./screens/TopicScreen").then((module) => module.TopicScreen);
 const loadOverview = () =>
   import("./screens/OverviewScreen").then((module) => module.OverviewScreen);
 
@@ -61,6 +63,22 @@ export function App() {
         failureTitle="Study map unavailable"
         onLibrary={onLibrary}
         render={(Screen) => <Screen slug={slug} onNavigate={navigate} />}
+      />
+    );
+  if (path === "gs2/polity/topics/constitution")
+    return (
+      <RouteScreen
+        key={`topic:${params.toString()}`}
+        routeKey="constitution-topic"
+        load={loadTopic}
+        failureTitle="Topic graph unavailable"
+        onLibrary={onLibrary}
+        render={(Screen) => (
+          <Screen
+            themeId={params.get("theme") || undefined}
+            onNavigate={navigate}
+          />
+        )}
       />
     );
   if (path === "gs2/polity" || path.startsWith("gs2/polity/topics/")) {
