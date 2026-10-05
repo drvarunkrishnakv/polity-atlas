@@ -320,7 +320,7 @@ export function GraphCanvas({
     <div className="app-shell">
       <header className="topbar">
         <button className="brand" onClick={() => onNavigate("")}>
-          Polity Atlas
+          Recall Atlas
         </button>
         <span className="header-divider" />
         <nav className="breadcrumb" aria-label="Breadcrumb">

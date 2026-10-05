@@ -1,4 +1,4 @@
-# Polity Atlas
+# Recall Atlas
 
 A personal UPSC Mains revision graph. Read elsewhere, then use the graph to recall
 concepts and understand justified connections. No textbook reader, tutor or game.
