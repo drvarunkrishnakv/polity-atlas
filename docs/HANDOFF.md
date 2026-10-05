@@ -5,6 +5,8 @@
 - Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/20
 - Branch: `codex/rename-recall-atlas`, based on `100eeca` from PR #18
   (`codex/inline-topic-graph`). Assisting tool: Codex.
+  Implementation commit: `1c51c50`. PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/21
+  A documentation checkpoint follows; resume from the actual branch head.
 - GitHub repository renamed to `drvarunkrishnakv/recall-atlas`; shared local
   origin updated. Main protection verified unchanged (admin enforcement and
   strict required `quality` check). Existing PRs retain their numbers and bases.
