@@ -4,7 +4,10 @@
 
 - Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/19
 - Branch: `codex/focused-study-navigation`, based on `100eeca` from PR #18.
-  Assisting tool: Codex. Implementation and PR checkpoint follow below.
+  Implementation commit: `607791d`.
+  PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/22
+  (stacked on PR #18). Assisting tool: Codex.
+  A documentation checkpoint follows; resume from the actual branch head.
 - Supersedes the combined topic-canvas experiment below at the user's request.
   Syllabus topics show canonical PYQ themes. Selecting an authored theme opens
   its separate complete map immediately; unfinished themes retain coverage outlines.
