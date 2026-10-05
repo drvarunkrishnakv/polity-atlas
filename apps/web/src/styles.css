@@ -1468,97 +1468,302 @@ p {
   }
 }
 
-/* Syllabus navigation uses the same quiet canvas, with a separate coverage inspector. */
-.coverage-shell .map-card {
-  width: 250px;
-  min-height: 105px;
+/* Syllabus navigation is a document list; the canvas starts inside a study map. */
+.syllabus-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
 }
-.coverage-shell .map-card strong {
-  font-size: 14px;
-  line-height: 1.4;
+.syllabus-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 48px 70px;
 }
-.map-meaning {
-  display: block;
-  font-size: 11px;
-  line-height: 1.45;
+.list-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 0;
+  padding: 0 4px;
   color: var(--text-secondary);
-  margin-top: 5px;
 }
-.coverage-list {
+.list-intro {
+  margin: 22px 0 26px;
+}
+.list-intro h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(25px, 3vw, 34px);
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+}
+.list-intro > p {
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+.list-intro .list-coverage {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.list-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 20px 0 16px;
+}
+.list-tools .search-wrap {
+  width: min(520px, 100%);
+  background: var(--surface);
+}
+.list-tools .search-wrap input {
+  height: 46px;
+  font-size: 14px;
+}
+.list-tools > span {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.list-context {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin: 14px 0 20px;
+}
+.list-context summary,
+.list-sources summary {
+  cursor: pointer;
+  padding: 8px 0;
+}
+.list-context ul {
+  padding-left: 20px;
+  line-height: 1.9;
+}
+.list-context details {
+  margin-top: 10px;
+}
+.placement-note {
+  margin: 12px 0;
+  max-width: 800px;
+}
+.group-jumps {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 4px 0 12px;
+}
+.group-jumps button {
+  padding: 5px 10px;
+  min-height: 34px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+.browse-group {
+  margin-top: 30px;
+  scroll-margin-top: 18px;
+}
+.browse-group h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+}
+.browse-group h2 > span {
+  letter-spacing: 0;
+  font-size: 11px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.theme-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.theme-list > li + li {
+  border-top: 1px solid var(--line);
+}
+.theme-row,
+.topic-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  padding: 18px 22px;
+  gap: 22px;
+  border: 0;
+  border-radius: 0;
+  min-height: 94px;
+}
+.theme-row:focus-visible,
+.topic-row:focus-visible {
+  outline-offset: -3px;
+}
+.list-row-copy {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-top: 14px;
+  min-width: 0;
+  flex: 1;
 }
-.coverage-list button {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  padding: 12px;
-  background: var(--input);
-}
-.coverage-section {
-  margin: 16px 0 8px;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--text-muted);
+.list-row-copy strong {
+  font-size: 15px;
+  line-height: 1.45;
   font-weight: 600;
 }
-.coverage-list strong {
-  font-size: 12px;
+.list-description {
+  font-size: 13px;
   line-height: 1.5;
+  color: var(--text-secondary);
 }
-.coverage-list small,
-.coverage-list span {
-  font-size: 10px;
+.list-row-copy small {
+  font-size: 11px;
+  line-height: 1.5;
   color: var(--muted);
 }
-.coverage-list span {
+.list-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 11px;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.list-status.available {
   color: var(--link);
 }
-.coverage-link {
+.topic-number {
+  font-size: 14px;
+  color: var(--muted);
+  align-self: flex-start;
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.subject-tag {
+  font-size: 10px;
+  font-weight: 400;
+  margin-left: 10px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: var(--soft);
+  color: var(--text-secondary);
+}
+.related-themes {
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.related-themes > p {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.list-sources {
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.list-sources p {
+  margin: 10px 0;
+}
+.list-empty {
+  padding: 32px 0;
+}
+.list-empty button {
   margin-top: 15px;
+  padding: 8px 16px;
+}
+.theme-outline {
+  max-width: 780px;
+}
+.theme-outline section {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+}
+.theme-outline p {
+  color: var(--text-secondary);
+  margin: 10px 0;
+}
+.coverage-link {
+  margin-top: 16px;
 }
 .coverage-link button {
   display: flex;
+  gap: 10px;
   align-items: center;
-  gap: 8px;
-  border: none;
-  font-size: 12px;
-  text-align: left;
+  border: 0;
   padding: 0;
+  text-align: left;
 }
 .coverage-link small {
-  font-size: 10px;
   color: var(--muted);
+  display: block;
 }
 .coverage-caution {
-  font-size: 11px;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  padding: 10px;
-  background: var(--soft);
-  margin-top: 12px;
   border-left: 2px solid var(--line-strong);
-}
-.coverage-inspector .back-link {
-  margin: 20px 0 0;
-  font-size: 12px;
-}
-.coverage-shell .graph-viewport {
-  inset: 118px 0 66px;
+  padding-left: 12px;
 }
 @media (max-width: 700px) {
-  .coverage-shell .graph-viewport {
-    inset: 104px 0 53px;
+  .syllabus-shell .topbar {
+    height: 60px;
+    flex-wrap: nowrap;
+    padding: 0 14px;
+    gap: 12px;
   }
-  .coverage-shell .canvas-heading {
-    max-width: calc(100% - 28px);
+  .syllabus-shell .brand {
+    font-size: 18px;
   }
-  .coverage-shell .canvas-footer > span {
-    max-width: 215px;
+  .syllabus-shell .breadcrumb {
+    font-size: 12px;
+    gap: 7px;
+  }
+  .syllabus-shell .header-actions {
+    width: auto;
+    margin-left: auto;
+  }
+  .syllabus-content {
+    padding: 20px 18px 44px;
+  }
+  .list-intro {
+    margin-top: 18px;
+  }
+  .list-tools {
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .list-tools .search-wrap {
+    width: 100%;
+  }
+  .theme-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+  }
+  .theme-row .list-row-copy {
+    flex-basis: 100%;
+  }
+  .list-status {
+    font-size: 11px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .topic-row {
+    padding: 17px 14px;
+    gap: 14px;
+  }
+  .list-row-copy strong {
+    font-size: 14px;
+  }
+  .list-description {
+    font-size: 12px;
   }
 }
 

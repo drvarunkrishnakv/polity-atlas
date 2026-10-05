@@ -14,7 +14,7 @@ test("paper to subject to graph; all concepts, select and reset", async ({
     .getByRole("button", { name: "01 · Constitution & its foundations" })
     .click();
   await page
-    .getByRole("button", { name: /^Fundamental Rights 7 Mains/ })
+    .getByRole("button", { name: "Fundamental Rights", exact: true })
     .click();
   await expect(
     page.getByRole("heading", { name: "Fundamental Rights", exact: true }),

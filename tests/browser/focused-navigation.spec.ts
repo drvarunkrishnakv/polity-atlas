@@ -4,7 +4,7 @@ test("authored theme card opens directly while an unfinished theme remains an ou
   page,
 }) => {
   await page.goto("/#/gs2/polity/topics/constitution");
-  await expect(page.locator(".map-card")).toHaveCount(50);
+  await expect(page.locator(".theme-row")).toHaveCount(49);
   const card = page.getByRole("button", {
     name: "Fundamental Rights",
     exact: true,
@@ -16,7 +16,7 @@ test("authored theme card opens directly while an unfinished theme remains an ou
     page.getByRole("button", { name: /Reveal|^Open .*map/ }),
   ).toHaveCount(0);
   await page.goBack();
-  await expect(page.locator(".map-card")).toHaveCount(50);
+  await expect(page.locator(".theme-row")).toHaveCount(49);
   const unfinished = page.getByRole("button", {
     name: "Federalism",
     exact: true,
