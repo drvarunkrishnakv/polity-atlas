@@ -4,7 +4,9 @@
 
 - Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/23
 - Branch: `codex/syllabus-theme-lists`, based on `a2d5622` from PR #22.
-  Assisting tool: Codex. Implementation/PR checkpoint follows.
+  Implementation commit: `fcf112b`.
+  PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/24 (stacked on PR #22).
+  Assisting tool: Codex. A documentation checkpoint follows; resume from branch head.
 - Syllabus overview and topic pages now use full-width lists, without a graph or
   duplicate inspector. The graph starts only after opening an authored study theme.
   Constitution has five editorial browsing groups and a separate Related themes
