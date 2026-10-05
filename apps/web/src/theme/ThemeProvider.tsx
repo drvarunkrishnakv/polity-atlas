@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 
 export type Theme = "dark" | "light";
+// Keep the original key so existing Recall Atlas users retain their preference.
 const storageKey = "polity-atlas-theme";
 export function readTheme(): Theme {
   try {

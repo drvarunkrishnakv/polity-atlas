@@ -1,11 +1,39 @@
 # Handoff
 
+## Recall Atlas rename — 2026-10-05
+
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/20
+- Branch: `codex/rename-recall-atlas`, based on `100eeca` from PR #18
+  (`codex/inline-topic-graph`). Assisting tool: Codex.
+  Implementation commit: `1c51c50`. PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/21
+  A documentation checkpoint follows; resume from the actual branch head.
+- GitHub repository renamed to `drvarunkrishnakv/recall-atlas`; shared local
+  origin updated. Main protection verified unchanged (admin enforcement and
+  strict required `quality` check). Existing PRs retain their numbers and bases.
+- App headers, browser title, README, npm workspace names/lockfile and repository
+  links now use Recall Atlas. The original `polity-atlas-theme` storage key is
+  intentionally retained for saved appearance preferences. Subject labels,
+  academic records, permanent IDs, routes and historical screenshots are unchanged.
+- Checks: `npm ci`; `npm run check` passed formatting, TypeScript, 24 unit tests,
+  production build and public audit. Browser theme/catalogue suites passed all
+  12 desktop/phone/tablet cases with one worker, using
+  `npx playwright test --config output/rename.config.ts tests/browser/theme.spec.ts tests/browser/catalog.spec.ts --workers=1`.
+  Initial four-worker run had one desktop blocked-storage timeout; sequential
+  rerun passed without application changes. Isolated test server used port 4186.
+- Visual QA: reviewed `docs/design/recall-atlas-{desktop,phone}.png`.
+  Browser title and retained legacy light-mode preference verified using Playwright
+  CLI. Review server: http://localhost:4188/ . Physical devices/Safari untested.
+  npm install reports two moderate dependency advisories; dependencies unchanged.
+- No merge or production deployment. Next: review this rename atop PR #18;
+  main's README and existing running copies change only when the branch is integrated.
+  The local workspace folder remains in place to preserve other active worktrees.
+
 ## Inline Constitution topic graph — 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/17
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/17
 - Branch: `codex/inline-topic-graph`, based on `48da912` from PR #16.
   Implementation commit: `48e9e41`.
-  PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/18
+  PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/18
   (stacked on PR #16). Assisting tool for this correction: Codex.
   A documentation checkpoint follows; resume from the actual branch head.
 - User correction: the syllabus topic must show study connections immediately,
@@ -40,10 +68,10 @@
 
 ## Constitution foundations — reviewed first-topic release, 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/15
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/15
 - Branch: `codex/constitution-foundations`, based on `d4acd51` from PR #14.
   Implementation commit: `646de27`.
-  PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/16
+  PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/16
   (stacked on `codex/graph-on-demand`, PR #14). A documentation checkpoint
   commit follows; resume from the actual branch head.
   No merge, production deployment or remote-protection changes.
@@ -94,10 +122,10 @@
 
 ## On-demand graph screens / Grok coding pilot — 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/13
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/13
 - Branch: `codex/graph-on-demand`, based on `3fe9624` of
   `codex/polity-syllabus-overview`. Implementation commit: `8480840`.
-- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/14 (stacked on PR #12).
+- PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/14 (stacked on PR #12).
   A handover-only commit follows; resume from the actual branch head.
 - Assisting tools: Grok CLI (`grok-4.7`, `xhigh`) wrote code and review corrections
   in an isolated worktree. Codex specified scope, reviewed, independently tested,
@@ -136,10 +164,10 @@
 
 ## Polity syllabus overview — 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/11
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/11
 - Branch: `codex/polity-syllabus-overview`, based on appearance handover `a67a75f`.
   Assisting tool: Codex. Implementation commit: `5bddfa7`.
-- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/12 (open).
+- PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/12 (open).
   A handover-only commit follows; use the actual branch head when resuming.
 - Polity now opens a nine-topic syllabus overview. Topic canvases show all mapped
   themes; selecting a theme opens its coverage outline. Search, sidebar lists,
@@ -172,10 +200,10 @@
 
 ## Dark/light appearance — 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/9
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/9
 - Branch: `codex/dark-light-mode`, based on hierarchy handover `f5ca72d`.
   Assisting tool: Codex. Implementation commit: `10c6ac7`.
-- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/10 (open).
+- PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/10 (open).
   A handover-only commit follows; use the current branch head when resuming.
 - Sun/moon toggle in the library and graph header. Dark is the initial default;
   a browser-local preference survives navigation/reloads. Storage failures leave
@@ -196,10 +224,10 @@
 
 ## Six categories and node-type colours — 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/7
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/7
 - Branch: `codex/rights-hierarchy-colours`, based on complete-theme handover
   `ceaa784`. Assisting tool: Codex. Implementation commit: `5a27d5a`.
-- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/8 (open).
+- PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/8 (open).
   Later handover-only commits may follow; use the actual branch head when resuming.
 - Release `2026.10.04.1`: 47 concepts, 52 explained edges and seven PYQ angles.
   Six category records introduce the Articles. Supporting and omitted provisions
@@ -228,10 +256,10 @@
 
 ## Complete microtheme view — 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/5
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/5
 - Branch: `codex/show-complete-theme`, based on hover fix handover `44610b2`.
   Assisting tool: Codex. Implementation commit: `f8428d7`.
-- PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/6 (open).
+- PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/6 (open).
   Later handover-only commits may follow; use the actual branch head when resuming.
 - All 41 concepts and 46 edges in the current example render immediately and
   remain present through selection, search, camera movement and Reset. Removed
@@ -257,10 +285,10 @@
 
 ## Hover flicker follow-up — 2026-10-04
 
-- Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/3
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/3
 - Branch: `codex/fix-hover-flicker`, based on `bfe97a7` of the still-open app PR #2.
   Assisting tool: Codex. Fix commit: `245e95a`.
-- Fix PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/4 (open).
+- Fix PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/4 (open).
   Later handover-only commits may follow; use `git rev-parse HEAD` to resume.
 - Root cause reproduced in Chromium: hover rebuilt controlled nodes without their
   measured dimensions, temporarily hiding cards and removing edges. Hiding the
@@ -281,11 +309,11 @@
 
 ## Current task and ownership
 
-Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/1
-Repository: https://github.com/drvarunkrishnakv/polity-atlas
+Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/1
+Repository: https://github.com/drvarunkrishnakv/recall-atlas
 Branch: `feat/fundamental-rights-graph`. Assisting tool: Codex.
 Foundation commit: `826d9b9`. App implementation commit: `1718a3d`.
-PR: https://github.com/drvarunkrishnakv/polity-atlas/pull/2 (open for user review).
+PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/2 (open for user review).
 Later documentation-only commits may follow; use the actual branch head to resume.
 
 ## Completed

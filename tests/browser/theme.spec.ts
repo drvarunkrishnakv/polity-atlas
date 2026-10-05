@@ -95,7 +95,7 @@ test("theme persists across screens and reloads without moving the graph", async
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
-  await page.getByRole("button", { name: "Polity Atlas", exact: true }).click();
+  await page.getByRole("button", { name: "Recall Atlas", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Start with a paper." }),
   ).toBeVisible();

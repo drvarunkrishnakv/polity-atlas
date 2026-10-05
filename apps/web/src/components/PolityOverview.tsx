@@ -276,7 +276,7 @@ export function PolityOverview({
     <div className="app-shell coverage-shell">
       <header className="topbar">
         <button className="brand" onClick={() => onNavigate("")}>
-          Polity Atlas
+          Recall Atlas
         </button>
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <button onClick={() => onNavigate("gs2")}>GS II</button>

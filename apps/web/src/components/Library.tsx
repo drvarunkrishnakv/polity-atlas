@@ -17,7 +17,7 @@ export function Library({
     <div className="library">
       <header className="topbar">
         <button className="brand" onClick={() => onNavigate("")}>
-          Polity Atlas
+          Recall Atlas
         </button>
         <span className="library-tag">Revision through connections</span>
         <ThemeToggle />
