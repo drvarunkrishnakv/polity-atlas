@@ -85,13 +85,13 @@ test("overview loads the catalogue and not the study graph", async ({
   const urls = watch(page);
   await page.goto("/#/gs2/polity");
   await expect(
-    page.getByRole("heading", { name: "Polity syllabus map" }),
+    page.getByRole("heading", { name: "Polity syllabus" }),
   ).toBeVisible();
-  await expect(page.locator(".map-card")).toHaveCount(10);
+  await expect(page.locator(".topic-row")).toHaveCount(9);
   const seen = joined(urls);
   expect(seen).toContain("OverviewScreen");
   expect(seen).toContain("polity-catalog.json");
-  expect(seen).toContain("xyflow");
+  expect(seen).not.toContain("xyflow");
   expect(seen).not.toContain("StudyScreen");
   expect(seen).not.toContain("fundamental-rights.json");
   expect(seen).not.toContain("foundations.json");
@@ -223,7 +223,7 @@ test("a finished overview import does not replace a newer study route", async ({
       page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "Polity syllabus map" }),
+      page.getByRole("heading", { name: "Polity syllabus" }),
     ).toHaveCount(0);
   } finally {
     held.release();

@@ -26,7 +26,7 @@ npm run test:e2e
 ```
 
 The app is in `apps/web`; curated, versioned content is separate from components.
-The Polity overview maps nine syllabus topics and 154 unique PYQ themes.
+The Polity overview lists nine syllabus topics and 154 unique PYQ themes.
 The first topic, Constitution & its foundations, now has 37 detailed maps covering its 38 home microtheme identities. See `docs/HANDOFF.md` for exact
 implementation and verification status, and `docs/ARCHITECTURE.md` for boundaries.
 
@@ -49,9 +49,9 @@ for simultaneous agents. Pull requests, automated checks and previews precede
 merging. Main is protected on the public remote. Production release is a separate,
 explicit action. Never put provider credentials in frontend code.
 
-## Polity coverage map
+## Polity syllabus browser
 
-Open GS II → Polity → a syllabus topic → a PYQ theme. The canvas uses the first
+Open GS II → Polity → a syllabus topic → a PYQ theme. The list uses the first
 nine GS II syllabus bullets as the Polity spine; headings are concise paraphrases
 with a link to the official 2026 notification. All nine topics remain present.
 The catalogue preserves 139 Polity themes (118 Mains / 210 Prelims occurrences)
@@ -107,3 +107,18 @@ The map loads on demand. Its headings surround the topic and details extend
 outwards; select a heading to frame its group. Every node is already present.
 Source dates remain visible. Dark/light appearance, bookmarks, direct-neighbour
 highlighting and the responsive inspector work across the new maps.
+
+## Browse with lists, study with graphs
+
+Paper, subject and syllabus navigation use ordinary lists. Constitution themes
+are grouped under five editorial browsing headings, with a separate Related themes
+section. Search filters the current topic; the Polity list searches all themes.
+Rows show the existing map meaning, secondary PYQ counts and an explicit Map
+available or Outline only label. An authored row opens its complete graph in one
+click. The graph design and academic content are unchanged.
+
+Returning by the topic breadcrumb or browser Back restores the list's search,
+scroll and selected-row focus. Tab-local session storage keeps this on reload;
+an in-memory fallback supports environments where storage is blocked. Original
+syllabus placement explanations remain under the topic's revision/placement notes,
+and unfinished outlines retain their detailed provenance.

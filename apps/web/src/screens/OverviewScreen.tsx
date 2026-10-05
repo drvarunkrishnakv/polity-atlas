@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { ReactFlowProvider } from "@xyflow/react";
 import { catalog, validateCatalog } from "../content/catalog";
 import { PolityOverview } from "../components/PolityOverview";
 import { RouteNotice } from "../routing/RouteScreen";
@@ -26,7 +25,7 @@ export function OverviewScreen({
   if (failure)
     return (
       <RouteNotice
-        title="Syllabus map unavailable"
+        title="Syllabus list unavailable"
         onLibrary={() => onNavigate("")}
         onReload={() => location.reload()}
       />
@@ -43,12 +42,11 @@ export function OverviewScreen({
       </main>
     );
   return (
-    <ReactFlowProvider key={topicId || "overview"}>
-      <PolityOverview
-        topicId={topicId}
-        themeId={themeId}
-        onNavigate={onNavigate}
-      />
-    </ReactFlowProvider>
+    <PolityOverview
+      key={`${topicId || "overview"}:${themeId || "list"}`}
+      topicId={topicId}
+      themeId={themeId}
+      onNavigate={onNavigate}
+    />
   );
 }

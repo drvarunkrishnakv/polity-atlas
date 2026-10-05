@@ -66,9 +66,103 @@ const links = specs.map(([from, to, anchorId, edgeId]) => {
     ),
   };
 });
+// Editorial browsing groups only; these do not change syllabus membership or edges.
+const browserGroups = [
+  [
+    "Foundations",
+    [
+      "constitutional-history",
+      "constitution-making",
+      "commencement-repeal",
+      "preamble",
+      "constitutional-values",
+      "principles",
+      "constitutional-morality",
+      "constitutionalism",
+      "democracy",
+      "political-concepts",
+      "rule-of-law",
+      "constitutional-structure",
+    ],
+  ],
+  [
+    "Rights and remedies",
+    [
+      "fundamental-rights",
+      "human-rights-foundations",
+      "constitutional-remedies",
+      "article-13-review",
+      "constitutional-property",
+      "equality-reservation",
+      "access-to-justice",
+    ],
+  ],
+  [
+    "Duties and public policy",
+    [
+      "fundamental-duties",
+      "directive-principles",
+      "education-governance",
+      "environmental-jurisprudence",
+      "gender-justice",
+    ],
+  ],
+  [
+    "Amendments and limits",
+    [
+      "constitutional-amendment",
+      "ninth-schedule",
+      "emergency-provisions",
+      "security-and-rights",
+    ],
+  ],
+  [
+    "Citizenship and safeguards",
+    [
+      "citizenship",
+      "constitutional-safeguards",
+      "constitutional-provisions",
+      "scheduled-tribes",
+      "tribal-safeguards",
+      "scheduled-areas-and-tribes",
+      "scheduled-areas",
+      "constitutional-languages",
+      "national-honours",
+    ],
+  ],
+];
+const browserMaps = browserGroups.flatMap(([group, slugs]) =>
+  slugs.map((slug) => {
+    const map = maps.find((m) => m.slug === slug);
+    if (!map) throw new Error(`Unknown browser map ${slug}`);
+    return {
+      microthemeIds: map.microthemeIds,
+      group,
+      meaning:
+        slug === "fundamental-rights"
+          ? rights.nodes.find((n) => n.id === "fr").meaning
+          : bank.maps.find((m) => m.slug === slug).meaning,
+    };
+  }),
+);
+if (
+  browserMaps.length !== maps.length ||
+  new Set(browserGroups.flatMap(([, slugs]) => slugs)).size !== maps.length
+)
+  throw new Error("Browser groups must cover each authored map exactly once");
 for (const [name, data] of [
   ["study-navigation.json", { version: "2026.10.05.1", maps }],
   ["study-links.json", { version: "2026.10.05.1", links }],
+  [
+    "theme-browser.json",
+    {
+      version: "2026.10.05.1",
+      reason:
+        "Editorial browsing groups and existing map meanings; canonical syllabus tags and content unchanged.",
+      groups: browserGroups.map(([name]) => name),
+      maps: browserMaps,
+    },
+  ],
 ]) {
   const text = JSON.stringify(data, null, 2) + "\n";
   if (process.argv.includes("--check")) {

@@ -69,12 +69,12 @@ syllabus mappings. `catalog.ts` validates references and resolves memberships.
 Navigation links use `register-tag` or `editorial-placement`; neither asserts a
 legal relationship. The original Fundamental Rights graph is unchanged.
 
-`PolityOverview` renders the selected syllabus scope, with measured dimensions
-retained on hover. All members of that navigation scope render immediately.
-Selecting a topic changes scope; selecting an authored theme opens its study
-route immediately. Selecting an unauthored theme pins its coverage outline. No unauthored theme has an enabled study destination. Search and accessible
-sidebar lists provide access to off-screen members. Shared theme IDs appear under
-multiple topics without duplicating their source identity or occurrence counts.
+`PolityOverview` renders full-width semantic topic and theme lists. It never imports
+React Flow. Selecting a topic changes list scope; selecting an authored theme opens
+its study route immediately. An unauthored theme opens a clearly labelled coverage
+outline. Search filters the current topic, or all themes from the Polity overview.
+Home and related memberships remain distinct. Original syllabus placement notes are
+available independently of the editorial browsing headings.
 
 Routes: `#/gs2/polity` is the overview, `#/gs2/polity/topics/<topic-id>` is a topic,
 and `?theme=<stable-theme-id>` opens an authored study or pins an unfinished outline. The study example lives at
@@ -87,8 +87,8 @@ reload and appearance persistence are covered by browser tests.
 The entry renders the library only. `App` statically imports the library and a
 small route loader. It dynamically imports two screen modules and does not
 import React Flow, the catalogue, or the study graph. `OverviewScreen` validates
-`polity-catalog.json` and renders the syllabus map inside its own
-`ReactFlowProvider` (`key` is the topic id, or `overview`). `StudyScreen`
+`polity-catalog.json` and renders the list, keyed by topic and outline identity.
+It does not load React Flow or its styles. `StudyScreen`
 validates the Fundamental Rights release through the graph repository and
 renders that canvas inside its own provider. Neither screen imports the other
 dataset.
@@ -170,3 +170,19 @@ check` to detect stale metadata. Unit checks verify the shared anchor, destinati
 edge and exact evidence; browser checks cover direct opening, old bookmarks,
 related-map return navigation, one-hop highlights and complete map membership.
 The full banks are still loaded only by their respective study screens.
+
+## Syllabus lists — 2026-10-05
+
+Issue #23 replaces navigation-only graphs with lists; authored study canvases
+are unchanged. `theme-browser.json` is small generated presentation metadata:
+editorial groups and one-line meanings copied from existing public study records.
+It never rewrites source tags, stable IDs, counts, map memberships or legal edges.
+`tooling/build-study-navigation.mjs --check` also validates this metadata against
+its explicit group choices and original meanings. Related themes retain their
+home-topic labels; duplicate titles retain subject labels and canonical identities.
+
+`navigation/list-state.ts` stores query, scroll position and last opened theme
+per topic/outline scope in tab-local session storage, with a memory fallback.
+The list restores these in a layout effect, including keyboard focus without
+moving the restored scroll. On-screen list controls persist state before navigation.
+No corpus, study bank or React Flow dependency is needed for syllabus browsing.

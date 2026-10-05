@@ -90,3 +90,10 @@ it does not change the canonical study releases. Each gateway names an existing
 destination, preserves the shared Article identity and reproduces the destination
 edge explanation/classification and exact source references. Theme membership alone
 is not treated as proof of an academic connection.
+
+
+Syllabus navigation uses lists as of 2026-10-05. Editorial browsing groups organise
+the existing themes without adding syllabus tags or academic edges. Row descriptions
+copy existing study-map meanings; outline-only rows describe their home-topic
+placement and never imply that a study graph exists. Related themes remain separate.
+Original mapping explanations stay accessible under placement notes and outlines.

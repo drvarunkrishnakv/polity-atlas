@@ -1,0 +1,201 @@
+{
+  "version": "2026.10.05.1",
+  "reason": "Editorial browsing groups and existing map meanings; canonical syllabus tags and content unchanged.",
+  "groups": [
+    "Foundations",
+    "Rights and remedies",
+    "Duties and public policy",
+    "Amendments and limits",
+    "Citizenship and safeguards"
+  ],
+  "maps": [
+    {
+      "microthemeIds": ["microtheme:c3c94f6635b8e4706b38c1c0"],
+      "group": "Foundations",
+      "meaning": "Colonial institutions to constitutional self-government"
+    },
+    {
+      "microthemeIds": ["microtheme:8e07cc7e7d3278699a18ea56"],
+      "group": "Foundations",
+      "meaning": "From the 1946 Assembly to commencement"
+    },
+    {
+      "microthemeIds": ["microtheme:7fcb384207a954260270cd8d"],
+      "group": "Foundations",
+      "meaning": "Title, start, and what was repealed"
+    },
+    {
+      "microthemeIds": ["microtheme:c3962731a01281f55e8d2e47"],
+      "group": "Foundations",
+      "meaning": "Authority, constitutional character and objectives"
+    },
+    {
+      "microthemeIds": ["microtheme:1d65764b992c6badc9fb36b4"],
+      "group": "Foundations",
+      "meaning": "Justice, liberty, equality, dignity and fraternity"
+    },
+    {
+      "microthemeIds": ["microtheme:0018b78cdf24beb7591884c7"],
+      "group": "Foundations",
+      "meaning": "Preamble ideals read with constitutional morality"
+    },
+    {
+      "microthemeIds": [
+        "microtheme:89b54b741cde68ab404fe2bd",
+        "microtheme:a3a1ac01d2874c2c60ad8eb1"
+      ],
+      "group": "Foundations",
+      "meaning": "The Constitution's own discipline, not popular sentiment"
+    },
+    {
+      "microthemeIds": ["microtheme:36519d6431193c4c7cad9542"],
+      "group": "Foundations",
+      "meaning": "A government limited by the Constitution"
+    },
+    {
+      "microthemeIds": ["microtheme:3486c0cd901d6cf443b37332"],
+      "group": "Foundations",
+      "meaning": "Representative government on adult suffrage"
+    },
+    {
+      "microthemeIds": ["microtheme:b0661ad92bdaef9a8c581de4"],
+      "group": "Foundations",
+      "meaning": "State, liberty, equality, rights, duties, separation"
+    },
+    {
+      "microthemeIds": ["microtheme:b409b57530021fab586b3c3e"],
+      "group": "Foundations",
+      "meaning": "Limited power, equal law, and fair procedure"
+    },
+    {
+      "microthemeIds": ["microtheme:f456be7c19b4544f3a10a2c1"],
+      "group": "Foundations",
+      "meaning": "Parts, Schedules and the roles they organise"
+    },
+    {
+      "microthemeIds": ["microtheme:3dc9a2d227339195a31d5617"],
+      "group": "Rights and remedies",
+      "meaning": "Six categories of rights · Part III"
+    },
+    {
+      "microthemeIds": ["microtheme:74bc0f875a60a7abe4d9d35b"],
+      "group": "Rights and remedies",
+      "meaning": "Preamble, directives and duties"
+    },
+    {
+      "microthemeIds": ["microtheme:4c151a40114a66773378a049"],
+      "group": "Rights and remedies",
+      "meaning": "Five writs and two constitutional jurisdictions"
+    },
+    {
+      "microthemeIds": ["microtheme:71879327c4b7d9c6d999a8ce"],
+      "group": "Rights and remedies",
+      "meaning": "Law is widely defined; amendments are a separate track"
+    },
+    {
+      "microthemeIds": ["microtheme:d45ad59a671b13757e4d8e99"],
+      "group": "Rights and remedies",
+      "meaning": "Article 300A, after the omission of Article 31"
+    },
+    {
+      "microthemeIds": ["microtheme:c97e482455fd40d61226d7b2"],
+      "group": "Rights and remedies",
+      "meaning": "Substantive equality and affirmative action"
+    },
+    {
+      "microthemeIds": ["microtheme:c0648495e7a07a5653cfdd51"],
+      "group": "Rights and remedies",
+      "meaning": "Legal aid, fair procedure and accessible reporting"
+    },
+    {
+      "microthemeIds": ["microtheme:d537e90d29dc0ed702629d18"],
+      "group": "Duties and public policy",
+      "meaning": "All eleven clauses, without a built-in penalty"
+    },
+    {
+      "microthemeIds": ["microtheme:16e2c15cae67ac7bdd95a2d4"],
+      "group": "Duties and public policy",
+      "meaning": "Part IV as the welfare-state programme"
+    },
+    {
+      "microthemeIds": ["microtheme:c84ea849737508017a379a16"],
+      "group": "Duties and public policy",
+      "meaning": "A right, a directive, a duty, and a shared subject"
+    },
+    {
+      "microthemeIds": ["microtheme:f34d8d2c49776d167f4b103d"],
+      "group": "Duties and public policy",
+      "meaning": "Rights, public duties and sustainable development"
+    },
+    {
+      "microthemeIds": ["microtheme:b399c9baefb653aef5c59b2d"],
+      "group": "Duties and public policy",
+      "meaning": "Equality provisions, kept case by case"
+    },
+    {
+      "microthemeIds": ["microtheme:34d6e3ff5d72c612894a8938"],
+      "group": "Amendments and limits",
+      "meaning": "A special majority, a short ratification list, and a substantive limit"
+    },
+    {
+      "microthemeIds": ["microtheme:f02c0708969a6e63504534e0"],
+      "group": "Amendments and limits",
+      "meaning": "A 1951 shield, later opened to review"
+    },
+    {
+      "microthemeIds": ["microtheme:880954d1d66c4c88b48d6453"],
+      "group": "Amendments and limits",
+      "meaning": "Exceptional powers with distinct safeguards"
+    },
+    {
+      "microthemeIds": ["microtheme:324e8c69ffa1fb216ccb1a61"],
+      "group": "Amendments and limits",
+      "meaning": "Article 355 is a duty, not a rights waiver"
+    },
+    {
+      "microthemeIds": ["microtheme:b7be21a887147ac1dc45d18e"],
+      "group": "Citizenship and safeguards",
+      "meaning": "One Union citizenship, regulated by parliamentary law"
+    },
+    {
+      "microthemeIds": ["microtheme:fe254ebcb09f69a6474906a3"],
+      "group": "Citizenship and safeguards",
+      "meaning": "Basic structure is a doctrine; judicial review is the device"
+    },
+    {
+      "microthemeIds": ["microtheme:ab4bbb3b5b488d9fd7648790"],
+      "group": "Citizenship and safeguards",
+      "meaning": "Directive, duty, or fundamental right"
+    },
+    {
+      "microthemeIds": ["microtheme:1eafe2f46c660909baa7ca1e"],
+      "group": "Citizenship and safeguards",
+      "meaning": "A Presidential list, State by State"
+    },
+    {
+      "microthemeIds": ["microtheme:47ea21d54fb145e4734a3c8b"],
+      "group": "Citizenship and safeguards",
+      "meaning": "Protection of Scheduled Tribes, by two different designs"
+    },
+    {
+      "microthemeIds": ["microtheme:619f0dd9761ce4d4d7b43bb1"],
+      "group": "Citizenship and safeguards",
+      "meaning": "Status, territory and representative institutions"
+    },
+    {
+      "microthemeIds": ["microtheme:63ea79efbb3ff536cf59f196"],
+      "group": "Citizenship and safeguards",
+      "meaning": "Presidential order, Governor's report, State executive power"
+    },
+    {
+      "microthemeIds": ["microtheme:6cbd3c141384c45b7d57c5a6"],
+      "group": "Citizenship and safeguards",
+      "meaning": "Recognition, official use and linguistic safeguards"
+    },
+    {
+      "microthemeIds": ["microtheme:53b24add341d429f91d80b0a"],
+      "group": "Citizenship and safeguards",
+      "meaning": "Awards are not Article 18 titles"
+    }
+  ]
+}

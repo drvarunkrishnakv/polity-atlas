@@ -21,7 +21,7 @@ test("theme persists across screens and reloads without moving the graph", async
     .getByRole("button", { name: "01 · Constitution & its foundations" })
     .click();
   await page
-    .getByRole("button", { name: /^Fundamental Rights 7 Mains/ })
+    .getByRole("button", { name: "Fundamental Rights", exact: true })
     .click();
   await expect(page.locator(".react-flow.light")).toBeVisible();
   await page

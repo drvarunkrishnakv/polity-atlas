@@ -99,3 +99,14 @@ all records within each map and one-hop highlighting; do not restore per-node
 Reveal. Selected source-backed sidebar gateways link maps at shared Articles.
 Existing combined-canvas bookmarks migrate rather than breaking. This supersedes
 the 2026-10-04 inline-topic decision; it does not regenerate content or embeddings.
+
+
+## 2026-10-05 — Lists before study graphs (issue #23)
+
+Use full-width searchable lists through GS paper, subject, syllabus topic and theme
+selection. Navigation-only hub diagrams obscured labels and duplicated the sidebar.
+The graph begins when an authored theme opens. Group Constitution home themes using
+editorial headings and separate related themes; preserve taxonomy and sources.
+Restore list search/scroll/focus on return. Keep React Flow out of the overview
+module so graph dependencies load only for actual study. Study graph content and
+interaction contracts remain unchanged.

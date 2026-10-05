@@ -1,5 +1,47 @@
 # Handoff
 
+## Syllabus lists before study graphs — 2026-10-05
+
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/23
+- Branch: `codex/syllabus-theme-lists`, based on `a2d5622` from PR #22.
+  Implementation commit: `fcf112b`.
+  PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/24 (stacked on PR #22).
+  Assisting tool: Codex. A documentation checkpoint follows; resume from branch head.
+- Syllabus overview and topic pages now use full-width lists, without a graph or
+  duplicate inspector. The graph starts only after opening an authored study theme.
+  Constitution has five editorial browsing groups and a separate Related themes
+  section. All 49 canonical memberships remain: 38 home identities and 11 related.
+- Rows show the existing study meaning, secondary PYQ counts and Map available or
+  Outline only status. Subject labels distinguish identically named themes. Jump
+  buttons move to groups. Search filters the current topic; Polity searches all
+  themes. Unfinished themes retain their source-aware outlines.
+- Original mappings remain accessible under Revision structure & syllabus placement;
+  source notes and overlap warnings remain available. Editorial groups do not alter
+  syllabus tags, identity, counts or academic graph records. Small generated
+  `theme-browser.json` metadata reuses existing map meanings. Its freshness is
+  covered by `npm run check` through the navigation metadata generator.
+- Returning by browser Back or the topic breadcrumb restores list search, scroll
+  and opened-row focus. Session storage retains this on reload; an in-memory
+  fallback supports blocked storage within the current session.
+- Overview no longer imports React Flow or graph CSS. Study graphs, lazy loading,
+  six-rights hierarchy, all-node rendering and bounded hover are preserved.
+- Validation: `npm run check` passes format, generated metadata, TypeScript,
+  25 unit tests, production build and public audit. Full browser run: 93 passed,
+  four mouse-only touch skips, two new-test navigation-wait failures. Those tests
+  were filling the departing screen before the hash route finished. After adding
+  an explicit destination-heading wait, all 12 list tests passed across desktop,
+  phone and tablet. No application changes followed the full run.
+  Full command: `npx playwright test --config output/grok-pilot/independent.config.ts`.
+  Follow-up: the same command with `tests/browser/syllabus-lists.spec.ts`.
+  Scroll restoration allows two CSS pixels for device-scale rounding.
+- Visual evidence: desktop, phone and tablet dark/light screenshots in
+  `docs/design/lists-*`. Physical devices and Safari remain untested.
+- Review server continues at http://localhost:4177/ from this branch. No merge,
+  deployment, corpus regeneration or remote-protection changes.
+- Next: user reviews list browsing; then resume topic 2, Federalism & local
+  government. Eight syllabus topics and the comprehensive inter-topic linking
+  pass remain unfinished. This task adds no new academic study coverage.
+
 ## Focused study navigation — 2026-10-05
 
 - Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/19

@@ -13,6 +13,8 @@ Read README.md, docs/HANDOFF.md, docs/ARCHITECTURE.md and docs/CONTENT_CONVENTIO
 - Work on a task branch, never push directly to main. Use a separate worktree when
   another agent is active. State the issue, branch and scope in the PR.
 - Keep content, graph traversal and UI separate. Stable IDs are permanent identities.
+- Use lists through syllabus topics and canonical PYQ themes; open a graph only
+  inside an authored study theme. Preserve list search and scroll on return.
 - Start Polity navigation from syllabus topics, then canonical PYQ themes. Keep
   coverage outlines separate from authored study graphs. Preserve original tags;
   label new editorial placements and overlapping counts explicitly.
