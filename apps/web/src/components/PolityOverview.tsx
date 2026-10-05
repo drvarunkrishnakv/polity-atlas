@@ -107,6 +107,10 @@ export function PolityOverview({
     setQuery("");
     setHovered(null);
     setDetailsOpen(true);
+    if (t.studyRoute && t.status !== "outline-only") {
+      onNavigate(t.studyRoute);
+      return;
+    }
     const home =
       topic && themes.some((x) => x.id === t.id) ? topic.id : t.homeTopicId;
     onNavigate(`${pathFor(home)}?theme=${encodeURIComponent(t.id)}`);

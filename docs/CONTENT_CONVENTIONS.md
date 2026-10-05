@@ -83,8 +83,10 @@ prompts should explain an analytical use; option-elimination notes belong in PYQ
 context, not the core teaching skeleton.
 
 
-The Constitution syllabus-topic screen now composes all its authored maps. Theme
-focus is a view on that full union, not a separate content release or disclosure
-step. Seven navigation groups organise exploration without asserting legal edges.
-Composition version `2026.10.04-foundations.1+inline-topic.1` changes presentation
-and evidence-reference disambiguation only; the canonical releases stay unchanged.
+The combined topic canvas was replaced on 2026-10-05 with complete, focused
+microtheme maps. Clicking an authored theme opens it directly. Navigation metadata
+version `2026.10.05.1` changes destinations and adds six selected sidebar gateways;
+it does not change the canonical study releases. Each gateway names an existing
+destination, preserves the shared Article identity and reproduces the destination
+edge explanation/classification and exact source references. Theme membership alone
+is not treated as proof of an academic connection.

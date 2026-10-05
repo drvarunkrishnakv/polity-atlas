@@ -65,10 +65,9 @@ against official papers. Raw texts and per-question audit trails remain private.
 
 ## First study example
 
-In the Constitution topic, select Fundamental Rights through Explore theme or the
-Topic index. Its connections are already on the same canvas. The standalone
-`#/gs2/polity/fundamental-rights` example remains available with 47 concepts and
-52 links; the following describes that smaller view.
+In the Constitution syllabus topic, click Fundamental Rights to open its focused
+map directly. All 47 concepts and 52 links appear immediately; there is no second
+Open map step. Unfinished themes remain labelled coverage outlines.
 Start with the six rights categories, then select Right to Freedom → Article 21 →
 Puttaswamy → Privacy without revealing anything. Selecting a category frames its
 Articles. Node tints and text labels distinguish categories, Articles, judgments,
@@ -85,12 +84,17 @@ example is dated 2024. See docs/CONTENT_REVIEW.md for scope and source limitatio
 
 ## Constitution foundations release
 
-GS II → Polity → Constitution & its foundations opens the connected study content
-directly. Use Explore theme or Topic index to focus a teaching structure on that
-same canvas; there is no Open map step. The initial view starts with the Preamble.
-All 260 canonical concepts and 419 existing connections stay present. There are 36 new maps plus the original Fundamental Rights
-map; the two constitutional-morality register identities share one destination.
-The 11 related themes retain their later home-topic authoring passes.
+GS II → Polity → Constitution & its foundations lists the syllabus-linked themes.
+Clicking an authored theme opens its complete focused map. There are 36 foundation
+maps plus Fundamental Rights, covering 38 home identities; the two morality
+identities share one destination. Eleven related themes retain later authoring
+passes. No combined 260-concept canvas is loaded for study.
+
+At selected Articles, Continue in another map offers named, source-backed routes
+to related themes. Initial gateways connect Rights with Directive Principles,
+Constitutional values and Constitutional remedies. Each opens the destination at
+the shared Article; the rest of that destination is already present. Existing
+bookmarks from the combined-canvas experiment migrate to focused maps.
 
 The new bank contains 234 canonical concepts, 367 explained relationships and
 84 short PYQ angles, labelled Mains or Prelims. Shared Articles keep their existing

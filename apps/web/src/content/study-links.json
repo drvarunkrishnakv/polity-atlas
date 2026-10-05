@@ -1,0 +1,135 @@
+{
+  "version": "2026.10.05.1",
+  "links": [
+    {
+      "id": "fundamental-rights:directive-principles:a31C",
+      "from": "fundamental-rights",
+      "to": "directive-principles",
+      "anchorId": "a31C",
+      "edgeId": "cf:directive-principles:a37:a31C",
+      "explanation": "Although directives are non-justiciable, Article 31C gives specified protection to laws implementing Article 39(b) or (c), subject to the cited judicial limits.",
+      "classification": "analytical",
+      "sources": [
+        {
+          "id": "constitution",
+          "title": "Constitution of India · 2024 edition",
+          "url": "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2024/07/20240716890312078.pdf",
+          "locator": "Relevant Articles, Schedules and amendment footnotes; individual concepts supply locators",
+          "edition": "Through the 106th Amendment; 2024 text",
+          "sha256": "819ba7adc5e5ae4063f26c82472283ba682ddb662e5a7f864cf26984d99b26ed"
+        },
+        {
+          "id": "minerva-1980",
+          "title": "Supreme Court · Minerva Mills (1980)",
+          "url": "https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/documents/aor_notice_circular/3.pdf",
+          "locator": "Striking down of the 42nd Amendment clauses that extended Article 31C to all Directive Principles and that removed limits on amending power.",
+          "edition": "Judgment 1980; reported 1981",
+          "sha256": "a176284d048a553a73ff1da974d20bef5dc6890e2d3966c665a5bbad5493f367"
+        },
+        {
+          "id": "property-owners-2024",
+          "title": "Supreme Court · Property Owners Association (2024)",
+          "url": "https://api.sci.gov.in/supremecourt/1992/78629/78629_1992_1_1501_57003_Judgement_05-Nov-2024.pdf",
+          "locator": "Operative Article 31C remains the Kesavananda extent. Not every private resource is a material resource of the community.",
+          "edition": "5 November 2024",
+          "sha256": "e7f2c677113fcf2330a2df036a29b465936d9455d03550caa1b4e06b37331b9d"
+        }
+      ]
+    },
+    {
+      "id": "directive-principles:fundamental-rights:a31C",
+      "from": "directive-principles",
+      "to": "fundamental-rights",
+      "anchorId": "a31C",
+      "edgeId": "a31C--dpsp",
+      "explanation": "Operative Article 31C protection concerns Article 39(b) and (c), not all DPSPs.",
+      "classification": "direct",
+      "sources": [
+        {
+          "id": "constitution",
+          "title": "Constitution of India · 2024 edition",
+          "url": "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2024/07/20240716890312078.pdf",
+          "locator": "Part III; relevant article and footnotes",
+          "edition": "Through the 106th Amendment; 2024 text",
+          "sha256": "819ba7adc5e5ae4063f26c82472283ba682ddb662e5a7f864cf26984d99b26ed"
+        }
+      ]
+    },
+    {
+      "id": "fundamental-rights:constitutional-values:a14",
+      "from": "fundamental-rights",
+      "to": "constitutional-values",
+      "anchorId": "a14",
+      "edgeId": "cf:constitutional-values:value-equality:a14",
+      "explanation": "This provision gives a concrete constitutional expression to the value; the comparison is an editorial teaching link.",
+      "classification": "analytical",
+      "sources": [
+        {
+          "id": "constitution",
+          "title": "Constitution of India · 2024 edition",
+          "url": "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2024/07/20240716890312078.pdf",
+          "locator": "Relevant Articles, Schedules and amendment footnotes; individual concepts supply locators",
+          "edition": "Through the 106th Amendment; 2024 text",
+          "sha256": "819ba7adc5e5ae4063f26c82472283ba682ddb662e5a7f864cf26984d99b26ed"
+        }
+      ]
+    },
+    {
+      "id": "constitutional-values:fundamental-rights:a14",
+      "from": "constitutional-values",
+      "to": "fundamental-rights",
+      "anchorId": "a14",
+      "edgeId": "a14--equality",
+      "explanation": "Compare general equality with targeted measures under Article 15.",
+      "classification": "analytical",
+      "sources": [
+        {
+          "id": "constitution",
+          "title": "Constitution of India · 2024 edition",
+          "url": "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2024/07/20240716890312078.pdf",
+          "locator": "Part III; relevant article and footnotes",
+          "edition": "Through the 106th Amendment; 2024 text",
+          "sha256": "819ba7adc5e5ae4063f26c82472283ba682ddb662e5a7f864cf26984d99b26ed"
+        }
+      ]
+    },
+    {
+      "id": "fundamental-rights:constitutional-remedies:a32",
+      "from": "fundamental-rights",
+      "to": "constitutional-remedies",
+      "anchorId": "a32",
+      "edgeId": "c-re-basu",
+      "explanation": "Basu is an Article 32 proceeding that produced custody requirements.",
+      "classification": "direct",
+      "sources": [
+        {
+          "id": "dk-basu-1996",
+          "title": "Supreme Court · D. K. Basu (1996)",
+          "url": "https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/documents/aor_notice_circular/11.pdf",
+          "locator": "Requirements during arrest and detention.",
+          "edition": "18 December 1996",
+          "sha256": "4d947b31301b8d0e6d22adebe96904f50e7860fc69bb1665a56d0877b3a2a049"
+        }
+      ]
+    },
+    {
+      "id": "constitutional-remedies:fundamental-rights:a32",
+      "from": "constitutional-remedies",
+      "to": "fundamental-rights",
+      "anchorId": "a32",
+      "edgeId": "a32--a226",
+      "explanation": "Article 226 extends to Fundamental Rights and other purposes; Article 32 concerns Part III enforcement.",
+      "classification": "direct",
+      "sources": [
+        {
+          "id": "constitution",
+          "title": "Constitution of India · 2024 edition",
+          "url": "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2024/07/20240716890312078.pdf",
+          "locator": "Part III; relevant article and footnotes",
+          "edition": "Through the 106th Amendment; 2024 text",
+          "sha256": "819ba7adc5e5ae4063f26c82472283ba682ddb662e5a7f864cf26984d99b26ed"
+        }
+      ]
+    }
+  ]
+}

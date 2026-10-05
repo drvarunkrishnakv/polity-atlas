@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { useEffect, useRef } from "react";
 import {
   ArrowRight,
@@ -14,7 +15,9 @@ export function Inspector({
   onSelect,
   onFrameConnections,
   onClose,
+  relatedMaps,
 }: {
+  relatedMaps?: ReactNode;
   concept: Concept;
   graph: GraphRelease;
   onSelect: (id: string) => void;
@@ -40,11 +43,7 @@ export function Inspector({
     ? allRelated.filter((e) => e.role !== "structure")
     : [];
   const pyqs = graph.pyqs.filter(
-    (q) =>
-      q.conceptId === concept.id ||
-      (concept.id === rootId &&
-        (!graph.display?.focusNodeIds ||
-          graph.display.focusNodeIds.includes(q.conceptId))),
+    (q) => q.conceptId === concept.id || concept.id === rootId,
   );
   const connectionTitle = !organise
     ? "Direct connections"
@@ -200,6 +199,7 @@ export function Inspector({
         )}
       </section>
       {!organise && connections}
+      {relatedMaps}
       {pyqs.length > 0 && (
         <section>
           <h2>PYQ angles</h2>

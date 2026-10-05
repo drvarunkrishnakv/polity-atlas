@@ -21,7 +21,16 @@ export function StudyScreen({
         if (!active) return;
         const errors = validateGraph(release);
         if (errors.length) throw new Error(errors.join("; "));
-        setGraph(release);
+        setGraph({
+          ...release,
+          display: {
+            family: "rights",
+            topic: {
+              id: "constitution",
+              title: "Constitution & its foundations",
+            },
+          },
+        });
       })
       .catch((reason: unknown) => {
         if (!active) return;

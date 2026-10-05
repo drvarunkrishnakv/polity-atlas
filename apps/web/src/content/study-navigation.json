@@ -1,0 +1,727 @@
+{
+  "version": "2026.10.05.1",
+  "maps": [
+    {
+      "slug": "fundamental-rights",
+      "title": "Fundamental Rights",
+      "route": "gs2/polity/fundamental-rights",
+      "microthemeIds": ["microtheme:3dc9a2d227339195a31d5617"],
+      "nodeIds": [
+        "constitution",
+        "fr",
+        "a12",
+        "a13",
+        "a14",
+        "a15",
+        "a16",
+        "a17",
+        "a18",
+        "a19",
+        "a20",
+        "a21",
+        "a21A",
+        "a22",
+        "a23",
+        "a24",
+        "a25",
+        "a26",
+        "a27",
+        "a28",
+        "a29",
+        "a30",
+        "a31",
+        "a31A",
+        "a31B",
+        "a31C",
+        "a32",
+        "a33",
+        "a34",
+        "a35",
+        "dpsp",
+        "a226",
+        "a359",
+        "equality",
+        "privacy",
+        "maneka",
+        "puttaswamy",
+        "bonds",
+        "disclosure",
+        "a31D",
+        "a32A",
+        "right-equality",
+        "right-freedom",
+        "right-exploitation",
+        "right-religion",
+        "right-cultural",
+        "right-remedies"
+      ]
+    },
+    {
+      "slug": "principles",
+      "title": "Constitutional principles",
+      "route": "gs2/polity/study/principles",
+      "microthemeIds": ["microtheme:0018b78cdf24beb7591884c7"],
+      "nodeIds": [
+        "theme:principles",
+        "preamble",
+        "cat-republic",
+        "cat-objectives",
+        "theme:morality",
+        "navtej",
+        "kesavananda",
+        "minerva",
+        "a14",
+        "a19",
+        "a21"
+      ]
+    },
+    {
+      "slug": "directive-principles",
+      "title": "Directive Principles",
+      "route": "gs2/polity/study/directive-principles",
+      "microthemeIds": ["microtheme:16e2c15cae67ac7bdd95a2d4"],
+      "nodeIds": [
+        "theme:dpsp",
+        "cat-dpsp-social",
+        "cat-dpsp-gandhian",
+        "cat-dpsp-liberal",
+        "a38",
+        "a39",
+        "a39A",
+        "a43A",
+        "a44",
+        "a45",
+        "a48A",
+        "a50",
+        "a51",
+        "a31C",
+        "minerva",
+        "property-owners",
+        "a36",
+        "a37",
+        "a40",
+        "a41",
+        "a42",
+        "a43",
+        "a43B",
+        "a46",
+        "a47",
+        "a48",
+        "a49",
+        "a32"
+      ]
+    },
+    {
+      "slug": "constitutional-values",
+      "title": "Constitutional values",
+      "route": "gs2/polity/study/constitutional-values",
+      "microthemeIds": ["microtheme:1d65764b992c6badc9fb36b4"],
+      "nodeIds": [
+        "theme:values",
+        "preamble",
+        "cat-objectives",
+        "a38",
+        "a39",
+        "dpsp",
+        "a14",
+        "value-justice",
+        "value-liberty",
+        "a19",
+        "value-equality",
+        "value-fraternity",
+        "a51A-e"
+      ]
+    },
+    {
+      "slug": "constitutionalism",
+      "title": "Constitutionalism",
+      "route": "gs2/polity/study/constitutionalism",
+      "microthemeIds": ["microtheme:36519d6431193c4c7cad9542"],
+      "nodeIds": [
+        "theme:constitutionalism",
+        "cat-limited",
+        "a13",
+        "a14",
+        "a21",
+        "a32",
+        "a368",
+        "kesavananda",
+        "minerva",
+        "preamble"
+      ]
+    },
+    {
+      "slug": "democracy",
+      "title": "Democracy",
+      "route": "gs2/polity/study/democracy",
+      "microthemeIds": ["microtheme:3486c0cd901d6cf443b37332"],
+      "nodeIds": [
+        "theme:democracy",
+        "preamble",
+        "cat-republic",
+        "a326",
+        "cat-limited",
+        "evt-adoption",
+        "evt-commencement"
+      ]
+    },
+    {
+      "slug": "preamble",
+      "title": "Preamble",
+      "route": "gs2/polity/study/preamble",
+      "microthemeIds": ["microtheme:c3962731a01281f55e8d2e47"],
+      "nodeIds": [
+        "theme:preamble",
+        "preamble",
+        "cat-republic",
+        "cat-objectives",
+        "evt-adoption",
+        "kesavananda",
+        "a326",
+        "dpsp",
+        "value-justice",
+        "a38",
+        "value-liberty",
+        "a19",
+        "value-equality",
+        "a14",
+        "value-fraternity",
+        "a51A-e"
+      ]
+    },
+    {
+      "slug": "commencement-repeal",
+      "title": "Commencement and repeal",
+      "route": "gs2/polity/study/commencement-repeal",
+      "microthemeIds": ["microtheme:7fcb384207a954260270cd8d"],
+      "nodeIds": [
+        "theme:commencement",
+        "a393",
+        "a394",
+        "a394A",
+        "a395",
+        "evt-commencement",
+        "evt-adoption",
+        "goi-1935"
+      ]
+    },
+    {
+      "slug": "constitutional-amendment",
+      "title": "Constitutional amendment",
+      "route": "gs2/polity/study/constitutional-amendment",
+      "microthemeIds": ["microtheme:34d6e3ff5d72c612894a8938"],
+      "nodeIds": [
+        "theme:amendment",
+        "part-xx",
+        "a368",
+        "cat-special-majority",
+        "cat-ratification",
+        "a13",
+        "kesavananda",
+        "minerva",
+        "coelho-2007",
+        "a31B",
+        "evt-first-amendment"
+      ]
+    },
+    {
+      "slug": "ninth-schedule",
+      "title": "Ninth Schedule history",
+      "route": "gs2/polity/study/ninth-schedule",
+      "microthemeIds": ["microtheme:f02c0708969a6e63504534e0"],
+      "nodeIds": [
+        "theme:ninth",
+        "a31B",
+        "evt-first-amendment",
+        "coelho-2007",
+        "kesavananda"
+      ]
+    },
+    {
+      "slug": "constitutional-safeguards",
+      "title": "Constitutional safeguards",
+      "route": "gs2/polity/study/constitutional-safeguards",
+      "microthemeIds": ["microtheme:fe254ebcb09f69a6474906a3"],
+      "nodeIds": [
+        "theme:safeguards",
+        "kesavananda",
+        "a13",
+        "a32",
+        "a226",
+        "minerva",
+        "bommai",
+        "a368"
+      ]
+    },
+    {
+      "slug": "constitutional-structure",
+      "title": "Constitutional structure",
+      "route": "gs2/polity/study/constitutional-structure",
+      "microthemeIds": ["microtheme:f456be7c19b4544f3a10a2c1"],
+      "nodeIds": [
+        "theme:structure",
+        "part-ix",
+        "part-ixa",
+        "part-xviii",
+        "part-xx",
+        "a368",
+        "structure-people",
+        "structure-government",
+        "structure-relations",
+        "structure-schedules",
+        "part-i",
+        "part-ii",
+        "part-iii",
+        "part-iv",
+        "part-iva",
+        "part-v",
+        "part-vi",
+        "part-viii",
+        "part-ixb",
+        "part-x",
+        "part-xi",
+        "part-xii",
+        "part-xiii",
+        "part-xiv",
+        "part-xiva",
+        "part-xv",
+        "part-xvi",
+        "part-xvii",
+        "part-xix",
+        "part-xxi",
+        "part-xxii",
+        "schedule-1",
+        "schedule-2",
+        "schedule-3",
+        "schedule-4",
+        "schedule-7",
+        "schedule-9",
+        "schedule-10",
+        "schedule-11",
+        "schedule-12",
+        "fifth-schedule",
+        "sixth-schedule",
+        "eighth-schedule"
+      ]
+    },
+    {
+      "slug": "constitutional-history",
+      "title": "Constitutional history",
+      "route": "gs2/polity/study/constitutional-history",
+      "microthemeIds": ["microtheme:c3c94f6635b8e4706b38c1c0"],
+      "nodeIds": [
+        "theme:history",
+        "goi-1935",
+        "independence-1947",
+        "evt-independence",
+        "a395",
+        "a1",
+        "evt-commencement",
+        "history-company",
+        "history-crown",
+        "regulating-1773",
+        "pitt-1784",
+        "charter-1813",
+        "charter-1833",
+        "charter-1853",
+        "crown-1858",
+        "councils-1861",
+        "councils-1892",
+        "councils-1909",
+        "goi-1919"
+      ]
+    },
+    {
+      "slug": "constitution-making",
+      "title": "Constitution making",
+      "route": "gs2/polity/study/constitution-making",
+      "microthemeIds": ["microtheme:8e07cc7e7d3278699a18ea56"],
+      "nodeIds": [
+        "theme:making",
+        "assembly-1946",
+        "goi-1935",
+        "evt-independence",
+        "evt-adoption",
+        "evt-commencement",
+        "a395",
+        "objectives-resolution",
+        "drafting-committee",
+        "assembly-deliberation",
+        "assembly-representation",
+        "preamble"
+      ]
+    },
+    {
+      "slug": "constitutional-morality",
+      "title": "Constitutional morality",
+      "route": "gs2/polity/study/constitutional-morality",
+      "microthemeIds": [
+        "microtheme:89b54b741cde68ab404fe2bd",
+        "microtheme:a3a1ac01d2874c2c60ad8eb1"
+      ],
+      "nodeIds": [
+        "theme:morality",
+        "preamble",
+        "navtej",
+        "kesavananda",
+        "cat-judicial-office",
+        "minerva",
+        "a32",
+        "a14"
+      ]
+    },
+    {
+      "slug": "fundamental-duties",
+      "title": "Fundamental Duties",
+      "route": "gs2/polity/study/fundamental-duties",
+      "microthemeIds": ["microtheme:d537e90d29dc0ed702629d18"],
+      "nodeIds": [
+        "theme:duties",
+        "a51A",
+        "cat-fd-republic",
+        "cat-fd-social",
+        "cat-fd-develop",
+        "preamble",
+        "a21A",
+        "a45",
+        "a51A-a",
+        "a51A-b",
+        "a51A-c",
+        "a51A-d",
+        "a51A-e",
+        "a51A-f",
+        "a51A-g",
+        "a51A-h",
+        "a51A-i",
+        "a51A-j",
+        "a51A-k",
+        "a48A"
+      ]
+    },
+    {
+      "slug": "constitutional-provisions",
+      "title": "Constitutional provisions",
+      "route": "gs2/polity/study/constitutional-provisions",
+      "microthemeIds": ["microtheme:ab4bbb3b5b488d9fd7648790"],
+      "nodeIds": [
+        "theme:provisions",
+        "a50",
+        "cat-fd-social",
+        "a51A",
+        "a24",
+        "dpsp"
+      ]
+    },
+    {
+      "slug": "human-rights-foundations",
+      "title": "Human rights foundations",
+      "route": "gs2/polity/study/human-rights-foundations",
+      "microthemeIds": ["microtheme:74bc0f875a60a7abe4d9d35b"],
+      "nodeIds": [
+        "theme:human-rights",
+        "preamble",
+        "dpsp",
+        "a51A",
+        "a39A",
+        "a21",
+        "udhr-1948"
+      ]
+    },
+    {
+      "slug": "political-concepts",
+      "title": "Political concepts",
+      "route": "gs2/polity/study/political-concepts",
+      "microthemeIds": ["microtheme:b0661ad92bdaef9a8c581de4"],
+      "nodeIds": [
+        "theme:concepts",
+        "cat-state",
+        "a12",
+        "cat-liberty",
+        "a19",
+        "a21",
+        "cat-equality-idea",
+        "a14",
+        "a18",
+        "cat-rights-claims",
+        "cat-rights-duties",
+        "a51A",
+        "cat-separation",
+        "a50"
+      ]
+    },
+    {
+      "slug": "rule-of-law",
+      "title": "Rule of law",
+      "route": "gs2/polity/study/rule-of-law",
+      "microthemeIds": ["microtheme:b409b57530021fab586b3c3e"],
+      "nodeIds": [
+        "theme:rule-of-law",
+        "a14",
+        "cat-limited",
+        "cat-liberty",
+        "a21",
+        "maneka",
+        "dk-basu"
+      ]
+    },
+    {
+      "slug": "constitutional-remedies",
+      "title": "Constitutional remedies",
+      "route": "gs2/polity/study/constitutional-remedies",
+      "microthemeIds": ["microtheme:4c151a40114a66773378a049"],
+      "nodeIds": [
+        "theme:remedies",
+        "a32",
+        "a226",
+        "writ-prohibition",
+        "writ-mandamus",
+        "writ-quo",
+        "dk-basu",
+        "a22",
+        "right-remedies",
+        "writ-habeas",
+        "writ-certiorari"
+      ]
+    },
+    {
+      "slug": "article-13-review",
+      "title": "Fundamental rights and judicial review",
+      "route": "gs2/polity/study/article-13-review",
+      "microthemeIds": ["microtheme:71879327c4b7d9c6d999a8ce"],
+      "nodeIds": [
+        "theme:art13",
+        "a13",
+        "cat-law-includes",
+        "a368",
+        "kesavananda",
+        "a32"
+      ]
+    },
+    {
+      "slug": "security-and-rights",
+      "title": "Security and rights",
+      "route": "gs2/polity/study/security-and-rights",
+      "microthemeIds": ["microtheme:324e8c69ffa1fb216ccb1a61"],
+      "nodeIds": [
+        "theme:security",
+        "a355",
+        "a356",
+        "a22",
+        "a22-detention",
+        "a39A",
+        "a21",
+        "dk-basu"
+      ]
+    },
+    {
+      "slug": "emergency-provisions",
+      "title": "Emergency provisions",
+      "route": "gs2/polity/study/emergency-provisions",
+      "microthemeIds": ["microtheme:880954d1d66c4c88b48d6453"],
+      "nodeIds": [
+        "theme:emergency",
+        "part-xviii",
+        "a352",
+        "a356",
+        "a357",
+        "a358",
+        "a359",
+        "a360",
+        "a19",
+        "bommai",
+        "a355"
+      ]
+    },
+    {
+      "slug": "constitutional-property",
+      "title": "Constitutional rights to property",
+      "route": "gs2/polity/study/constitutional-property",
+      "microthemeIds": ["microtheme:d45ad59a671b13757e4d8e99"],
+      "nodeIds": [
+        "theme:property",
+        "a300A",
+        "a31",
+        "a31C",
+        "property-owners",
+        "minerva",
+        "a39"
+      ]
+    },
+    {
+      "slug": "scheduled-tribes",
+      "title": "Scheduled Tribes",
+      "route": "gs2/polity/study/scheduled-tribes",
+      "microthemeIds": ["microtheme:1eafe2f46c660909baa7ca1e"],
+      "nodeIds": [
+        "theme:scheduled-tribes",
+        "a342",
+        "a244",
+        "fifth-schedule",
+        "sixth-schedule"
+      ]
+    },
+    {
+      "slug": "tribal-safeguards",
+      "title": "Tribal constitutional safeguards",
+      "route": "gs2/polity/study/tribal-safeguards",
+      "microthemeIds": ["microtheme:47ea21d54fb145e4734a3c8b"],
+      "nodeIds": [
+        "theme:tribal-purpose",
+        "a244",
+        "fifth-schedule",
+        "sixth-schedule",
+        "part-ix"
+      ]
+    },
+    {
+      "slug": "scheduled-areas-and-tribes",
+      "title": "Scheduled areas and tribal safeguards",
+      "route": "gs2/polity/study/scheduled-areas-and-tribes",
+      "microthemeIds": ["microtheme:619f0dd9761ce4d4d7b43bb1"],
+      "nodeIds": [
+        "theme:tribal-mix",
+        "sixth-schedule",
+        "fifth-schedule",
+        "a243D",
+        "a244",
+        "a342"
+      ]
+    },
+    {
+      "slug": "scheduled-areas",
+      "title": "Scheduled Areas",
+      "route": "gs2/polity/study/scheduled-areas",
+      "microthemeIds": ["microtheme:63ea79efbb3ff536cf59f196"],
+      "nodeIds": [
+        "theme:scheduled-areas",
+        "fifth-schedule",
+        "a244",
+        "sixth-schedule",
+        "part-ix",
+        "a342"
+      ]
+    },
+    {
+      "slug": "constitutional-languages",
+      "title": "Constitutional languages",
+      "route": "gs2/polity/study/constitutional-languages",
+      "microthemeIds": ["microtheme:6cbd3c141384c45b7d57c5a6"],
+      "nodeIds": [
+        "theme:languages",
+        "eighth-schedule",
+        "a368",
+        "a343",
+        "a345",
+        "a348",
+        "a350A",
+        "a350B",
+        "a351",
+        "a21A"
+      ]
+    },
+    {
+      "slug": "national-honours",
+      "title": "National honours",
+      "route": "gs2/polity/study/national-honours",
+      "microthemeIds": ["microtheme:53b24add341d429f91d80b0a"],
+      "nodeIds": ["theme:honours", "a18", "balaji-1995", "a51A"]
+    },
+    {
+      "slug": "citizenship",
+      "title": "Citizenship",
+      "route": "gs2/polity/study/citizenship",
+      "microthemeIds": ["microtheme:b7be21a887147ac1dc45d18e"],
+      "nodeIds": [
+        "theme:citizenship",
+        "a5",
+        "a11",
+        "a58",
+        "citizenship-act",
+        "citizenship-rules-2024",
+        "caa-2026",
+        "a6",
+        "a7",
+        "a8",
+        "a9",
+        "a10"
+      ]
+    },
+    {
+      "slug": "access-to-justice",
+      "title": "Criminal procedure and access to justice",
+      "route": "gs2/polity/study/access-to-justice",
+      "microthemeIds": ["microtheme:c0648495e7a07a5653cfdd51"],
+      "nodeIds": ["theme:access", "a39A", "a21", "a22", "bnss-173", "dk-basu"]
+    },
+    {
+      "slug": "education-governance",
+      "title": "Education governance",
+      "route": "gs2/polity/study/education-governance",
+      "microthemeIds": ["microtheme:c84ea849737508017a379a16"],
+      "nodeIds": [
+        "theme:education",
+        "a21A",
+        "a45",
+        "cat-fd-develop",
+        "list-iii-education",
+        "dpsp",
+        "a244",
+        "sixth-schedule",
+        "part-ix",
+        "a51A-k"
+      ]
+    },
+    {
+      "slug": "equality-reservation",
+      "title": "Equality and reservation",
+      "route": "gs2/polity/study/equality-reservation",
+      "microthemeIds": ["microtheme:c97e482455fd40d61226d7b2"],
+      "nodeIds": [
+        "theme:reservation",
+        "a16",
+        "a15",
+        "a335",
+        "davinder-2024",
+        "janhit-2022",
+        "equality"
+      ]
+    },
+    {
+      "slug": "gender-justice",
+      "title": "Gender justice",
+      "route": "gs2/polity/study/gender-justice",
+      "microthemeIds": ["microtheme:b399c9baefb653aef5c59b2d"],
+      "nodeIds": [
+        "theme:gender",
+        "a14",
+        "a15",
+        "a16",
+        "a39",
+        "cat-fd-social",
+        "vishaka-1997",
+        "a21",
+        "a19",
+        "nalsa-2014",
+        "navtej",
+        "a51A-e",
+        "a42"
+      ]
+    },
+    {
+      "slug": "environmental-jurisprudence",
+      "title": "Environmental jurisprudence",
+      "route": "gs2/polity/study/environmental-jurisprudence",
+      "microthemeIds": ["microtheme:f34d8d2c49776d167f4b103d"],
+      "nodeIds": [
+        "theme:environment",
+        "a48A",
+        "cat-fd-develop",
+        "a21",
+        "vellore-1996",
+        "dpsp",
+        "a51",
+        "a51A-g"
+      ]
+    }
+  ]
+}

@@ -71,13 +71,13 @@ legal relationship. The original Fundamental Rights graph is unchanged.
 
 `PolityOverview` renders the selected syllabus scope, with measured dimensions
 retained on hover. All members of that navigation scope render immediately.
-Selecting a topic changes scope; selecting a theme pins its outline and moves the
-camera. No unauthored theme has an enabled study destination. Search and accessible
+Selecting a topic changes scope; selecting an authored theme opens its study
+route immediately. Selecting an unauthored theme pins its coverage outline. No unauthored theme has an enabled study destination. Search and accessible
 sidebar lists provide access to off-screen members. Shared theme IDs appear under
 multiple topics without duplicating their source identity or occurrence counts.
 
 Routes: `#/gs2/polity` is the overview, `#/gs2/polity/topics/<topic-id>` is a topic,
-and `?theme=<stable-theme-id>` pins an outline. The study example lives at
+and `?theme=<stable-theme-id>` opens an authored study or pins an unfinished outline. The study example lives at
 `#/gs2/polity/fundamental-rights`. Old `#/gs2/polity?node=...` links still open the
 study graph. The Polity breadcrumb returns to the overview. Browser history,
 reload and appearance persistence are covered by browser tests.
@@ -143,27 +143,30 @@ rights release is untouched. Study metadata is small enough for syllabus screens
 the full bank is a separate lazy chunk, loaded only by a foundation study route.
 
 
-## Inline syllabus-topic canvas — 2026-10-04
+## Focused maps and related-study navigation — 2026-10-05
 
-The Constitution topic route now lazy-loads `TopicScreen`, rather than rendering
-`PolityOverview`'s theme catalogue. Other unauthored topics retain the catalogue.
-`content/topic-graph.ts` composes the existing foundations and rights releases by
-canonical identity: 260 unique concepts and 419 existing edges. No relationships
-are inferred from co-membership. Conflicting source records are namespaced in the
-composition so the original locators/URLs remain attached to their evidence.
-Canonical content JSON files are unchanged.
+The combined topic canvas experiment (PR #18) is superseded by owner feedback:
+its scale required too much scrolling. Topic routes again show the syllabus
+catalogue, and an authored theme opens its complete individual graph in one click.
+The canonical content JSON, IDs, evidence and authored map membership are unchanged.
+`TopicScreen`, combined graph composition and its layout code are removed.
 
-`graph/topic-layout.ts` places the focused theme in its authored teaching layout
-and all other concepts in surrounding blocks. Shared nodes appear once, retaining
-edges across maps. Theme selection changes this focus layout, without changing
-membership. Ordinary selection and hover keep positions stable. The Topic index
-and Explore theme selector provide seven editorial reading groups; these are
-navigation organisation, not additional academic edges. Fit graph includes the
-complete topic at overview scale; readable detail requires focus or zoom.
+A small `study-navigation.json` contains destinations and canonical node membership
+for bookmark resolution. `routing/study-navigation.ts` maps old topic `theme`,
+`focus` and `node` queries to a valid focused route. Migration replaces the current
+history entry, avoiding back-button redirect loops. Invalid IDs cannot create a
+study destination. Shared Articles retain their selected identity across map links.
 
-Old `?theme=<microtheme-id>` links resolve directly to their teaching focus.
-New bookmarks preserve both `focus=<slug>` and `node=<canonical-id>`. Standalone
-study routes remain supported. The initial topic focus is the Preamble, not a
-claim that all 260 concepts fit legibly in one viewport. Related unauthored themes
-remain available as labelled home-topic outlines in the index. Root PYQ prompts
-are scoped to the focused node family rather than all questions in the bank.
+`study-links.json` provides six explicit directional gateways (three pairs) at
+Articles 14, 31C and 32. `RelatedMaps` renders the destination name, copied reviewed
+edge explanation, legal/analytical classification and source locators in the
+inspector. These are navigation links grounded in a shared Article and an existing
+destination edge; they do not add nodes or inferred edges to the loaded graph.
+They are selective gateways, not a completed cross-topic relationship pass.
+
+`tooling/build-study-navigation.mjs` derives both small files from the public
+canonical records and explicit gateway choices. Its `--check` runs in `npm run
+check` to detect stale metadata. Unit checks verify the shared anchor, destination
+edge and exact evidence; browser checks cover direct opening, old bookmarks,
+related-map return navigation, one-hop highlights and complete map membership.
+The full banks are still loaded only by their respective study screens.
