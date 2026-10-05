@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { useTheme } from "../theme/ThemeProvider";
 import { useEffect, useMemo, useState, useCallback } from "react";
@@ -36,6 +35,7 @@ import {
   kindLabel,
   teachingRegions,
 } from "../graph/presentation";
+import { RelatedMaps } from "./RelatedMaps";
 import { Inspector } from "./Inspector";
 import "@xyflow/react/dist/style.css";
 type ConceptNode = Node<
@@ -112,27 +112,14 @@ export function GraphCanvas({
   graph,
   onNavigate,
   studyPath,
-  focusControl,
-  onSelectTheme,
-  indexGroups,
-  indexExtras,
-  initialIndexOpen = false,
 }: {
   graph: GraphRelease;
   onNavigate: (path: string) => void;
   studyPath: string;
-  focusControl?: ReactNode;
-  indexExtras?: ReactNode;
-  initialIndexOpen?: boolean;
-  onSelectTheme?: (id: string) => boolean;
-  indexGroups?: { title: string; ids: string[] }[];
 }) {
   const { theme } = useTheme();
   const family = graphFamily(graph);
   const rootId = graphRootId(graph);
-  const focusQuery = graph.display?.focusSlug
-    ? `focus=${encodeURIComponent(graph.display.focusSlug)}&`
-    : "";
   const initialId = new URLSearchParams(location.hash.split("?")[1]).get(
     "node",
   );
@@ -161,7 +148,7 @@ export function GraphCanvas({
     });
   }, []);
   const [query, setQuery] = useState("");
-  const [indexOpen, setIndexOpen] = useState(initialIndexOpen);
+  const [indexOpen, setIndexOpen] = useState(false);
   const [detailsOpen, setDetailsOpen] = useState(true);
   const [focusVersion, setFocusVersion] = useState(0);
   const { fitView, setCenter, zoomIn, zoomOut } = useReactFlow<ConceptNode>();
@@ -170,17 +157,14 @@ export function GraphCanvas({
   const focusConcept = useCallback(
     (id: string) => {
       const n = graph.nodes.find((n) => n.id === id)!;
-      if (
-        n.kind === "category" ||
-        (n.kind === "theme" && innerWidth > (family === "topic" ? 1100 : 700))
-      ) {
+      if (n.kind === "category" || n.kind === "theme") {
         const children = graph.edges
           .filter((e) => e.source === id && e.role === "structure")
           .map((e) => ({ id: e.target }));
         fitView({
           nodes: [{ id }, ...children],
           padding: 0.22,
-          minZoom: family === "topic" ? 0.6 : 0.22,
+          minZoom: 0.05,
           maxZoom: 1,
           duration: 240,
         });
@@ -191,7 +175,7 @@ export function GraphCanvas({
         });
       }
     },
-    [graph, fitView, setCenter, family],
+    [graph, fitView, setCenter],
   );
   const active = hovered || selected;
   const lit = useMemo(
@@ -200,7 +184,6 @@ export function GraphCanvas({
   );
   const select = useCallback(
     (id: string, center = true) => {
-      if (onSelectTheme?.(id)) return;
       setSelected(id);
       setHovered(null);
       setDetailsOpen(true);
@@ -209,13 +192,13 @@ export function GraphCanvas({
       history.replaceState(
         null,
         "",
-        `#/${studyPath}?${focusQuery}node=${encodeURIComponent(id)}`,
+        `#/${studyPath}?node=${encodeURIComponent(id)}`,
       );
       if (center || graph.nodes.find((n) => n.id === id)?.kind === "category") {
         setTimeout(() => focusConcept(id), 50);
       }
     },
-    [graph.nodes, focusConcept, studyPath, onSelectTheme, focusQuery],
+    [graph.nodes, focusConcept, studyPath],
   );
   const reset = () => {
     setSelected(rootId);
@@ -224,11 +207,7 @@ export function GraphCanvas({
     setIndexOpen(false);
     setDetailsOpen(true);
     setFocusVersion((v) => v + 1);
-    history.replaceState(
-      null,
-      "",
-      `#/${studyPath}${focusQuery ? "?" + focusQuery.slice(0, -1) : ""}`,
-    );
+    history.replaceState(null, "", `#/${studyPath}`);
   };
   useEffect(() => {
     if (!initialized) return;
@@ -303,9 +282,8 @@ export function GraphCanvas({
     (n) => n.id === (selected || hovered || rootId),
   )!;
   const categories = graph.nodes.filter((node) => node.kind === "category");
-  const scopeStatus = focusControl
-    ? `Whole topic · ${graph.nodes.length} concepts · ${graph.edges.length} connections`
-    : family === "rights"
+  const scopeStatus =
+    family === "rights"
       ? `${categories.length} rights categories · ${graph.nodes.length} concepts · ${graph.edges.length} links on canvas`
       : categories.length
         ? `${categories.length} categories · ${graph.nodes.length} concepts · ${graph.edges.length} links on canvas`
@@ -393,15 +371,12 @@ export function GraphCanvas({
           </button>
         </div>
       </header>
-      <div
-        className={`workspace ${focusControl ? "topic-workspace" : ""} ${detailsOpen ? "details-open" : ""}`}
-      >
+      <div className={`workspace ${detailsOpen ? "details-open" : ""}`}>
         <main
           className="canvas-area"
           aria-label={`${graph.title} knowledge graph`}
         >
           <div className="canvas-toolbar">
-            {focusControl}
             <div className="legend">
               {legend.map(([kind, title]) => (
                 <span key={kind} className={`legend-item kind-${kind}`}>
@@ -427,9 +402,7 @@ export function GraphCanvas({
                 : (graph.display?.topic?.title ?? "Indian Constitution")}
             </span>
             <span>
-              {focusControl
-                ? graph.nodes.find((n) => n.id === rootId)?.title
-                : graph.title}
+              {graph.title}
               {family === "rights" ? <small> · Part III</small> : null}
               <small className="scope-status">{scopeStatus}</small>
               <small className="source-cutoff">{graph.sourceCutoff}</small>
@@ -464,34 +437,14 @@ export function GraphCanvas({
                   ? "Part III provisions and selected connections"
                   : graph.scope}
               </p>
-              {indexExtras}
-              {indexGroups?.map((group) => (
-                <section key={group.title}>
-                  <h2>{group.title}</h2>
-                  {group.ids.map((id) => {
-                    const n = graph.nodes.find((n) => n.id === id)!;
-                    return (
-                      <button
-                        key={id}
-                        aria-label={n.title}
-                        onClick={() => select(id)}
-                      >
-                        <strong>{n.title}</strong>
-                        <small>{n.meaning}</small>
-                      </button>
-                    );
-                  })}
-                </section>
-              ))}
-              {!indexGroups &&
-                graph.nodes
-                  .filter((n) => family !== "rights" || n.id !== "constitution")
-                  .map((n) => (
-                    <button key={n.id} onClick={() => select(n.id)}>
-                      <strong>{n.title}</strong>
-                      <small>{n.meaning}</small>
-                    </button>
-                  ))}
+              {graph.nodes
+                .filter((n) => family !== "rights" || n.id !== "constitution")
+                .map((n) => (
+                  <button key={n.id} onClick={() => select(n.id)}>
+                    <strong>{n.title}</strong>
+                    <small>{n.meaning}</small>
+                  </button>
+                ))}
             </div>
           )}
           <div className="graph-viewport">
@@ -500,7 +453,7 @@ export function GraphCanvas({
               edges={edges}
               nodeTypes={nodeTypes}
               onNodesChange={onNodesChange}
-              minZoom={focusControl ? 0.005 : 0.2}
+              minZoom={0.05}
               maxZoom={1.8}
               nodesConnectable={false}
               nodesFocusable={false}
@@ -578,7 +531,12 @@ export function GraphCanvas({
               <button
                 aria-label="Fit graph"
                 onClick={() =>
-                  fitView({ padding: 0.15, duration: 250, maxZoom: 1.15 })
+                  fitView({
+                    padding: 0.15,
+                    duration: 250,
+                    minZoom: 0.05,
+                    maxZoom: 1.15,
+                  })
                 }
               >
                 <CornersOut size={18} />
@@ -601,6 +559,13 @@ export function GraphCanvas({
           <Inspector
             concept={inspected}
             graph={graph}
+            relatedMaps={
+              <RelatedMaps
+                path={studyPath}
+                conceptId={inspected.id}
+                onNavigate={onNavigate}
+              />
+            }
             onSelect={select}
             onFrameConnections={() => {
               const ids = neighbours(inspected.id, graph.edges);

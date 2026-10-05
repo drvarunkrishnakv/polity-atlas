@@ -416,9 +416,7 @@ p {
   color: var(--muted);
   margin: 10px 0;
 }
-.topic-index > button,
-.topic-index section > button,
-.related-topic-outlines > button {
+.topic-index > button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1564,96 +1562,32 @@ p {
   }
 }
 
-/* Theme focus changes the view inside the complete syllabus-topic graph. */
-.theme-focus {
+.related-map {
+  margin-top: 14px;
+}
+.related-map > button {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: var(--muted);
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  text-align: left;
+  background: var(--raised);
+}
+.related-map > p {
+  margin: 9px 0;
   font-size: 12px;
-  white-space: nowrap;
+  color: var(--text-secondary);
 }
-.theme-focus select {
-  max-width: 250px;
-  min-width: 150px;
-  color: var(--text);
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 9px 12px;
-  font: inherit;
-  font-size: 14px;
+.related-map details {
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.6;
 }
-.topic-workspace .canvas-toolbar {
-  flex-wrap: wrap;
-  gap: 10px;
+.related-map summary {
+  cursor: pointer;
 }
-.topic-workspace .legend {
-  order: 3;
-  flex-basis: 100%;
-}
-.topic-workspace .canvas-heading {
-  top: 124px;
-}
-.topic-workspace .graph-viewport {
-  top: 216px;
-}
-.topic-index section h2 {
-  margin: 16px 0 6px;
-}
-@media (max-width: 1100px) {
-  .topic-workspace .canvas-heading {
-    top: 114px;
-  }
-  .topic-workspace .graph-viewport {
-    top: 220px;
-  }
-}
-@media (max-width: 700px) {
-  .theme-focus {
-    gap: 5px;
-    font-size: 11px;
-  }
-  .theme-focus select {
-    min-width: 0;
-    max-width: 180px;
-    font-size: 12px;
-    padding: 8px;
-  }
-  .topic-workspace .canvas-heading {
-    top: 108px;
-  }
-  .topic-workspace .graph-viewport {
-    top: 218px;
-  }
-}
-@media (max-width: 1100px) {
-  .topic-workspace .legend {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    max-width: 100%;
-    padding-bottom: 3px;
-  }
-  .topic-workspace .legend-item {
-    flex-shrink: 0;
-  }
-}
-@media (max-width: 700px) {
-  .topic-workspace .canvas-heading {
-    top: 100px;
-  }
-  .topic-workspace .canvas-heading > .eyebrow {
-    display: none;
-  }
-  .topic-workspace .canvas-heading .source-cutoff {
-    font-size: 9px;
-    line-height: 1.3;
-  }
-  .topic-workspace .graph-viewport {
-    top: 178px;
-  }
-}
-
-.topic-workspace .react-flow__minimap::before {
-  content: "Whole topic";
+.related-map details p {
+  margin-top: 8px;
 }

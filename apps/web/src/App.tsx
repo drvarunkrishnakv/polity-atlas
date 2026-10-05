@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Library } from "./components/Library";
-import { RouteScreen } from "./routing/RouteScreen";
+import { studyBookmark } from "./routing/study-navigation";
+import { RouteNotice, RouteScreen } from "./routing/RouteScreen";
 
 const loadStudy = () =>
   import("./screens/StudyScreen").then((module) => module.StudyScreen);
@@ -8,8 +9,6 @@ const loadFoundation = () =>
   import("./screens/FoundationScreen").then(
     (module) => module.FoundationScreen,
   );
-const loadTopic = () =>
-  import("./screens/TopicScreen").then((module) => module.TopicScreen);
 const loadOverview = () =>
   import("./screens/OverviewScreen").then((module) => module.OverviewScreen);
 
@@ -26,6 +25,27 @@ function foundationSlug(path: string): string | null {
   }
 }
 
+function StudyRedirect({
+  destination,
+  onResolved,
+}: {
+  destination: string;
+  onResolved: (path: string) => void;
+}) {
+  useEffect(() => {
+    history.replaceState(null, "", `#/${destination}`);
+    onResolved(destination);
+  }, [destination, onResolved]);
+  return (
+    <RouteNotice
+      busy
+      onLibrary={() => {
+        location.hash = "/";
+      }}
+    />
+  );
+}
+
 export function App() {
   const [route, setRoute] = useState(location.hash.slice(2));
   useEffect(() => {
@@ -39,13 +59,16 @@ export function App() {
   const [path, query] = route.split("?");
   const params = new URLSearchParams(query);
   const onLibrary = () => navigate("");
+  const destination = studyBookmark(path, params);
+  if (destination)
+    return <StudyRedirect destination={destination} onResolved={setRoute} />;
   if (
     path === "gs2/polity/fundamental-rights" ||
     (path === "gs2/polity" && params.has("node"))
   )
     return (
       <RouteScreen
-        key="study"
+        key={`study:${query ?? ""}`}
         routeKey="study"
         load={loadStudy}
         failureTitle="Study map unavailable"
@@ -57,28 +80,12 @@ export function App() {
   if (slug !== null)
     return (
       <RouteScreen
-        key="foundation"
+        key={`foundation:${slug}:${query ?? ""}`}
         routeKey={`foundation:${slug}`}
         load={loadFoundation}
         failureTitle="Study map unavailable"
         onLibrary={onLibrary}
         render={(Screen) => <Screen slug={slug} onNavigate={navigate} />}
-      />
-    );
-  if (path === "gs2/polity/topics/constitution")
-    return (
-      <RouteScreen
-        key={`topic:${params.toString()}`}
-        routeKey="constitution-topic"
-        load={loadTopic}
-        failureTitle="Topic graph unavailable"
-        onLibrary={onLibrary}
-        render={(Screen) => (
-          <Screen
-            themeId={params.get("theme") || undefined}
-            onNavigate={navigate}
-          />
-        )}
       />
     );
   if (path === "gs2/polity" || path.startsWith("gs2/polity/topics/")) {

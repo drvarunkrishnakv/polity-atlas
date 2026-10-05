@@ -88,3 +88,14 @@ existing banks, reuses shared identities and provides in-canvas theme focus.
 Focus changes layout, never graph membership; hover remains one hop. Standalone
 routes remain compatible, but are not a required navigation step. Untouched
 syllabus topics remain explicit outlines until their content is authored.
+
+
+## 2026-10-05 — Return to complete focused maps (issue #19)
+
+Owner testing found the combined topic canvas required too much scrolling. Restore
+syllabus topic → canonical PYQ theme → complete focused map, opening authored
+maps on the first click. Only unfinished themes show a coverage outline. Preserve
+all records within each map and one-hop highlighting; do not restore per-node
+Reveal. Selected source-backed sidebar gateways link maps at shared Articles.
+Existing combined-canvas bookmarks migrate rather than breaking. This supersedes
+the 2026-10-04 inline-topic decision; it does not regenerate content or embeddings.

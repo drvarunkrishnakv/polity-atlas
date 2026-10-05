@@ -1,5 +1,48 @@
 # Handoff
 
+## Focused study navigation — 2026-10-05
+
+- Issue: https://github.com/drvarunkrishnakv/recall-atlas/issues/19
+- Branch: `codex/focused-study-navigation`, based on `100eeca` from PR #18.
+  Implementation commit: `607791d`.
+  PR: https://github.com/drvarunkrishnakv/recall-atlas/pull/22
+  (stacked on PR #18). Assisting tool: Codex.
+  A documentation checkpoint follows; resume from the actual branch head.
+- Supersedes the combined topic-canvas experiment below at the user's request.
+  Syllabus topics show canonical PYQ themes. Selecting an authored theme opens
+  its separate complete map immediately; unfinished themes retain coverage outlines.
+  No intermediate Open map action or per-node Reveal controls.
+- All 37 authored destinations remain available. Fundamental Rights retains its
+  47 concepts, 52 links and six-category teaching hierarchy. Stable IDs, academic
+  content, sources and corpus files are unchanged. Hover remains one-hop.
+- Small generated navigation metadata migrates old combined-canvas theme/focus
+  bookmarks, preserving selected Articles where available. The app still loads
+  study screens and banks on demand.
+- Six explicit sidebar navigation links (three reciprocal pairs) connect Rights
+  with Directive Principles, Constitutional values and Constitutional remedies at
+  shared Articles. Each reuses an existing destination edge's explanation, class
+  and sources exactly. This is selective navigation, not a complete cross-topic
+  academic-link authoring pass. Check metadata with the normal check command;
+  regenerate it with `node tooling/build-study-navigation.mjs` when content changes.
+- Opening and resetting a theme frames its immediate structural branches on
+  desktop and touch layouts. Camera framing never filters the map's records.
+  The Fit graph control can zoom out to include the complete map.
+- Validation checkpoint: `npm run check` passed format, generated metadata,
+  TypeScript, 25 unit tests, production build and public audit. The final full
+  browser run passed 83 tests, with four mouse-only touch skips, after responsive
+  opening-camera refinement. Command:
+  `npx playwright test --config output/grok-pilot/independent.config.ts`.
+  Includes all 37 destinations, bookmarks, Back, links, complete node membership,
+  bounded hover, phone/tablet branch visibility and private-file serving checks.
+- Visual evidence: `docs/design/focused-*` contains desktop, phone and tablet
+  dark/light screenshots. Physical devices and Safari remain untested.
+- Dev server is running at http://localhost:4177/ from this branch. Port 4173 is
+  the older primary checkout; isolated browser tests use port 4175.
+- No merge, deployment, protection changes, embedding regeneration or private
+  source publication. Remaining eight syllabus topics are still unfinished.
+- Next: user reviews the focused-map navigation, then continue the Federalism
+  content batch and the separately reviewed inter-topic connection pass.
+
 ## Inline Constitution topic graph — 2026-10-04
 
 - Issue: https://github.com/drvarunkrishnakv/polity-atlas/issues/17

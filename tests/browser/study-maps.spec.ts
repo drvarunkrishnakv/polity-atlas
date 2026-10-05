@@ -35,7 +35,10 @@ test("an unknown constitution study slug recovers without the rights graph", asy
   expect(seen).not.toContain("polity-catalog.json");
   await page.getByRole("button", { name: "Back to Constitution" }).click();
   await expect(
-    page.getByRole("combobox", { name: "Explore theme" }),
+    page.getByRole("heading", {
+      name: "Constitution & its foundations",
+      exact: true,
+    }),
   ).toBeVisible();
   await page.goto("/#/gs2/polity/study/not-a-reviewed-map");
   await page.getByRole("button", { name: "Back to library" }).click();
@@ -61,7 +64,10 @@ test("reviewed foundation maps render in full when the bank has them", async ({
     .getByRole("button", { name: "Constitution & its foundations" })
     .click();
   await expect(
-    page.getByRole("combobox", { name: "Explore theme" }),
+    page.getByRole("heading", {
+      name: "Constitution & its foundations",
+      exact: true,
+    }),
   ).toBeVisible();
   if (!second) return;
   await page.goto(`/#/gs2/polity/study/${first.slug}?node=${first.rootId}`);

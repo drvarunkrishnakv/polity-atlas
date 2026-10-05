@@ -29,21 +29,41 @@ test("syllabus overview opens theme outlines and the existing rights graph", asy
   await page
     .getByRole("button", { name: "01 · Constitution & its foundations" })
     .click();
-  const focus = page.getByRole("combobox", { name: "Explore theme" });
-  await expect(focus).toHaveValue("preamble");
   await expect(
-    page.getByRole("button", { name: /^Open .* (map|graph)$/ }),
-  ).toHaveCount(0);
-  await focus.selectOption("fundamental-duties");
+    page.getByRole("heading", {
+      name: "Constitution & its foundations",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: /^Fundamental Duties 0 Mains/ })
+    .click();
   await expect(
     page.getByRole("heading", { name: "Fundamental Duties", exact: true }),
   ).toBeVisible();
-  await expect(page.locator('[data-concept="a51A-k"]')).toHaveCount(1);
-  await focus.selectOption("fundamental-rights");
+  await expect(page.locator(".concept-card")).toHaveCount(20);
   await expect(
-    page.getByRole("heading", { name: "Fundamental Rights", exact: true }),
-  ).toBeVisible();
-  expect(page.url()).toContain("/topics/constitution");
+    page.getByRole("button", { name: /^Open .* (map|graph)$/ }),
+  ).toHaveCount(0);
+  await page
+    .getByRole("button", {
+      name: "Constitution & its foundations",
+      exact: true,
+    })
+    .click();
+  await page
+    .getByRole("textbox", { name: "Search Polity themes" })
+    .fill("Fundamental Rights");
+  await page
+    .getByRole("region", { name: "Theme search results" })
+    .getByRole("button", {
+      name: "Fundamental Rights Polity · 7 Mains · 7 Prelims",
+      exact: true,
+    })
+    .click();
+  await expect(page.locator(".concept-card")).toHaveCount(47);
+  await expect(page.locator(".react-flow__edge")).toHaveCount(52);
+  expect(page.url()).toContain("/fundamental-rights");
   await page.getByRole("button", { name: "Switch to light mode" }).click();
   await page.screenshot({
     path: `output/qa/${test.info().project.name}-polity-theme.png`,
